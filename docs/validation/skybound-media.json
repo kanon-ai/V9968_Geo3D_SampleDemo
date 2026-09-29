@@ -1,0 +1,21 @@
+{
+  "seconds": 25.633005057311795,
+  "gif_seconds": 25.65,
+  "gif_dimensions": [
+    480,
+    390
+  ],
+  "silent": true,
+  "speed_adjustment": false,
+  "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+  "files": {
+    "SKYBOUND-textured-flight-v2.mp4": {
+      "bytes": 13271969,
+      "sha256": "3db3de0bd65501eec98e5e65d7a79c88a58271a347743b833446b051f31bde53"
+    },
+    "SKYBOUND-textured-flight-v2-under15MB.gif": {
+      "bytes": 8078753,
+      "sha256": "45657044c0172123d063a91d224770074fdd6bc2be8e9835f9d76e38cdb75828"
+    }
+  }
+}

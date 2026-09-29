@@ -1,0 +1,21 @@
+{
+  "seconds": 25.633005057311795,
+  "gif_seconds": 25.65,
+  "gif_dimensions": [
+    480,
+    390
+  ],
+  "silent": true,
+  "speed_adjustment": false,
+  "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+  "files": {
+    "VECTOR-RUSH-coastal-run-v1.mp4": {
+      "bytes": 3926775,
+      "sha256": "0607420251e74bac0bee5114d994429519e9e84cf417d4eb877f5a3567869b2f"
+    },
+    "VECTOR-RUSH-coastal-run-v1-under15MB.gif": {
+      "bytes": 3313037,
+      "sha256": "01761b8c6ffbdc0693a0e9226fc9f3de7a51a7d3d934558281e1b0a248466d0f"
+    }
+  }
+}

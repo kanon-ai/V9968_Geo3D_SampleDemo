@@ -1,0 +1,3 @@
+Built-in image_gen, 2026-09-29. No reference images.
+Prompt: Create a seamless square aerial ground texture for a retro low polygon flight simulator. Straight down orthographic satellite-like view of a natural grassy upland meadow, muted sage green and olive green patches, subtle exposed gray-green stone and tiny shrubs, no buildings, no roads, no water, no horizon, no text, no border. Broad soft irregular natural patches with fine restrained detail, even diffuse lighting, low contrast, all four edges tile seamlessly. This is a material texture to cover large 3D terrain polygons, not a landscape scene. Original artwork.
+Conversion: low-pass via 32x32, expanded to 128x128, quantized to existing palette entries 10,9,14; duplicated horizontally in a 256x128 SCREEN5 atlas.

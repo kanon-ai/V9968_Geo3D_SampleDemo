@@ -1,0 +1,15 @@
+{
+  "frames": 1536,
+  "rom_bytes": 1048576,
+  "meshes": {
+    "earth": {
+      "vertices": 222,
+      "faces": 240
+    },
+    "moon": {
+      "vertices": 146,
+      "faces": 160
+    }
+  },
+  "sha256": "d0029bd081add9baf13c62f5bdf10f160a9ae7b95a556817378058287fe788de"
+}

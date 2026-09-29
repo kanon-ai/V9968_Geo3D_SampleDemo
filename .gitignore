@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+demos/*/out/
+demos/*/media/
+demos/*/src/palette.inc
+dist/
+.venv/
+.env
+runtime/
+*.avi
+*.exe
+*.dll
+*.sram
