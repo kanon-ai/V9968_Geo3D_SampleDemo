@@ -1,0 +1,17 @@
+{
+  "source": "actual openMSX geo3d AVI",
+  "speed_adjustment": false,
+  "mp4_full_loop_seconds_approximately": 34.18,
+  "gif_excerpt_seconds": 16.0,
+  "gif_frames": 240,
+  "files": {
+    "OBSIDIAN-v0.2.0-silent.mp4": {
+      "bytes": 4072867,
+      "sha256": "1eb00a04487e9c110a0621205e8053e7a7a0bfa27ab30d54dd655fda29873058"
+    },
+    "OBSIDIAN-v0.2.0-preview.gif": {
+      "bytes": 3011549,
+      "sha256": "7f282033a1cbedfbb2ba5afc13b5d77aab9332974821797444cabad0a03324a9"
+    }
+  }
+}

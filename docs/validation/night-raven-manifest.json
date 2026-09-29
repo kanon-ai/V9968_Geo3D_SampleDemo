@@ -1,0 +1,30 @@
+{
+  "aircraft_types": [
+    "NIGHT RAVEN",
+    "interceptor",
+    "orbital drone",
+    "heavy lancer"
+  ],
+  "model_vertices": [
+    90,
+    36,
+    48,
+    60,
+    12,
+    8
+  ],
+  "model_faces": [
+    71,
+    32,
+    40,
+    48,
+    12,
+    8
+  ],
+  "frame_count": 1536,
+  "rom_bytes": 1048576,
+  "resident_vertices": 248,
+  "geometry_streaming": "resident vertex pool; face list on type change, six object slots",
+  "combat_events": 237,
+  "sha256": "cca91b616751ba334509abe53f50a510f04dae2adc60fee6f534c90bed103640"
+}

@@ -37,3 +37,12 @@ Texture atlas: 256×128, Earth in rows 0–63, Moon in 64–127. Seven pre-shade
 - 近面をまたぐ面は完全なクリッピングではなく省略される場合があります。
 - 1MiB ROMは空き・パディングを含むサイズです。3本をまとめた1MiB ROMではありません。
 - エミュレータ上の描画速度はFPGA実機の性能評価値ではありません。
+
+
+## NIGHT RAVEN (v0.2.0)
+
+See [NIGHT RAVEN usage, technical details, validation and license review](NIGHT_RAVEN.md). The existing three demos and v0.1.0 assets are unchanged.
+
+## OBSIDIAN / TITAN PASS (v0.2.0)
+
+[起動・ビルド・技術・検証・素材の来歴](OBSIDIAN.md)。256KiB / ASCII16、無音の自動再生デモです。

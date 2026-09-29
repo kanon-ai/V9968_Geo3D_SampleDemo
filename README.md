@@ -1,19 +1,39 @@
 # V9968 + Geo3D Sample Demos
 
-**TurboR + V9968 + Geo3Dで「こんな映像も見てみたい」を試す、3本の無音・自動再生デモです。**
+**TurboR + V9968 + Geo3Dで「こんな映像も見てみたい」を試す、5本の無音・自動再生デモです。**
 
-Three silent, non-interactive experiments: a coastal race, a low-altitude flight, and rotating Earth/Moon spheres. These are real-time polygon rendering demos, with precomputed movement/camera tables—not prerecorded raster movies in ROM.
+Five silent, non-interactive experiments, including NIGHT RAVEN space combat and OBSIDIAN battleship flyby: a coastal race, a low-altitude flight, and rotating Earth/Moon spheres. These are real-time polygon rendering demos, with precomputed movement/camera tables—not prerecorded raster movies in ROM.
 
 **まずはGeo3D開発者 Alex Moncks氏のopenMSXで確認しています。実機動作・実機速度の保証ではありません。** These demos were checked with the Geo3D developer's openMSX build. Physical hardware and other emulators are not validated. See [validation details](docs/VALIDATION.md).
+
+## NIGHT RAVEN — 新着 / New
+
+巨大艦の壁沿いを突破する、リアルタイム・ポリゴン宇宙戦デモを追加しました。**効果音・BGMなし版です。カッコいいBGMを付けたいのですが、まだ決まらず悩み中。今後BGMを追加する予定です。それまでは、それぞれの「心のBGM」を重ねてお楽しみください。**
+
+NIGHT RAVEN is currently silent (no SFX or BGM). We are still looking for the right soundtrack and plan to add BGM later. Until then, enjoy it with the soundtrack in your imagination!
+
+[無音ROM・MP4 / v0.2.0](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0) · [使い方・技術説明・検証・免責 / Details](docs/NIGHT_RAVEN.md)
+
+![NIGHT RAVEN](docs/media/night-raven.gif)
+
+## OBSIDIAN / TITAN PASS — 最初の巨大戦艦デモ
+
+巨大戦艦の近傍を飛行する、最初のGeo3D実験も無音版で追加しました。1フレームあたり1,816頂点・1,302面を投入します（全ての面が常に表示されるという意味ではありません）。
+
+[使い方・技術説明・検証](docs/OBSIDIAN.md) · [v0.2.0 ROM・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0)
+
+![OBSIDIAN](docs/media/obsidian.gif)
 
 ## ダウンロード / Download
 
 [v0.1.0 リリース・ROMと無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.0)
 
-ROMは各 **1MiB / ASCII16**。操作は不要です。音声はありません。エミュレータ・BIOS・FPGAビットストリームは同梱していません。
+ROMは **ASCII16**（OBSIDIAN: 256KiB、ほか: 1MiB）。操作は不要です。音声はありません。エミュレータ・BIOS・FPGAビットストリームは同梱していません。
 
 | Demo | 内容 | Preview |
 |---|---|---|
+| OBSIDIAN / TITAN PASS | 巨大戦艦への接近飛行 / battleship flyby | [Details](docs/OBSIDIAN.md) |
+| NIGHT RAVEN | 巨大艦沿いの宇宙迎撃戦 / space combat | [Details](docs/NIGHT_RAVEN.md) |
 | VECTOR / RUSH | 起伏とバンクのある海沿いコース、3台の車 / coastal race | [GIF](docs/media/vector-rush.gif) |
 | SKYBOUND | テクスチャ付き地形、僚機2機、港湾・谷・橋 / textured low-altitude flight | [GIF](docs/media/skybound.gif) |
 | ORBITAL | テクスチャ付き地球・月の自転と公転、7段階の陰影 / Earth and Moon | [GIF](docs/media/orbital.gif) |

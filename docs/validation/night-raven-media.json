@@ -1,0 +1,23 @@
+{
+  "source": "actual openMSX geo3d capture",
+  "speed_adjustment": false,
+  "mp4_frames": 1548,
+  "mp4_fps": 59.922744,
+  "mp4_seconds": 25.83326290932204,
+  "simulation_ticks_per_second": 59.426885802484314,
+  "render_updates_per_second": 19.808961934161438,
+  "hardware_performance_verified": false,
+  "audio": "none; silent ROM and video",
+  "gif_frames": 517,
+  "gif_seconds": 25.85,
+  "files": {
+    "NIGHT-RAVEN-v0.2.0-silent.mp4": {
+      "bytes": 13322522,
+      "sha256": "6e3c03622e095ec51772c75fc34d12d376d90ec28ea69056e135f129d63e7b8d"
+    },
+    "NIGHT-RAVEN-v0.2.0-silent.gif": {
+      "bytes": 14035096,
+      "sha256": "5a7f244789e109a5d33975e4636b00ff892cc2b5d55bbf27ee26e970cc3e9453"
+    }
+  }
+}

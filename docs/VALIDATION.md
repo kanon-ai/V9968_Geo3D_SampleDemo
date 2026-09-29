@@ -36,3 +36,12 @@ The video stream itself is approximately 59.92 fps, including repeated display f
 The checked Geo3D emulator computes geometry without charging emulated CPU/FPGA time for that math; VDP command execution and CPU streaming are separate. Successful playback therefore establishes display/software behavior in this environment, not real hardware throughput or full hardware compatibility. The videos are demonstrations, not proof of a playable game's complete workload.
 
 Checksums: each `validation/*-original-build.json` records the expected ROM hash; release `SHA256SUMS.txt` covers downloads. Source/build dependencies can affect reproducibility and must not be silently substituted when comparing hashes.
+
+
+## NIGHT RAVEN (v0.2.0)
+
+See [NIGHT RAVEN usage, technical details, validation and license review](NIGHT_RAVEN.md). The existing three demos and v0.1.0 assets are unchanged.
+
+## OBSIDIAN / TITAN PASS (v0.2.0)
+
+[起動・ビルド・技術・検証・素材の来歴](OBSIDIAN.md)。256KiB / ASCII16、無音の自動再生デモです。
