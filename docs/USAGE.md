@@ -56,3 +56,12 @@ python demos/orbital/encode.py
 `vector-rush` / `skybound` も同様です。キャプチャは独立したエミュレータプロセスを起動し、設定の自動保存を無効にします。`throttle off` は収録の実時間を短縮するためで、映像のタイムスタンプはエミュレート時間を使います。エンコード時の速度変更はありません。キャプチャは起動と終了のタイムアウトを持ちます。
 
 Media generation also needs OpenCV (tested 5.0.0) and ffmpeg (tested 7.1). The caption font is rendered into the video, not bundled. Set `CAPTION_FONT` to another locally available licensed font if necessary. MP4 is silent; GIF export checks the 15,000,000-byte limit.
+
+
+## NIGHT RAVEN (v0.2.0)
+
+See [NIGHT RAVEN usage, technical details, validation and license review](NIGHT_RAVEN.md). The existing three demos and v0.1.0 assets are unchanged.
+
+## OBSIDIAN / TITAN PASS (v0.2.0)
+
+[起動・ビルド・技術・検証・素材の来歴](OBSIDIAN.md)。256KiB / ASCII16、無音の自動再生デモです。

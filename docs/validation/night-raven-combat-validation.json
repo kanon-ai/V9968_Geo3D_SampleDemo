@@ -1,0 +1,34 @@
+{
+  "frames": 1536,
+  "events": 237,
+  "destroyed": [
+    176,
+    579,
+    1120
+  ],
+  "pickups": [
+    239,
+    641
+  ],
+  "missile_launch": 1101,
+  "missile_impact": 1120,
+  "max_missile_turn_degrees": 6.879627154022041,
+  "spawned": 40,
+  "passed": 34,
+  "shield_guards": 29,
+  "minimum_enemy_player_distance": 197.96728246613986,
+  "final_score": 8500,
+  "final_shield": 8,
+  "resident_vertices": 248,
+  "max_visible_objects": 6,
+  "face_counts": [
+    71,
+    32,
+    40,
+    48,
+    12,
+    8
+  ],
+  "rom_sha256": "cca91b616751ba334509abe53f50a510f04dae2adc60fee6f534c90bed103640",
+  "scope": "Offline combat simulation and packed ROM validation; hardware performance unverified"
+}

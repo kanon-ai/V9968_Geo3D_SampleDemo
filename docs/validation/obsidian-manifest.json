@@ -1,0 +1,46 @@
+{
+  "solid_components": 184,
+  "escort_craft": 8,
+  "player_craft": 1,
+  "vertices": 1816,
+  "faces": 1302,
+  "batches": 9,
+  "per_world_batch": [
+    [
+      225,
+      161
+    ],
+    [
+      225,
+      161
+    ],
+    [
+      225,
+      161
+    ],
+    [
+      225,
+      161
+    ],
+    [
+      225,
+      161
+    ],
+    [
+      225,
+      161
+    ],
+    [
+      225,
+      161
+    ],
+    [
+      225,
+      161
+    ]
+  ],
+  "geometry_ram_bytes": 24968,
+  "frames": 512,
+  "rom_bytes": 262144,
+  "sha256": "e71b04b9e521858c4e8ca47dca8c3675228391314ad88075f84678583d821d89"
+}

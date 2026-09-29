@@ -15,3 +15,12 @@
 公開対象はドライブ・フライト・地球/月の3本のみです。ほかのデモ、評価用の上流checkout、商用BIOS、エミュレータ環境、個人の設定・保存データは含めません。
 
 The release uses MIT for project-owned material, preserves upstream MIT credits, and excludes emulator/tool executables, firmware and third-party source trees. See [full notices](../THIRD_PARTY_NOTICES.md). AI-generated assets are licensed only to the extent rights are held; no rights clearance or endorsement guarantee is made.
+
+
+## NIGHT RAVEN (v0.2.0)
+
+See [NIGHT RAVEN usage, technical details, validation and license review](NIGHT_RAVEN.md). The existing three demos and v0.1.0 assets are unchanged.
+
+## OBSIDIAN / TITAN PASS (v0.2.0)
+
+[起動・ビルド・技術・検証・素材の来歴](OBSIDIAN.md)。256KiB / ASCII16、無音の自動再生デモです。

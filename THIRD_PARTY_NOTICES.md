@@ -27,3 +27,12 @@ V9968 design and documentation are credited to HRA!. [Upstream MIT notice](LICEN
 Geometry and the compact HUD font are authored in the demo source. SKYBOUND and ORBITAL texture originals were made using a built-in AI image generation tool without reference images; prompts are included. These assets are offered under the repository MIT terms to the extent the contributors hold rights. No exclusive copyright or absence of all possible third-party claims is asserted for AI outputs.
 
 Names of hardware, tools and their authors are used for identification and attribution, not as an endorsement claim.
+
+
+## NIGHT RAVEN
+
+All geometry, the procedural starfield/planet and HUD glyphs are defined in source. No third-party game artwork, music or model files are included. Geo3D reference/setup conventions are covered by the retained Alex Moncks MIT notice above. The silent ROM contains no music driver or music data.
+
+## OBSIDIAN / TITAN PASS
+
+Ship geometry, flight paths and star background are procedurally authored demo data. No commercial game models, images or music are included. The HUD and capture caption render text from a locally installed font (Consolas in the verified build); font files are not redistributed. Set ROM_FONT and CAPTION_FONT to fonts you are licensed to use. Upstream Geo3D/V9968 notices above also apply.

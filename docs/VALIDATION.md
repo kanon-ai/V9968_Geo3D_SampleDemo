@@ -40,3 +40,11 @@ Checksums: each `validation/*-original-build.json` records the expected ROM hash
 ## v0.1.1 ORBITAL update
 
 All 1536 pose records keep the same Moon hemisphere facing Earth (maximum fixed-point facing error below 0.2 degrees). Earth poses and lunar positions match v0.1.0 exactly. A small background UFO is present during 240 records. ORBITAL was recaptured for a full loop and the MP4/GIF revalidated; the other two demos remain byte-identical. The earlier pixel-for-pixel comparison above describes v0.1.0, before this intentional ORBITAL change.
+
+## NIGHT RAVEN (v0.2.0)
+
+See [NIGHT RAVEN usage, technical details, validation and license review](NIGHT_RAVEN.md). The existing three demos and v0.1.0 assets are unchanged.
+
+## OBSIDIAN / TITAN PASS (v0.2.0)
+
+[起動・ビルド・技術・検証・素材の来歴](OBSIDIAN.md)。256KiB / ASCII16、無音の自動再生デモです。

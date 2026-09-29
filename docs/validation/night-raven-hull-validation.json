@@ -1,0 +1,27 @@
+{
+  "district_vertex_face_counts": [
+    [
+      104,
+      46
+    ],
+    [
+      80,
+      40
+    ],
+    [
+      200,
+      118
+    ],
+    [
+      100,
+      61
+    ],
+    [
+      92,
+      51
+    ]
+  ],
+  "hull_instances": 5,
+  "validated_camera_records": 1536,
+  "combat_event_sequence_unchanged": true
+}
