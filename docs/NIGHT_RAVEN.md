@@ -1,5 +1,20 @@
 # NIGHT RAVEN — silent sample / 無音サンプル
 
+## v0.3.2 — NIGHT RAVEN 高速版
+
+画面外へ完全に出た壁区画のモデル転送とGeo3D RUNを省略しました。画面・敵・弾・演出は保持し、無音仕様も継続します。ROMは1MiB / ASCII16です。
+
+開発者版openMSX (de29fb854885a38251c03e24596ad4ff95770ef2) で、元版と一周512画面の表示VRAMが完全一致、237イベントも不変でした。最初と最後の表示完了間の時間は25.800335秒から24.749319秒へ約4.07%短縮。1,536進行レコードの壁RUN候補7,680回中843回を省略します（描画は3レコード刻み）。実機性能を示す値ではありません。
+
+[検証記録](validation/night-raven-optimization-v0.3.2.json)。blueMSXのローカル検証パッチは含みません。blueMSXでの同条件の最適化前後比較・実機検証は未実施です。従来の使用方法、ライセンス、無保証の条件を引き継ぎます。
+
+Download: [v0.3.2](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.2)
+
+Software-only off-screen hull culling. Identical display VRAM across all 512 rendered frames; unchanged events. About 4.07% less elapsed emulated time in the stated openMSX comparison. No emulator patches included; physical hardware unverified.
+
+## v0.2.0 documentation / 旧版の記録
+
+
 TurboR + V9968 + Geo3Dで、巨大艦の壁沿いを黒烏が突破する非操作型の宇宙戦デモです。墨黒の機体、橙色の誘導ミサイル、5種類の船体区画、雲のない惑星を組み合わせています。ゲーム操作はできません。
 
 **今回は効果音・BGMともにありません。カッコいいBGMを付けたいのですが、まだ決まらず悩み中です。今後BGMを追加する予定です。それまでは、それぞれの「心のBGM」を重ねてお楽しみください。** 追加時期は未定です。

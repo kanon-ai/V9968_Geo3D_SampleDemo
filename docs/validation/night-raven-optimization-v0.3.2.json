@@ -1,0 +1,12 @@
+{
+  "display_pages_identical": 512,
+  "simulation_records": 1536,
+  "events_unchanged": true,
+  "baseline_seconds": 25.80033523813781,
+  "optimized_seconds": 24.74931883800874,
+  "time_reduction_percent": 4.073654045298861,
+  "wall_runs_skipped": 843,
+  "wall_runs_total": 7680,
+  "rom_sha256": "10c9a14a337b4ce530058842a44cac83bf3872573f5eb6af48c241bea8335374",
+  "scope": "Fixed developer openMSX only; not blueMSX or physical-hardware performance"
+}

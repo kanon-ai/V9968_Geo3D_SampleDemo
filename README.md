@@ -1,5 +1,14 @@
 # V9968 + Geo3D Sample Demos
 
+## NIGHT RAVEN v0.3.2 — 高速版
+
+画面外の壁の転送・描画を省略。元版と一周512画面の表示VRAMが完全一致し、開発者版openMSXで測定時間を約4.1%短縮しました。無音・1MiB / ASCII16。実機未検証です。
+
+[高速版ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.2) · [変更・検証詳細](docs/NIGHT_RAVEN.md)
+
+以下のNIGHT RAVEN GIFはv0.2.0の映像です（画面内容は同じ、速度は旧版）。
+
+
 **TurboR + V9968 + Geo3Dで「こんな映像も見てみたい」を試す、5本の無音・自動再生デモです。**
 
 Five silent, non-interactive experiments, including NIGHT RAVEN space combat and OBSIDIAN battleship flyby: a coastal race, a low-altitude flight, and rotating Earth/Moon spheres. These are real-time polygon rendering demos, with precomputed movement/camera tables—not prerecorded raster movies in ROM.

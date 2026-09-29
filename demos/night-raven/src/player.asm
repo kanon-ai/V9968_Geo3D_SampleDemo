@@ -410,6 +410,9 @@ wall_far:
  ld a,#5
  ld (WCOUNT),a
 wall_loop:
+ ld hl,#WALL+31
+ srl (hl)
+ jr nc,wall_skipped
  call load_wall_district
  xor a
  out (0x9D),a
@@ -424,6 +427,7 @@ wall_busy:
  in a,(0x9D)
  and #1
  jr nz,wall_busy
+wall_skipped:
  ld hl,(WALL+18)
  ld de,(WALL+24)
  or a

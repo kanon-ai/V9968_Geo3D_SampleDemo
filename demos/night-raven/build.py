@@ -307,7 +307,11 @@ def build():
         escape=max(0.,(f-1150)/386)
         pos=cam@np.array([80*math.sin(f*.008)-1400*escape**2,100*math.sin(f*.011),180-(f*25)%320])
         step=cam@np.array([0,0,320])
-        wr+=words((cam*16384).flatten().tolist()+pos.tolist()+step.tolist())+bytes([(f*25//320)%5,0])
+        quantized=words((cam*16384).flatten().tolist()+pos.tolist()+step.tolist())
+        from visibility import visible_mask
+        first=(f*25//320)%5
+        mask=visible_mask(hulls,struct.unpack('<15h',quantized),first)
+        wr+=quantized+bytes([first,mask])
     banks.extend(bytearray(wr[i:i+16384]) for i in range(0,len(wr),16384))
     assert len(banks)==59
     for hull in hulls[1:]:
