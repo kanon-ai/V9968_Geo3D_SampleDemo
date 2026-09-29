@@ -1,0 +1,44 @@
+{
+  "rom": {
+    "frames": 1536,
+    "rom_bytes": 1048576,
+    "meshes": {
+      "earth": {
+        "vertices": 222,
+        "faces": 240
+      },
+      "moon": {
+        "vertices": 146,
+        "faces": 160
+      },
+      "distant_ufo": {
+        "vertices": 96,
+        "faces": 78
+      }
+    },
+    "sha256": "c81148ecee4e81bbeb782ef8d997bc85731c5c9618f6cf1001d026be1d83f9b6"
+  },
+  "media": {
+    "seconds": 18.423722384942852,
+    "gif_seconds": 18.4,
+    "gif_dimensions": [
+      480,
+      390
+    ],
+    "silent": true,
+    "speed_adjustment": false,
+    "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+    "files": {
+      "ORBITAL-TYPE-REAL.mp4": {
+        "bytes": 6734789,
+        "sha256": "11b41374cdc8e61001a9028072ecd95fd2519cca62289040f7118a9489137942"
+      },
+      "ORBITAL-TYPE-REAL-under15MB.gif": {
+        "bytes": 3227687,
+        "sha256": "52b0a0ecbaaefdacccefd549ec6646faccf4e1accfc5dc91cdcbb403aeea51af"
+      }
+    }
+  },
+  "capture_log": "START frame=33 time=6.810207861613696\nFRAME frame=102 time=7.580413572116009\nFRAME frame=180 time=8.450645961986789\nFRAME frame=297 time=9.750998101714044\nFRAME frame=342 time=10.251132336651725\nFRAME frame=387 time=10.751266012859176\nFRAME frame=600 time=13.121895101193028\nFRAME frame=780 time=15.452516171748085\nFRAME frame=852 time=16.662838433376308\nFRAME frame=900 time=17.463049214355454\nFRAME frame=1161 time=20.693916545259242\nFRAME frame=1326 time=22.534402137701857\nFRAME frame=1350 time=22.804475010092062\nFRAME frame=1452 time=23.934780677432467\nEND frame=1569 time=25.235129464778343\n",
+  "hardware_verified": false
+}

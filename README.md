@@ -6,6 +6,14 @@ Five silent, non-interactive experiments, including NIGHT RAVEN space combat and
 
 **まずはGeo3D開発者 Alex Moncks氏のopenMSXで確認しています。実機動作・実機速度の保証ではありません。** These demos were checked with the Geo3D developer's openMSX build. Physical hardware and other emulators are not validated. See [validation details](docs/VALIDATION.md).
 
+## ORBITAL — TYPE REAL / 別バージョン
+
+地球が月の1公転につき約27.3回自転する高速回転版です。月は同じ面を地球に向けたまま公転します。**従来のORBITALも引き続き提供します。** 実時間や実機性能を示すものではありません。
+
+[ROM・無音MP4・GIF / v0.3.0](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.0) · [使い方・技術説明・検証 / Details](demos/orbital-type-real/README.md)
+
+![ORBITAL TYPE REAL](docs/media/orbital-type-real.gif)
+
 ## NIGHT RAVEN — 新着 / New
 
 巨大艦の壁沿いを突破する、リアルタイム・ポリゴン宇宙戦デモを追加しました。**効果音・BGMなし版です。カッコいいBGMを付けたいのですが、まだ決まらず悩み中。今後BGMを追加する予定です。それまでは、それぞれの「心のBGM」を重ねてお楽しみください。**
