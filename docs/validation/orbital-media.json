@@ -1,6 +1,6 @@
 {
-  "seconds": 17.088670038207862,
-  "gif_seconds": 17.1,
+  "seconds": 18.423722384942852,
+  "gif_seconds": 18.4,
   "gif_dimensions": [
     480,
     390
@@ -9,13 +9,13 @@
   "speed_adjustment": false,
   "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
   "files": {
-    "ORBITAL-earth-moon-v1.mp4": {
-      "bytes": 3177358,
-      "sha256": "1344f5d9622abef2ebf10eacfaf48455b4b0b0ace84186c3855f26b23ad920a6"
+    "ORBITAL-earth-moon-v2.mp4": {
+      "bytes": 3276228,
+      "sha256": "332eba3f3b1878ca11b7314b781d7bad4222b17901d1efd9dc761f6950cb2dc2"
     },
-    "ORBITAL-earth-moon-v1-under15MB.gif": {
-      "bytes": 2528268,
-      "sha256": "289e5f4235f0a5a06e3a7ade9e08be3c0944a73009ff744777c20535e403319a"
+    "ORBITAL-earth-moon-v2-under15MB.gif": {
+      "bytes": 2689272,
+      "sha256": "3710485787d9dae409a027498187898c951b4e32468745a5bf9fead962d29b04"
     }
   }
 }

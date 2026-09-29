@@ -26,7 +26,7 @@ Terrain uses per-face UV coordinates and LRMM spans. The texture revision increa
 
 ## ORBITAL
 
-地球は222頂点・240面、月は146頂点・160面、合計400面のモデルです。裏面判定があるため、400面が常に実際に塗られるわけではありません。地球の自転と月の公転・自転を行い、球体単位の前後関係も切り替えます。
+地球は222頂点・240面、月は146頂点・160面、合計400面のモデルです。裏面判定があるため、400面が常に実際に塗られるわけではありません。月は地球へ常に同じ面を向ける姿勢で公転し、球体単位の前後関係も切り替えます。遠方を時々小さなUFO（96頂点・78面）が横切ります。
 
 Texture atlas: 256×128, Earth in rows 0–63, Moon in 64–127. Seven pre-shaded copies occupy VRAM Y=1024–1919. Transformed normals and a fixed virtual light select the shade copy using Geo3D TSTRIDE=128. Textures are AI-generated approximations, not scientific maps. Orbital distances, sizes and periods are chosen for presentation; the bodies do not cast shadows on each other.
 
@@ -37,3 +37,5 @@ Texture atlas: 256×128, Earth in rows 0–63, Moon in 64–127. Seven pre-shade
 - 近面をまたぐ面は完全なクリッピングではなく省略される場合があります。
 - 1MiB ROMは空き・パディングを含むサイズです。3本をまとめた1MiB ROMではありません。
 - エミュレータ上の描画速度はFPGA実機の性能評価値ではありません。
+
+The Moon orientation is constructed from its direction toward Earth and the fixed orbital-plane normal. Earth rotation and all planetary positions are unchanged. A small UFO passes behind the planets once per loop (240 of 1536 pose records); this is an occasional visual cameo, not an astronomical claim.

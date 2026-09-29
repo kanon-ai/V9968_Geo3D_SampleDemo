@@ -8,7 +8,7 @@ Three silent, non-interactive experiments: a coastal race, a low-altitude flight
 
 ## ダウンロード / Download
 
-[v0.1.0 リリース・ROMと無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.0)
+[v0.1.1 リリース・ROMと無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.1)
 
 ROMは各 **1MiB / ASCII16**。操作は不要です。音声はありません。エミュレータ・BIOS・FPGAビットストリームは同梱していません。
 

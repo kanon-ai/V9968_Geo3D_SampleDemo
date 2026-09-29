@@ -11,7 +11,7 @@ Use the Geo3D developer's openMSX build, including its machine and extension def
 
 ## ROMを起動する / Run a ROM
 
-[Release](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.0) から `V9968_Geo3D_SampleDemo-v0.1.0-ROMs.zip` をダウンロードし展開します。PowerShell例:
+[Release](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.1) から `V9968_Geo3D_SampleDemo-v0.1.1-ROMs.zip` をダウンロードし展開します。PowerShell例:
 
 ```powershell
 & 'C:\path\to\geo3d-openmsx\openmsx.exe' `

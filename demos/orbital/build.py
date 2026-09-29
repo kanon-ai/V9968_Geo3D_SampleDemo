@@ -35,12 +35,33 @@ def sphere(radius,nlon,nlat,vbase):
    m.f.append((ids,normal.tolist(),128));uv.extend(v for q in coords for v in q)
  d=m.data()+bytes(uv);assert len(d)<16384
  return bytearray(d+bytes(16384-len(d))),{'vertices':len(m.v),'faces':len(m.f)}
+def distant_ufo():
+ m=Mesh();rings=[(2,65),(30,60),(44,28),(100,0),(100,-10),(30,-22)]
+ n=12
+ for radius,y in rings:
+  for i in range(n):
+   t=2*math.pi*i/n;m.v.append((radius*math.sin(t),y,radius*math.cos(t)))
+ for j in range(len(rings)-1):
+  for i in range(n):
+   ids=[j*n+i,(j+1)*n+i,(j+1)*n+(i+1)%n,j*n+(i+1)%n]
+   pts=np.array([m.v[k] for k in ids]);normal=np.cross(pts[1]-pts[0],pts[2]-pts[0]);normal/=np.linalg.norm(normal)
+   if np.dot(normal,pts.mean(axis=0)*np.array([1,0,1]))<0:ids=ids[::-1];normal=-normal
+   m.f.append((ids,(normal*.65).tolist(),10))
+ for i in range(3):
+  t=i*2*math.pi/3;m.box(50*math.sin(t),-28,50*math.cos(t),18,20,18,10)
+ # Fixed grayscale on the tiny landing pods; no extra texture image.
+ for i in range(60,len(m.f)):
+  ids,normal,base=m.f[i];m.f[i]=(ids,[0,0,0],12)
+ d=m.data()+bytes(len(m.f)*8)
+ return bytearray(d+bytes(16384-len(d))),{'vertices':len(m.v),'faces':len(m.f)}
+
 def ry(a):return np.array([[math.cos(a),0,math.sin(a)],[0,1,0],[-math.sin(a),0,math.cos(a)]])
 def rz(a):return np.array([[math.cos(a),-math.sin(a),0],[math.sin(a),math.cos(a),0],[0,0,1]])
 def build():
  banks=[bytearray(16384) for _ in range(40)]
  banks[1],earth=sphere(165,20,12,0);banks[2],moon=sphere(46,16,10,64)
- meshstats={'earth':earth,'moon':moon}
+ banks[3],ufo=distant_ufo()
+ meshstats={'earth':earth,'moon':moon,'distant_ufo':ufo}
  pal=sum([list(c) for c in COLORS],[])+[0]*720
  sky=Image.new('P',(256,256));sky.putpalette(pal);d=ImageDraw.Draw(sky)
  rng=np.random.default_rng(12)
@@ -65,9 +86,17 @@ def build():
  for f in range(N):
   t=2*math.pi*f/N
   earthpose=(1,rz(-.20)@ry(t),np.array([0,0,580]))
-  moonpose=(2,ry(-2*t),np.array([290*math.cos(t),65*math.sin(t),580+250*math.sin(t)]))
-  poses=sorted([earthpose,moonpose],key=lambda x:x[2][2],reverse=True)
-  poses += [(255,np.eye(3),np.array([0,0,2000]))]*5
+  moonpos=np.array([290*math.cos(t),65*math.sin(t),580+250*math.sin(t)])
+  # Keep the same local +Z hemisphere facing Earth along the existing inclined orbit.
+  facing=earthpose[2]-moonpos;facing/=np.linalg.norm(facing)
+  orbit_up=np.array([0.,250.,-65.]);orbit_up/=np.linalg.norm(orbit_up)
+  right=np.cross(orbit_up,facing);right/=np.linalg.norm(right)
+  moonpose=(2,np.column_stack((right,np.cross(facing,right),facing)),moonpos)
+  # One small background cameo per cycle, never in front of either planet.
+  u=(f-720)/240
+  ufopose=(3 if 0<=u<1 else 255,rz(.12*math.sin(u*12))@np.array([[1,0,0],[0,.955336,.295520],[0,-.295520,.955336]]),np.array([-2400+4800*u,660+35*math.sin(u*9),3600]))
+  poses=[ufopose]+sorted([earthpose,moonpose],key=lambda x:x[2][2],reverse=True)
+  poses += [(255,np.eye(3),np.array([0,0,2000]))]*4
   rec=bytearray()
   for bank,mat,pos in poses:rec+=words((mat*16384).flatten().tolist()+pos.tolist())
   rec+=bytes([x[0] for x in poses])+bytes(1)

@@ -9,7 +9,11 @@
     "moon": {
       "vertices": 146,
       "faces": 160
+    },
+    "distant_ufo": {
+      "vertices": 96,
+      "faces": 78
     }
   },
-  "sha256": "d0029bd081add9baf13c62f5bdf10f160a9ae7b95a556817378058287fe788de"
+  "sha256": "a07b0f563cdce83c9b42fae4096d09fd4f95b9bd1b9d5e8a0d08b45ac61bad3d"
 }

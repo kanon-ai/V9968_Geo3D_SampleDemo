@@ -12,7 +12,7 @@ d.text((20,6),'ORBITAL / EARTH AND MOON   -   V9968 + Geo3D',font=ImageFont.true
 d.text((20,33),'TurboR | real-time polygon rendering | openMSX evaluation | automatic demo',font=ImageFont.truetype(FONT,16),fill=(153,187,210))
 band.save(P/'out/caption.png')
 def run(args):subprocess.run([str(FF),'-v','error','-y',*args],check=True)
-mp4=M/'ORBITAL-earth-moon-v1.mp4';gif=M/'ORBITAL-earth-moon-v1-under15MB.gif'
+mp4=M/'ORBITAL-earth-moon-v2.mp4';gif=M/'ORBITAL-earth-moon-v2-under15MB.gif'
 run(['-i',str(P/'out/ORBITAL-raw.avi'),'-i',str(P/'out/caption.png'),'-filter_complex','[0:v]scale=960:720:flags=neighbor,pad=960:780:0:0:black[v];[v][1:v]overlay=0:720[out]','-map','[out]','-an','-c:v','libx264','-crf','17','-preset','medium','-pix_fmt','yuv420p','-movflags','+faststart',str(mp4)])
 for width,height in ((480,390),(432,351),(384,312)):
     run(['-i',str(mp4),'-filter_complex',f'fps=20,scale={width}:{height}:flags=neighbor,split[a][b];[a]palettegen=max_colors=32[p];[b][p]paletteuse=dither=none','-loop','0',str(gif)])
