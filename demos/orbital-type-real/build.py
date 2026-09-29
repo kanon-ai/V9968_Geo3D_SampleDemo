@@ -12,7 +12,7 @@ N=1536
 COLORS=[(0,0,0),(0,0,36),(0,36,73),(0,73,146),(36,109,182),(73,146,219),(36,73,36),(73,109,36),(146,146,73),(182,146,109),(36,36,36),(73,73,73),(109,109,109),(146,146,146),(182,182,182),(255,255,255)]
 def bitmap(im):
  a=np.array(im,dtype=np.uint8);return bytes(((a[:,::2]<<4)|a[:,1::2]).flat)
-def sphere(radius,nlon,nlat,vbase):
+def sphere(radius,nlon,nlat,vbase,flip_u=False):
  m=Mesh();uv=[]
  m.v=[(0,radius,0)]
  for j in range(1,nlat):
@@ -25,6 +25,8 @@ def sphere(radius,nlon,nlat,vbase):
   for i in range(nlon):
    ids=[vi(j,i),vi(j+1,i),vi(j+1,i+1),vi(j,i+1)]
    coords=[(round(i*255/nlon),vbase+round(j*63/nlat)),(round(i*255/nlon),vbase+round((j+1)*63/nlat)),(round((i+1)*255/nlon),vbase+round((j+1)*63/nlat)),(round((i+1)*255/nlon),vbase+round(j*63/nlat))]
+   # Match eastward map longitude to the outward-facing sphere.
+   if flip_u:coords=[(255-u,v) for u,v in coords]
    # Collapse polar quads to valid triangles, keeping UV corners attached.
    if j==0:ids=ids[1:]+[ids[1]];coords=coords[1:]+[coords[1]]
    if j==nlat-1:ids=[ids[0],ids[1],ids[3],ids[3]];coords=[coords[0],coords[1],coords[3],coords[3]]
@@ -59,7 +61,7 @@ def ry(a):return np.array([[math.cos(a),0,math.sin(a)],[0,1,0],[-math.sin(a),0,m
 def rz(a):return np.array([[math.cos(a),-math.sin(a),0],[math.sin(a),math.cos(a),0],[0,0,1]])
 def build():
  banks=[bytearray(16384) for _ in range(40)]
- banks[1],earth=sphere(165,20,12,0);banks[2],moon=sphere(46,16,10,64)
+ banks[1],earth=sphere(165,20,12,0,flip_u=True);banks[2],moon=sphere(46,16,10,64)
  banks[3],ufo=distant_ufo()
  meshstats={'earth':earth,'moon':moon,'distant_ufo':ufo}
  pal=sum([list(c) for c in COLORS],[])+[0]*720

@@ -16,7 +16,7 @@
         "faces": 78
       }
     },
-    "sha256": "c81148ecee4e81bbeb782ef8d997bc85731c5c9618f6cf1001d026be1d83f9b6"
+    "sha256": "bd9b8a7349bce4d5d94f38c83d24bed7beb52d732f0a0da0cfb0dd47e830727c"
   },
   "media": {
     "seconds": 18.423722384942852,
@@ -30,15 +30,16 @@
     "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
     "files": {
       "ORBITAL-TYPE-REAL.mp4": {
-        "bytes": 6734789,
-        "sha256": "11b41374cdc8e61001a9028072ecd95fd2519cca62289040f7118a9489137942"
+        "bytes": 6660508,
+        "sha256": "ba8c4b192464a8dc6e56616db913b17f85be2eb6f2aefb4a861d64f2a825d55a"
       },
       "ORBITAL-TYPE-REAL-under15MB.gif": {
-        "bytes": 3227687,
-        "sha256": "52b0a0ecbaaefdacccefd549ec6646faccf4e1accfc5dc91cdcbb403aeea51af"
+        "bytes": 3230606,
+        "sha256": "6dc6bbb2b528595e347eccd7bb0aca4a5ed470785dad0ca20129e55b1f9c8995"
       }
     }
   },
-  "capture_log": "START frame=33 time=6.810207861613696\nFRAME frame=102 time=7.580413572116009\nFRAME frame=180 time=8.450645961986789\nFRAME frame=297 time=9.750998101714044\nFRAME frame=342 time=10.251132336651725\nFRAME frame=387 time=10.751266012859176\nFRAME frame=600 time=13.121895101193028\nFRAME frame=780 time=15.452516171748085\nFRAME frame=852 time=16.662838433376308\nFRAME frame=900 time=17.463049214355454\nFRAME frame=1161 time=20.693916545259242\nFRAME frame=1326 time=22.534402137701857\nFRAME frame=1350 time=22.804475010092062\nFRAME frame=1452 time=23.934780677432467\nEND frame=1569 time=25.235129464778343\n",
+  "capture_log": "START frame=33 time=6.810207861613696\nFRAME frame=102 time=7.580413851481124\nFRAME frame=180 time=8.450646800082133\nFRAME frame=297 time=9.750993631872207\nFRAME frame=342 time=10.25113317474707\nFRAME frame=387 time=10.751266012859176\nFRAME frame=600 time=13.1218945424628\nFRAME frame=780 time=15.452516171748085\nFRAME frame=852 time=16.66284150639257\nFRAME frame=900 time=17.46304893499034\nFRAME frame=1161 time=20.693916545259242\nFRAME frame=1326 time=22.534402137701857\nFRAME frame=1350 time=22.804474730726948\nFRAME frame=1452 time=23.934775788542957\nEND frame=1569 time=25.235124436206277\n",
+  "regression": "Binary diff limited to Earth U coordinates: U_new = 255 - U_old. All other ROM bytes unchanged.",
   "hardware_verified": false
 }

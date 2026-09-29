@@ -10,7 +10,7 @@ Five silent, non-interactive experiments, including NIGHT RAVEN space combat and
 
 地球が月の1公転につき約27.3回自転する高速回転版です。月は同じ面を地球に向けたまま公転します。**従来のORBITALも引き続き提供します。** 実時間や実機性能を示すものではありません。
 
-[ROM・無音MP4・GIF / v0.3.0](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.0) · [使い方・技術説明・検証 / Details](demos/orbital-type-real/README.md)
+[ROM・無音MP4・GIF / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) · [使い方・技術説明・検証 / Details](demos/orbital-type-real/README.md)
 
 ![ORBITAL TYPE REAL](docs/media/orbital-type-real.gif)
 
@@ -33,6 +33,8 @@ NIGHT RAVEN is currently silent (no SFX or BGM). We are still looking for the ri
 ![OBSIDIAN](docs/media/obsidian.gif)
 
 ## ダウンロード / Download
+
+[ORBITAL通常版・TYPE REAL 地球テクスチャ修正版 / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) — 両版の左右反転を修正しました。
 
 [v0.1.1 リリース・ROMと無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.1)
 

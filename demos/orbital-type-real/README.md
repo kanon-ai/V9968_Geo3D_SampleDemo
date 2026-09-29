@@ -9,7 +9,7 @@ A separate fast-spinning edition of ORBITAL. Earth turns approximately 27.3 time
 
 ## Download and run
 
-[TYPE REAL v0.3.0 release](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.0): 1 MiB ASCII16 ROM, silent MP4 and GIF. Automatic playback; no controls. Existing ORBITAL remains available unchanged.
+[TYPE REAL v0.3.1 release](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1): 1 MiB ASCII16 ROM, silent MP4 and GIF. Automatic playback; no controls. Existing ORBITAL remains available unchanged.
 
 Use the Geo3D developer's openMSX with `Panasonic_FS-A1ST_V9968` and `-ext geo3d`. Build with the same dependencies as [Usage](../../docs/USAGE.md), setting `SDCC_BIN`, then run `python demos/orbital-type-real/build.py`. Output: `out/ORBITAL-TYPE-REAL.ROM`. Capture uses `GEO3D_RUNTIME`; encoding uses `FFMPEG`.
 
@@ -20,3 +20,10 @@ Geo3D transforms/projects textured sphere polygons; V9968 draws the texture span
 Validated using Geo3D openMSX commit `de29fb854885a38251c03e24596ad4ff95770ef2`. Physical hardware and other emulators remain unverified. Rendering/capture runs at original emulated speed without video acceleration. Quantized Moon-facing error stays below 0.16 degrees. At the end of each lunar cycle the scripted scene restarts; 27.3 Earth turns do not form a seamless Earth-texture loop.
 
 MIT license and existing AI-generated texture provenance apply; see [license review](../../docs/LICENSE_REVIEW.md) and [validation limits](../../docs/VALIDATION.md). Supplied AS IS, without warranty.
+
+## v0.3.1 — Earth texture orientation fix
+
+地球のテクスチャが左右反転していた問題を修正しました。両版の自転速度・月の動きは維持しています。
+Corrected mirrored Earth UV mapping. Rotation speeds and lunar motion are unchanged.
+
+[Updated ROM, GIF and silent MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1)
