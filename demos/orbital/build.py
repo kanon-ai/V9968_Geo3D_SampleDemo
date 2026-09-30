@@ -5,6 +5,7 @@ import numpy as np
 from PIL import Image,ImageDraw
 from mesh import Mesh,words
 from hudfont import label
+from mochi import mochi_rabbit
 ROOT=Path(__file__).parent.resolve();OUT=ROOT/'out';OUT.mkdir(exist_ok=True)
 TOOL=Path(os.environ['SDCC_BIN']).resolve()
 N=1536
@@ -64,6 +65,9 @@ def build():
  banks[1],earth=sphere(165,20,12,0,flip_u=True);banks[2],moon=sphere(46,16,10,64)
  banks[3],ufo=distant_ufo()
  meshstats={'earth':earth,'moon':moon,'distant_ufo':ufo}
+ for step in range(16):
+  banks[15+step],stats=mochi_rabbit(step/16)
+  meshstats[f'mochi_{step}']=stats
  pal=sum([list(c) for c in COLORS],[])+[0]*720
  sky=Image.new('P',(256,256));sky.putpalette(pal);d=ImageDraw.Draw(sky)
  rng=np.random.default_rng(12)
@@ -97,8 +101,12 @@ def build():
   # One small background cameo per cycle, never in front of either planet.
   u=(f-720)/240
   ufopose=(3 if 0<=u<1 else 255,rz(.12*math.sin(u*12))@np.array([[1,0,0],[0,.955336,.295520],[0,-.295520,.955336]]),np.array([-2400+4800*u,660+35*math.sin(u*9),3600]))
-  poses=[ufopose]+sorted([earthpose,moonpose],key=lambda x:x[2][2],reverse=True)
-  poses += [(255,np.eye(3),np.array([0,0,2000]))]*4
+  # Keep the tableau upright and readable above the lunar north pole.
+  rabbit=(15+(f//6)%16,np.eye(3)*.5,moonpos+np.array([0,44,-8]))
+  # Treat Moon + rabbit as a group so Earth correctly occludes both behind it.
+  lunar=[moonpose,rabbit]
+  poses=[ufopose]+(lunar+[earthpose] if moonpos[2]>580 else [earthpose]+lunar)
+  poses += [(255,np.eye(3),np.array([0,0,2000]))]*3
   rec=bytearray()
   for bank,mat,pos in poses:rec+=words((mat*16384).flatten().tolist()+pos.tolist())
   rec+=bytes([x[0] for x in poses])+bytes(1)

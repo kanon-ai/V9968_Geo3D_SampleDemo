@@ -14,13 +14,77 @@
       "distant_ufo": {
         "vertices": 96,
         "faces": 78
+      },
+      "mochi_0": {
+        "vertices": 144,
+        "faces": 136
+      },
+      "mochi_1": {
+        "vertices": 144,
+        "faces": 136
+      },
+      "mochi_2": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_3": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_4": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_5": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_6": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_7": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_8": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_9": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_10": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_11": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_12": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_13": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_14": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_15": {
+        "vertices": 144,
+        "faces": 136
       }
     },
-    "sha256": "5472f2bd0313738debf7c10e4aa10bde49ba2019c81c816ac0f0cc657f99f63d"
+    "sha256": "5e5986b3e6e33997ad5e722d4881cbb8ad2feb31532f43998dc77f41fbee1c6d"
   },
   "media": {
-    "seconds": 18.423722384942852,
-    "gif_seconds": 18.4,
+    "seconds": 25.633005057311795,
+    "gif_seconds": 25.65,
     "gif_dimensions": [
       480,
       390
@@ -30,16 +94,16 @@
     "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
     "files": {
       "ORBITAL-earth-moon-v2.mp4": {
-        "bytes": 3262798,
-        "sha256": "c528c508e8106e4fc29b6c13277a04d4f073895ea64bd944a3e3980111974752"
+        "bytes": 3889511,
+        "sha256": "ffd773c5a3e6169d2441217909101183d17d3383bbfe5ab29d899c0012d2f852"
       },
       "ORBITAL-earth-moon-v2-under15MB.gif": {
-        "bytes": 2656726,
-        "sha256": "100036af275c3620c36461cdc36e3e670bfd8cbfcd0ef8470087db5dc7d6b86b"
+        "bytes": 3481292,
+        "sha256": "c0c4ffbd4d5beec244bd8459103d033626fc8df45e1ae8063c128679dbb7c5c8"
       }
     }
   },
-  "capture_log": "START frame=33 time=6.810207861613696\nFRAME frame=102 time=7.580413851481124\nFRAME frame=180 time=8.450645682621674\nFRAME frame=297 time=9.750994469967551\nFRAME frame=342 time=10.251127308079658\nFRAME frame=387 time=10.751264057303372\nFRAME frame=600 time=13.121891050398863\nFRAME frame=780 time=15.45251323841438\nFRAME frame=852 time=16.662839830201882\nFRAME frame=900 time=17.46304893499034\nFRAME frame=1161 time=20.693911097639504\nFRAME frame=1326 time=22.534401858336743\nFRAME frame=1350 time=22.804474730726948\nFRAME frame=1452 time=23.934775788542957\nEND frame=1569 time=25.235123877476045\n",
-  "regression": "All 1536 records checked: only Earth orientation matrices changed. All other ROM bytes unchanged. Earth angle now decreases, matching eastward increasing texture longitude after U correction.",
-  "hardware_verified": false
+  "capture_log": "START frame=33 time=7.00026260320795\nFRAME frame=102 time=8.150565923881388\nFRAME frame=180 time=9.450917504878413\nFRAME frame=297 time=11.401435936690277\nFRAME frame=342 time=12.151632539889846\nFRAME frame=387 time=12.901837943090532\nFRAME frame=600 time=16.462788706385865\nFRAME frame=780 time=19.46358824934454\nFRAME frame=852 time=20.663910776369622\nFRAME frame=900 time=21.464122255761556\nFRAME frame=1161 time=25.82528142543256\nFRAME frame=1326 time=28.57601510806541\nFRAME frame=1350 time=28.976125317603213\nFRAME frame=1452 time=30.676580543057845\nEND frame=1569 time=32.62709604153601\n",
+  "hardware_verified": false,
+  "change": "Small half-scale mochi rabbit, 16 animation poses; one additional Geo3D object, same planet motion tables."
 }

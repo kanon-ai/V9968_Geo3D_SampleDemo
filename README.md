@@ -43,6 +43,8 @@ NIGHT RAVEN is currently silent (no SFX or BGM). We are still looking for the ri
 
 ## ダウンロード / Download
 
+[ORBITAL通常版・TYPE REAL 餅つきウサギ版 / v0.3.4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.4) — 月の上に小さなポリゴンのウサギを追加。両版のROM・GIF・無音MP4を更新しました。
+
 [ORBITAL通常版 自転方向修正版 / v0.3.3](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.3) — 通常版を西から東への自転に修正。TYPE REALはv0.3.1から変更ありません。
 
 [ORBITAL通常版・TYPE REAL 地球テクスチャ修正版 / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) — 両版の左右反転を修正しました。

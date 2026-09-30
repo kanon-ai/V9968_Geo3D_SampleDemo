@@ -14,13 +14,77 @@
       "distant_ufo": {
         "vertices": 96,
         "faces": 78
+      },
+      "mochi_0": {
+        "vertices": 144,
+        "faces": 136
+      },
+      "mochi_1": {
+        "vertices": 144,
+        "faces": 136
+      },
+      "mochi_2": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_3": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_4": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_5": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_6": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_7": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_8": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_9": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_10": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_11": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_12": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_13": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_14": {
+        "vertices": 132,
+        "faces": 120
+      },
+      "mochi_15": {
+        "vertices": 144,
+        "faces": 136
       }
     },
-    "sha256": "bd9b8a7349bce4d5d94f38c83d24bed7beb52d732f0a0da0cfb0dd47e830727c"
+    "sha256": "95add7494de52aa482de4c7fbb1db91c747e7641971519d0de8980b720e65c7e"
   },
   "media": {
-    "seconds": 18.423722384942852,
-    "gif_seconds": 18.4,
+    "seconds": 25.633005057311795,
+    "gif_seconds": 25.65,
     "gif_dimensions": [
       480,
       390
@@ -30,16 +94,16 @@
     "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
     "files": {
       "ORBITAL-TYPE-REAL.mp4": {
-        "bytes": 6660508,
-        "sha256": "ba8c4b192464a8dc6e56616db913b17f85be2eb6f2aefb4a861d64f2a825d55a"
+        "bytes": 7048575,
+        "sha256": "797b2fc0661d9d0a0f0b1916fb4ad63d7f21eafee17282ca282e7773c679d919"
       },
       "ORBITAL-TYPE-REAL-under15MB.gif": {
-        "bytes": 3230606,
-        "sha256": "6dc6bbb2b528595e347eccd7bb0aca4a5ed470785dad0ca20129e55b1f9c8995"
+        "bytes": 4529450,
+        "sha256": "5d326be9fc3363e746968a71406e4d67893c7904b3157218308b7874c50217b3"
       }
     }
   },
-  "capture_log": "START frame=33 time=6.810207861613696\nFRAME frame=102 time=7.580413851481124\nFRAME frame=180 time=8.450646800082133\nFRAME frame=297 time=9.750993631872207\nFRAME frame=342 time=10.25113317474707\nFRAME frame=387 time=10.751266012859176\nFRAME frame=600 time=13.1218945424628\nFRAME frame=780 time=15.452516171748085\nFRAME frame=852 time=16.66284150639257\nFRAME frame=900 time=17.46304893499034\nFRAME frame=1161 time=20.693916545259242\nFRAME frame=1326 time=22.534402137701857\nFRAME frame=1350 time=22.804474730726948\nFRAME frame=1452 time=23.934775788542957\nEND frame=1569 time=25.235124436206277\n",
-  "regression": "Binary diff limited to Earth U coordinates: U_new = 255 - U_old. All other ROM bytes unchanged.",
-  "hardware_verified": false
+  "capture_log": "START frame=33 time=7.000258552413785\nFRAME frame=102 time=8.150569695310438\nFRAME frame=180 time=9.450923650910939\nFRAME frame=297 time=11.401432723991457\nFRAME frame=342 time=12.151636730366569\nFRAME frame=387 time=12.901837104995188\nFRAME frame=600 time=16.462788706385865\nFRAME frame=780 time=19.463587830296866\nFRAME frame=852 time=20.663907144623128\nFRAME frame=900 time=21.46412141766621\nFRAME frame=1161 time=25.825285057179055\nFRAME frame=1326 time=28.57601510806541\nFRAME frame=1350 time=28.97612350172997\nFRAME frame=1452 time=30.676580543057845\nEND frame=1569 time=32.627093806615086\n",
+  "hardware_verified": false,
+  "change": "Small half-scale mochi rabbit, 16 animation poses; one additional Geo3D object, same planet motion tables."
 }

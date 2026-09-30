@@ -27,3 +27,11 @@ MIT license and existing AI-generated texture provenance apply; see [license rev
 Corrected mirrored Earth UV mapping. Rotation speeds and lunar motion are unchanged.
 
 [Updated ROM, GIF and silent MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1)
+
+## v0.3.4 — Moon rabbit / 月の餅つきウサギ
+
+月の上に小さなウサギ・杵・臼を追加。16姿勢のポリゴンモデルで餅つきします。ROMは1 MiBのままです。地球と月の運動データは維持していますが、描画負荷が増え、専用openMSXでの1周は約25.63秒になりました。TYPE REALの自転周期比27.3は維持しています。従来の18.42秒という計測値はウサギ追加前の値です。
+
+Added a small polygon rabbit pounding mochi on the Moon. Sixteen animation poses reuse free ROM banks. One extra Geo3D object raises rendering load: a cycle now takes about 25.63 seconds in the evaluated emulator, not the earlier 18.42 seconds. This is not a physical hardware speed measurement.
+
+[Updated ROM, GIF and silent MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.4)
