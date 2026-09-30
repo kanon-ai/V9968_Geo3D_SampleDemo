@@ -87,7 +87,7 @@ def build():
  frames=bytearray()
  for f in range(N):
   t=2*math.pi*f/N
-  earthpose=(1,rz(-.20)@ry(t),np.array([0,0,580]))
+  earthpose=(1,rz(-.20)@ry(-t),np.array([0,0,580]))
   moonpos=np.array([290*math.cos(t),65*math.sin(t),580+250*math.sin(t)])
   # Keep the same local +Z hemisphere facing Earth along the existing inclined orbit.
   facing=earthpose[2]-moonpos;facing/=np.linalg.norm(facing)

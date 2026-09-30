@@ -16,7 +16,7 @@
         "faces": 78
       }
     },
-    "sha256": "472108b1548453c282ed435f75efa7e63bbce007ca5f9877ed72d166772dd84e"
+    "sha256": "5472f2bd0313738debf7c10e4aa10bde49ba2019c81c816ac0f0cc657f99f63d"
   },
   "media": {
     "seconds": 18.423722384942852,
@@ -30,16 +30,16 @@
     "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
     "files": {
       "ORBITAL-earth-moon-v2.mp4": {
-        "bytes": 3248349,
-        "sha256": "9904409a74d0cadfaf69f8f9d4f26ad09aba43d3e6379d1faa905c9a97d69a4a"
+        "bytes": 3262798,
+        "sha256": "c528c508e8106e4fc29b6c13277a04d4f073895ea64bd944a3e3980111974752"
       },
       "ORBITAL-earth-moon-v2-under15MB.gif": {
-        "bytes": 2666146,
-        "sha256": "bf5b56e6e74981c0fd52f75ca59dd268b5b92d77ce4ef3a8f06206f1743f19cc"
+        "bytes": 2656726,
+        "sha256": "100036af275c3620c36461cdc36e3e670bfd8cbfcd0ef8470087db5dc7d6b86b"
       }
     }
   },
-  "capture_log": "START frame=33 time=6.810212331455534\nFRAME frame=102 time=7.580420835608995\nFRAME frame=180 time=8.450646520717019\nFRAME frame=297 time=9.750995727110569\nFRAME frame=342 time=10.251132336651725\nFRAME frame=387 time=10.751264057303372\nFRAME frame=600 time=13.121891329763978\nFRAME frame=780 time=15.452513797144608\nFRAME frame=852 time=16.662840947662342\nFRAME frame=900 time=17.463049214355454\nFRAME frame=1161 time=20.693918780180162\nFRAME frame=1326 time=22.534402137701857\nFRAME frame=1350 time=22.804475010092062\nFRAME frame=1452 time=23.934775788542957\nEND frame=1569 time=25.23512695049231\n",
-  "regression": "Binary diff limited to Earth U coordinates: U_new = 255 - U_old. All other ROM bytes unchanged.",
+  "capture_log": "START frame=33 time=6.810207861613696\nFRAME frame=102 time=7.580413851481124\nFRAME frame=180 time=8.450645682621674\nFRAME frame=297 time=9.750994469967551\nFRAME frame=342 time=10.251127308079658\nFRAME frame=387 time=10.751264057303372\nFRAME frame=600 time=13.121891050398863\nFRAME frame=780 time=15.45251323841438\nFRAME frame=852 time=16.662839830201882\nFRAME frame=900 time=17.46304893499034\nFRAME frame=1161 time=20.693911097639504\nFRAME frame=1326 time=22.534401858336743\nFRAME frame=1350 time=22.804474730726948\nFRAME frame=1452 time=23.934775788542957\nEND frame=1569 time=25.235123877476045\n",
+  "regression": "All 1536 records checked: only Earth orientation matrices changed. All other ROM bytes unchanged. Earth angle now decreases, matching eastward increasing texture longitude after U correction.",
   "hardware_verified": false
 }
