@@ -80,7 +80,7 @@
         "faces": 136
       }
     },
-    "sha256": "95add7494de52aa482de4c7fbb1db91c747e7641971519d0de8980b720e65c7e"
+    "sha256": "0d5e23ca3f2cf66c110c0ec00f9e8004e3a639255ec2bd61662ad28216d1378b"
   },
   "media": {
     "seconds": 25.633005057311795,
@@ -94,16 +94,17 @@
     "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
     "files": {
       "ORBITAL-TYPE-REAL.mp4": {
-        "bytes": 7048575,
-        "sha256": "797b2fc0661d9d0a0f0b1916fb4ad63d7f21eafee17282ca282e7773c679d919"
+        "bytes": 7070536,
+        "sha256": "5f26b1a6225db9d0b948f95fdf63e65029f0f2bcee54f5183caa54fd590e37c1"
       },
       "ORBITAL-TYPE-REAL-under15MB.gif": {
-        "bytes": 4529450,
-        "sha256": "5d326be9fc3363e746968a71406e4d67893c7904b3157218308b7874c50217b3"
+        "bytes": 4554485,
+        "sha256": "8cf98cd1a9c8c919ba504b2819c7cea160a2b74b57bf8cd6f416ed67aadff694"
       }
     }
   },
-  "capture_log": "START frame=33 time=7.000258552413785\nFRAME frame=102 time=8.150569695310438\nFRAME frame=180 time=9.450923650910939\nFRAME frame=297 time=11.401432723991457\nFRAME frame=342 time=12.151636730366569\nFRAME frame=387 time=12.901837104995188\nFRAME frame=600 time=16.462788706385865\nFRAME frame=780 time=19.463587830296866\nFRAME frame=852 time=20.663907144623128\nFRAME frame=900 time=21.46412141766621\nFRAME frame=1161 time=25.825285057179055\nFRAME frame=1326 time=28.57601510806541\nFRAME frame=1350 time=28.97612350172997\nFRAME frame=1452 time=30.676580543057845\nEND frame=1569 time=32.627093806615086\n",
+  "capture_log": "START frame=33 time=7.000259111144014\nFRAME frame=102 time=8.150565923881388\nFRAME frame=180 time=9.450923650910939\nFRAME frame=297 time=11.401439428754212\nFRAME frame=342 time=12.151639524017718\nFRAME frame=387 time=12.901837104995188\nFRAME frame=600 time=16.462784515909146\nFRAME frame=780 time=19.46358699220152\nFRAME frame=852 time=20.66390546843244\nFRAME frame=900 time=21.46412141766621\nFRAME frame=1161 time=25.82528142543256\nFRAME frame=1326 time=28.57601510806541\nFRAME frame=1350 time=28.97612727315902\nFRAME frame=1452 time=30.676581101788074\nEND frame=1569 time=32.627093806615086\n",
   "hardware_verified": false,
-  "change": "Small half-scale mochi rabbit, 16 animation poses; one additional Geo3D object, same planet motion tables."
+  "rabbit_facing_error_degrees": 0.006057209640800625,
+  "regression": "All 1536 frames checked. Only rabbit transform changed; all other ROM bytes identical. Rabbit local +X follows Moon local +Z toward Earth; local position follows lunar rotation."
 }

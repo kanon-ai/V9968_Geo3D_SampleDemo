@@ -101,8 +101,10 @@ def build():
   # One small background cameo per cycle, never in front of either planet.
   u=(f-720)/240
   ufopose=(3 if 0<=u<1 else 255,rz(.12*math.sin(u*12))@np.array([[1,0,0],[0,.955336,.295520],[0,-.295520,.955336]]),np.array([-2400+4800*u,660+35*math.sin(u*9),3600]))
-  # Keep the tableau upright and readable above the lunar north pole.
-  rabbit=(15+(f//6)%16,np.eye(3)*.5,moonpos+np.array([0,44,-8]))
+  # Model +X is the rabbit's facing direction; lunar +Z points toward Earth.
+  lunar_rotation=moonpose[1]
+  rabbit=(15+(f//6)%16,(lunar_rotation@ry(-math.pi/2))*.5,
+          moonpos+lunar_rotation@np.array([0,44,-8]))
   # Treat Moon + rabbit as a group so Earth correctly occludes both behind it.
   lunar=[moonpose,rabbit]
   poses=[ufopose]+(lunar+[earthpose] if moonpos[2]>580 else [earthpose]+lunar)

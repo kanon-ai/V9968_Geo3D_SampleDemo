@@ -22,4 +22,9 @@ Corrected the standard edition to rotate west to east; speed and lunar motion ar
 
 Added a small polygon rabbit pounding mochi on the Moon. Sixteen animation poses reuse free ROM banks. One extra Geo3D object raises rendering load: a cycle now takes about 25.63 seconds in the evaluated emulator, not the earlier 18.42 seconds. This is not a physical hardware speed measurement.
 
-[Updated ROM, GIF and silent MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.4)
+[Updated ROM, GIF and silent MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.5)
+
+### v0.3.5
+
+ウサギと餅つき道具を月の姿勢に連動させ、常に地球側を向くよう調整しました。サイズ・餅つき動作・天体の動きは維持しています。
+Rabbit and mochi tools now follow the lunar orientation, facing Earth. Size, animation and planetary motion are unchanged.
