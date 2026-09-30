@@ -1,0 +1,9 @@
+PASS bounds_top_left
+PASS bounds_bottom_right
+PASS pause_on
+PASS pause_freezes_simulation
+PASS resume
+PASS restart
+PASS no_input_can_lose tick=293
+PASS retry_after_death
+END

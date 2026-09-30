@@ -1,0 +1,11 @@
+time=11.950124247634825 state=1 tick=98 kills=3 pause=0 shield=8 missiles=3 boss=0
+time=16.950237390506334 state=1 tick=198 kills=7 pause=0 shield=8 missiles=1 boss=0
+time=21.950430152435572 state=1 tick=298 kills=12 pause=0 shield=8 missiles=3 boss=0
+time=26.95084612709157 state=1 tick=398 kills=15 pause=0 shield=8 missiles=3 boss=0
+time=31.951183879515412 state=1 tick=497 kills=20 pause=0 shield=8 missiles=3 boss=0
+time=36.95155278114956 state=1 tick=597 kills=24 pause=0 shield=8 missiles=3 boss=0
+time=41.951820831977244 state=1 tick=697 kills=28 pause=0 shield=8 missiles=3 boss=0
+time=46.95194752405683 state=1 tick=797 kills=33 pause=0 shield=8 missiles=3 boss=0
+time=51.952083155820084 state=1 tick=897 kills=37 pause=0 shield=8 missiles=3 boss=0
+time=55.10216717487837 state=3 tick=960 kills=38 pause=0 shield=8 missiles=0 boss=1
+END

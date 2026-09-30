@@ -1,5 +1,18 @@
 # V9968 + Geo3D Sample Demos
 
+## NIGHT RAVEN — 操作できる開発体験デモ / Flight Development Demo
+
+**完成ゲームではなく、空間を飛行する感覚を少しだけ楽しめる開発体験版です。** 従来の無音・自動再生デモとは別に追加しました。
+
+**効果音は暫定のPSG音であり、最終版の音ではありません。BGMは未収録です。**
+
+An interactive development demo, not a finished game. **Sound effects are temporary placeholders, not final audio.**
+
+[ROM・動画 / v0.4.0 prerelease](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.4.0) · [操作・技術・検証・免責](docs/NIGHT_RAVEN_FLIGHT.md)
+
+![Flight development demo](docs/media/night-raven-flight.gif)
+
+
 ## NIGHT RAVEN v0.3.2 — 高速版
 
 画面外の壁の転送・描画を省略。元版と一周512画面の表示VRAMが完全一致し、開発者版openMSXで測定時間を約4.1%短縮しました。無音・1MiB / ASCII16。実機未検証です。
@@ -9,7 +22,7 @@
 以下のNIGHT RAVEN GIFはv0.2.0の映像です（画面内容は同じ、速度は旧版）。
 
 
-**TurboR + V9968 + Geo3Dで「こんな映像も見てみたい」を試す、5本の無音・自動再生デモです。**
+**TurboR + V9968 + Geo3Dで「こんな映像も見てみたい」を試す、従来5本の無音・自動再生デモも収録しています。**
 
 Five silent, non-interactive experiments, including NIGHT RAVEN space combat and OBSIDIAN battleship flyby: a coastal race, a low-altitude flight, and rotating Earth/Moon spheres. These are real-time polygon rendering demos, with precomputed movement/camera tables—not prerecorded raster movies in ROM.
 

@@ -1,0 +1,17 @@
+{
+  "audio": "temporary PSG effects, no BGM",
+  "capture": "keyboard-only automatic test in developer openMSX",
+  "pcm_samples": 2133911,
+  "pcm_peak": 1102,
+  "pcm_rms": 278.959462390928,
+  "files": {
+    "NIGHT-RAVEN-Flight-Development-Demo-v0.4.0.mp4": {
+      "bytes": 9580620,
+      "sha256": "76f21157d661ed469e842291b7f43fe3b223ab8782f1181d42113058560c9ed0"
+    },
+    "night-raven-flight.gif": {
+      "bytes": 4538922,
+      "sha256": "9286f2e9dc3621bd2dca5eff3d73011c06ac361adf1b3910f60c3906112e051e"
+    }
+  }
+}
