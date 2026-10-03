@@ -1,25 +1,31 @@
 # V9968 + Geo3D Sample Demos
 
-## FOUR SEASONS — ポリゴン・テクスチャの基本デモ
+## FOUR SEASONS — ポリゴン・テクスチャの基本デモ / Polygon & Texture Basics
 
 桜・蛍・紅葉・雪が黒背景を舞う、無音・自動の基本サンプルです。1 MiB / ASCII16。専用Geo3D openMSXで確認、BlueMSX+・実機は本デモ未検証です。
 
-[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.1.0) · [使い方・技術・検証・免責](docs/FOUR_SEASONS.md)
+A silent, automatic demo of cherry petals, fireflies, maple leaves and snow against a black background. **1 MiB / ASCII16.** Tested in the developer Geo3D openMSX build; this demo has not yet been tested in BlueMSX+ or on physical hardware.
+
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.1.0) · [使い方・技術・検証・免責 / Guide & Disclaimer](docs/FOUR_SEASONS.md)
 
 ![FOUR SEASONS](docs/media/four-seasons.gif)
 
 
-## BULLRUSH CROWD — 別バージョンの負荷実験
+## BULLRUSH CROWD — 別バージョンの負荷実験 / Separate Load Experiment
 
 自機1＋赤1＋青3の5機を配置した「にぎやか版」です。ゲーム本編とは別の自動走行負荷実験として追加しました。通常版も引き続き提供します。1 MiB / ASCII16、無音。専用openMSXとBlueMSX+ experimental-2で確認、実機未検証。
 
-[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-v0.1.0) · [技術・軽量化・測定条件・使い方](docs/BULLRUSH_CROWD.md)
+A separate automatic load experiment with **five robots: one player, one red and three blue**. This is not the main game; the original BULLRUSH demo remains available. Silent, 1 MiB / ASCII16. Checked in developer Geo3D openMSX and BlueMSX+ experimental-2; physical hardware is unverified. See the details for reduced geometry and measurement conditions.
 
-## GR-9 BULLRUSH — 256色の市街地追跡デモ
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-v0.1.0) · [技術・軽量化・測定条件・使い方 / Technical Guide & Measurements](docs/BULLRUSH_CROWD.md)
+
+## GR-9 BULLRUSH — 256色の市街地追跡デモ / 256-Color City Pursuit
 
 探索から青い機体を発見し、ローラーダッシュ・横スライド・急旋回で市街地を追跡する無音の自動走行デモを追加しました。関節の姿勢と体重移動、屋上ショートカットを描きます。**まだ操作可能なゲームではありません。専用Geo3D openMSXで確認。BlueMSX+第2版でもASCII16指定で起動・複数場面を確認、実機未検証です。**
 
-[ROM・GIF・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-v0.1.0) · [使い方・技術・検証・ライセンス・免責](docs/BULLRUSH.md)
+A silent, automatic robot pursuit through a city: find the blue robot, then follow it with roller dashes, lateral slides, sharp turns and rooftop shortcuts. Joint animation and weight shifts are part of the demonstration. **This is not yet a playable game.** Tested in developer Geo3D openMSX, with startup and multiple scenes also checked in BlueMSX+ experimental-2 using explicit ASCII16. Physical hardware is unverified.
+
+[ROM・GIF・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-v0.1.0) · [使い方・技術・検証・ライセンス・免責 / Guide, License & Disclaimer](docs/BULLRUSH.md)
 
 ![BULLRUSH](docs/media/bullrush.gif)
 
@@ -37,11 +43,13 @@ An interactive development demo, not a finished game. **Sound effects are tempor
 ![Flight development demo](docs/media/night-raven-flight.gif)
 
 
-## NIGHT RAVEN v0.3.2 — 高速版
+## NIGHT RAVEN v0.3.2 — 高速版 / Optimized Version
 
 画面外の壁の転送・描画を省略。元版と一周512画面の表示VRAMが完全一致し、開発者版openMSXで測定時間を約4.1%短縮しました。無音・1MiB / ASCII16。実機未検証です。
 
-[高速版ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.2) · [変更・検証詳細](docs/NIGHT_RAVEN.md)
+Skips off-screen wall transfers and rendering. Display VRAM matched the original across all 512 frames of one loop, while measured loop time decreased by about 4.1% in developer openMSX. Silent, 1 MiB / ASCII16; physical hardware is unverified. The NIGHT RAVEN GIF below shows the older v0.2.0 capture, not the optimized timing.
+
+[高速版ROM / Optimized ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.2) · [変更・検証詳細 / Changes & Validation](docs/NIGHT_RAVEN.md)
 
 以下のNIGHT RAVEN GIFはv0.2.0の映像です（画面内容は同じ、速度は旧版）。
 
@@ -52,9 +60,11 @@ Five silent, non-interactive experiments, including NIGHT RAVEN space combat and
 
 **まずはGeo3D開発者 Alex Moncks氏のopenMSXで確認しています。実機動作・実機速度の保証ではありません。** These demos were checked with the Geo3D developer's openMSX build. Physical hardware and other emulators are not validated. See [validation details](docs/VALIDATION.md).
 
-## ORBITAL — TYPE REAL / 別バージョン
+## ORBITAL — TYPE REAL / 別バージョン / Fast Earth Rotation Variant
 
 地球が月の1公転につき約27.3回自転する高速回転版です。月は同じ面を地球に向けたまま公転します。**従来のORBITALも引き続き提供します。** 実時間や実機性能を示すものではありません。
+
+Earth rotates approximately 27.3 times per lunar orbit, while the Moon keeps the same face toward Earth. The original ORBITAL version remains available. Animation is accelerated; this is not a real-time astronomical timescale or a physical-hardware performance measurement.
 
 [ROM・無音MP4・GIF / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) · [使い方・技術説明・検証 / Details](demos/orbital-type-real/README.md)
 
@@ -70,11 +80,13 @@ NIGHT RAVEN is currently silent (no SFX or BGM). We are still looking for the ri
 
 ![NIGHT RAVEN](docs/media/night-raven.gif)
 
-## OBSIDIAN / TITAN PASS — 最初の巨大戦艦デモ
+## OBSIDIAN / TITAN PASS — 最初の巨大戦艦デモ / Battleship Flyby
 
 巨大戦艦の近傍を飛行する、最初のGeo3D実験も無音版で追加しました。1フレームあたり1,816頂点・1,302面を投入します（全ての面が常に表示されるという意味ではありません）。
 
-[使い方・技術説明・検証](docs/OBSIDIAN.md) · [v0.2.0 ROM・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0)
+A silent real-time polygon flyby near a giant spacecraft. Submits 1,816 vertices and 1,302 faces per frame; not all submitted faces are necessarily visible.
+
+[使い方・技術説明・検証 / Guide & Validation](docs/OBSIDIAN.md) · [v0.2.0 ROM・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0)
 
 ![OBSIDIAN](docs/media/obsidian.gif)
 
