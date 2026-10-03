@@ -1,0 +1,17 @@
+{
+  "updates": 384,
+  "emulated_seconds": 36.93985618283888,
+  "average_updates_per_second": 10.395275988605352,
+  "rendered_object_counts": {
+    "sakura": 126,
+    "fireflies": 336,
+    "maple": 42,
+    "snow": 126
+  },
+  "maximum_submitted_triangle_faces_including_reverse_faces": 1596,
+  "background": "black",
+  "audio": false,
+  "physical_hardware_verified": false,
+  "emulator": "developer Geo3D openMSX",
+  "timing_note": "This is not a measured hardware limit. Transform and VDP timing differ between emulator implementations."
+}

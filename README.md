@@ -1,5 +1,14 @@
 # V9968 + Geo3D Sample Demos
 
+## FOUR SEASONS — ポリゴン・テクスチャの基本デモ
+
+桜・蛍・紅葉・雪が黒背景を舞う、無音・自動の基本サンプルです。1 MiB / ASCII16。専用Geo3D openMSXで確認、BlueMSX+・実機は本デモ未検証です。
+
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.1.0) · [使い方・技術・検証・免責](docs/FOUR_SEASONS.md)
+
+![FOUR SEASONS](docs/media/four-seasons.gif)
+
+
 ## BULLRUSH CROWD — 別バージョンの負荷実験
 
 自機1＋赤1＋青3の5機を配置した「にぎやか版」です。ゲーム本編とは別の自動走行負荷実験として追加しました。通常版も引き続き提供します。1 MiB / ASCII16、無音。専用openMSXとBlueMSX+ experimental-2で確認、実機未検証。

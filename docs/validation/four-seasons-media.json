@@ -1,0 +1,21 @@
+{
+  "seconds": 36.94757369589083,
+  "gif_seconds": 36.95,
+  "gif_dimensions": [
+    480,
+    390
+  ],
+  "silent": true,
+  "speed_adjustment": false,
+  "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+  "files": {
+    "FOUR-SEASONS.mp4": {
+      "bytes": 8557867,
+      "sha256": "9eee12a0f3d16a804e24761c06ae6504277ce0ad8c40733767b231fc073e1cf2"
+    },
+    "FOUR-SEASONS-under15MB.gif": {
+      "bytes": 5310777,
+      "sha256": "6e14fa2a1cecc7a7d1e3a9270f4eebd966f2a67f31d303315c07cf8bf55d8036"
+    }
+  }
+}
