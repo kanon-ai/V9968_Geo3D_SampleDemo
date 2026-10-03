@@ -1,5 +1,10 @@
 # V9968 + Geo3D Sample Demos
 
+**Upstream audit — 2026-10-04:** The official cartridge RTL now agrees between HRA and Alex, but the Geo3D openMSX branch is unchanged. The default `msx2pp` branch has no Geo3D device. We therefore retain the tested emulator and ROMs; this is not a new hardware validation. [Comparison and migration decision](docs/UPSTREAM_COMPATIBILITY_20261004.md)
+
+**上流確認（2026-10-04）：** カートリッジの主要RTLは一致しましたが、Geo3D対応openMSXは未更新で、既定のmsx2ppにはGeo3Dがありません。現行エミュレータ・ROMを維持しています。[全11本の影響確認と移行を見送る理由](docs/UPSTREAM_COMPATIBILITY_20261004.md)
+
+
 ## Z80 optimization update / Z80最適化更新
 
 **Nine demos updated for Z80:** SKYBOUND, VECTOR RUSH, ORBITAL (both editions), OBSIDIAN, NIGHT RAVEN (both editions), BULLRUSH and BULLRUSH CROWD. Measured gains are approximately **8–33%** in developer openMSX with unchanged visuals. R800 retains its original bulk-transfer loop. **This update is unverified on physical hardware and BlueMSX+.** BASIC FUNCTIONS is unchanged because no speed improvement was measured; FOUR SEASONS v0.2.0 remains available below.

@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-04",
+  "commits": {
+    "hra": "dceec5a50c7c2a5d107a0c6ce8d10cf232e43474",
+    "alex_cartridge": "873188ab98efd13d17149f6e8f80070be0362d8d",
+    "openmsx_geo3d": "de29fb854885a38251c03e24596ad4ff95770ef2",
+    "openmsx_msx2pp": "c620b693726b512c6860c7a0e01d3abf7b588b20"
+  },
+  "official_source_files": 703,
+  "identical_rtl_constraint_files": 90,
+  "official_source_differences": [
+    "fpga/V9968_Cartridge_TangNano20K/src/geo3d/readme.md"
+  ],
+  "geo3d_rtl_unchanged_since_previous_cartridge": true,
+  "geo3d_rtl_files": 4,
+  "demo_static_checks": [
+    {
+      "demo": "bullrush",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 17,
+      "port4_context": "xor a\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "bullrush-crowd",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 17,
+      "port4_context": "xor a\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "four-seasons",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "geo3d-basics",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 17,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "night-raven",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "night-raven-flight",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "obsidian",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "orbital",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "orbital-type-real",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "skybound",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    },
+    {
+      "demo": "vector-rush",
+      "port4_unlock_before_registers": true,
+      "r21": 0,
+      "r20": 1,
+      "port4_context": "xor a\n ld (PAGE),a\n ld hl,#0\n ld (FRAME),hl\n ld (DONE),hl\n out (0x9C),a",
+      "runtime_migration_required_by_observed_upstream_change": false
+    }
+  ],
+  "current_runtime_sha256": "ec39fbb8ec658e2358f0d824267eb9e5f2c8927e6a393c226428e58d560ae2f2",
+  "decision": "No runtime migration: geo3d branch unchanged; msx2pp branch lacks Geo3D. No ROM changes required by this audit.",
+  "verification": "Source-level audit, not new emulator/hardware validation"
+}
