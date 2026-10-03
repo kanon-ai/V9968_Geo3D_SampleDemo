@@ -1,0 +1,21 @@
+{
+  "seconds": 30.188871190544944,
+  "gif_seconds": 30.2,
+  "gif_dimensions": [
+    480,
+    390
+  ],
+  "silent": true,
+  "speed_adjustment": false,
+  "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+  "files": {
+    "FOUR-SEASONS-Z80.mp4": {
+      "bytes": 8099707,
+      "sha256": "6f4386dbb5e03be31eecbf8035aabca580bcb284e98951ab6dae453e4cc75a23"
+    },
+    "FOUR-SEASONS-Z80-under15MB.gif": {
+      "bytes": 5068355,
+      "sha256": "fb9a2be5b3a4e6da37711e60a37cce74df3c14f330264258b2c5561a55996b97"
+    }
+  }
+}

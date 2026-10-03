@@ -1,8 +1,8 @@
 # FOUR SEASONS — ポリゴン・テクスチャの基本デモ
 
-黒背景で **桜 → 蛍 → 紅葉 → 雪** と遷移する、TurboR + V9968 + Geo3D用の無音・自動デモです。ポリゴンの輪郭、表裏、テクスチャ、回転、奥行き順描画を試す基本サンプルとして公開します。ゲームや物理シミュレーションではありません。
+黒背景で **桜 → 蛍 → 紅葉 → 雪** と遷移する、MSX2+ / TurboR + V9968 + Geo3D用の無音・自動デモです。ポリゴンの輪郭、表裏、テクスチャ、回転、奥行き順描画を試す基本サンプルとして公開します。ゲームや物理シミュレーションではありません。
 
-[ROM・GIF・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.1.0)
+[ROM・GIF・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.2.0)
 
 ![Four seasons](media/four-seasons.gif)
 
@@ -27,11 +27,18 @@ openmsx -machine Panasonic_FS-A1ST_V9968 -ext geo3d -cart FOUR-SEASONS.ROM -romt
 
 ## 検証（2026-10-03）
 
-専用Geo3D openMSXで四季一周と代表フレームを確認。検証用openMSXソースは `de29fb854885a38251c03e24596ad4ff95770ef2`。384更新にエミュレーション時間約36.94秒、平均約10.40更新/秒でした。GIFと無音MP4は約36.95秒。速度変更・フレーム補間はしていません。
+同じ季節で共通の面情報・UV座標をGeo3Dに保持し、頂点だけを更新する最適化を追加しました。季節切り替え時は再転送します。花びらの数、形状、テクスチャ、動きは変更していません。従来のR800自動選択も維持しています。
 
-**本デモのBlueMSX+検証、実機・FPGA検証は未実施です。** この測定値は使用エミュレータの結果であり、実機性能・描画上限を示しません。公開ソースから再ビルドし、検証済みROMとSHA-256の一致を確認しています。
+| 専用openMSX評価 | 旧版 | v0.2.0 | 改善倍率 |
+|---|---:|---:|---:|
+| MSX2+ Z80 | 4.12 fps | 12.69 fps | 3.08倍 |
+| TurboR R800 | 10.39 fps | 27.26 fps | 2.62倍 |
 
-[描画・速度記録](validation/four-seasons-checks.json) · [キャプチャログ](validation/four-seasons-capture.txt) · [メディア情報](validation/four-seasons-media.json)
+完成画面383区間のエミュレーション時間から計算した平均更新頻度です。両CPUでそれぞれ384画面、合計768画面の表示ページが旧版とバイト単位で一致しました。検証用openMSXソースは `de29fb854885a38251c03e24596ad4ff95770ef2`。Z80は専用C-BIOS MSX2+構成です。外付けカートリッジのバス待ち時間を含む実機速度を保証する測定ではありません。
+
+公開GIF・無音MP4はZ80評価の約30.19秒の一周です。速度変更・フレーム補間はしていません。**本版のBlueMSX+・実機・FPGA検証は未実施です。**
+
+[最適化検証](validation/four-seasons-z80-optimization.json) · [メディア情報](validation/four-seasons-z80-media.json) · [旧版](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.1.0)
 
 ## ビルド
 
@@ -43,7 +50,7 @@ python demos/four-seasons/build.py
 ```
 
 出力 `demos/four-seasons/out/PETAL-STORM.ROM` が配布物の `FOUR-SEASONS.ROM` と同一です。
-SHA-256: `db0e1457a5f6f5076b8a6bbd3e4338857c1aacb73a50bdbfc1b438f88b999f8d`
+SHA-256: `9398616f80129a34ffb0c30346c4d2aea791f28dd93d5abfdbd81add98d5d8ee`
 
 ## ライセンス・来歴・免責
 
@@ -54,3 +61,5 @@ BIOS、エミュレータ、FPGAビットストリーム、ツール本体、個
 ## English
 
 A silent automatic polygon-and-texture basics demo: cherry petals, fireflies, maple leaves and snow on black. TurboR + V9968 + Geo3D, 1 MiB ASCII16. Geometry and movement tables are precomputed; polygon rendering runs in real time. Procedurally generated textures, no external artwork. Tested in developer Geo3D openMSX only; BlueMSX+ and physical hardware are unverified for this demo. Media is not sped up. MIT with upstream notices retained, provided as is without warranty.
+
+Version 0.2.0 retains identical face/UV buffers in Geo3D while updating animated vertices. No objects, geometry, textures or animation were removed. Developer-openMSX measurements improved from **4.12 to 12.69 fps on MSX2+ Z80 (3.08x)** and **10.39 to 27.26 fps on TurboR R800 (2.62x)**. All 384 display pages on each CPU match the original byte for byte. Automatic R800 selection is retained. The GIF and silent MP4 show actual Z80 emulation playback speed, without acceleration or interpolation. Physical hardware and BlueMSX+ are unverified for this version; the C-BIOS MSX2+ emulator profile does not establish external-cartridge bus timing or physical performance. The previous release remains available.

@@ -17,7 +17,11 @@ A minimal, silent demonstration of **focal length, projection center and texture
 
 A silent, automatic demo of cherry petals, fireflies, maple leaves and snow against a black background. **1 MiB / ASCII16.** Tested in the developer Geo3D openMSX build; this demo has not yet been tested in BlueMSX+ or on physical hardware.
 
-[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.1.0) · [使い方・技術・検証・免責 / Guide & Disclaimer](docs/FOUR_SEASONS.md)
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.2.0) · [使い方・技術・検証・免責 / Guide & Disclaimer](docs/FOUR_SEASONS.md)
+
+**v0.2.0: Z80向け転送最適化。** 同じ描画内容で、専用openMSXでは約4.12→12.69 fps。R800でも約10.39→27.26 fps。実機・BlueMSX+は未検証です。
+
+**v0.2.0: Z80 transfer optimization.** Identical visuals; developer-openMSX results improved from 4.12 to 12.69 fps on Z80 and 10.39 to 27.26 fps on R800. Physical hardware and BlueMSX+ remain unverified. Preview media uses actual Z80 playback speed.
 
 ![FOUR SEASONS](docs/media/four-seasons.gif)
 

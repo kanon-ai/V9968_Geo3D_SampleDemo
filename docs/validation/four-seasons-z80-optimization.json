@@ -1,0 +1,21 @@
+{
+  "rom_bytes": 1048576,
+  "sha256": "9398616f80129a34ffb0c30346c4d2aea791f28dd93d5abfdbd81add98d5d8ee",
+  "changed_bytes": 897,
+  "animation_records_unchanged": true,
+  "geometry_and_textures_unchanged_except_cache_tags": true,
+  "cpu": {
+    "z80": {
+      "identical_display_pages": 384,
+      "before_updates_per_second": 4.1218332859801725,
+      "after_updates_per_second": 12.686854671427284,
+      "speedup": 3.077964049293262
+    },
+    "r800": {
+      "identical_display_pages": 384,
+      "before_updates_per_second": 10.394295939400545,
+      "after_updates_per_second": 27.256271770708388,
+      "speedup": 2.622233572106693
+    }
+  }
+}

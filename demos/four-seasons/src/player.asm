@@ -22,6 +22,7 @@ COUNT = 0xE412
 DONE = 0xE420
 MODEL = 0xE414
 MODEL_PTR = 0xE416
+TOPOLOGY = 0xE41A
 SOUND = 0xE418
 SOUND_KIND = 0xE419
 SKY = 0xE430
@@ -65,6 +66,8 @@ start:
  call 0x0180
  di
 cpu_ready:
+ ld a,#255
+ ld (TOPOLOGY),a
  xor a
  ld (PAGE),a
  ld hl,#0
@@ -348,6 +351,14 @@ load_geometry:
  ld hl,#0x4006
  ld de,(0x4002)
  call geoblock
+ ; Vertex positions animate, but the face/UV buffers remain resident.
+ ; The build verifies that every pose with this key has identical topology.
+ ld a,(TOPOLOGY)
+ ld b,a
+ ld a,(0x7FFF)
+ cp b
+ ret z
+ ld (TOPOLOGY),a
  ld a,#0x58
  out (0x9D),a
  xor a

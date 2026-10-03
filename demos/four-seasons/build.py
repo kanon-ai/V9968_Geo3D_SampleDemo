@@ -68,9 +68,15 @@ def build():
  im=Image.fromarray(a).convert('P');im.putpalette(pal);im.save(OUT/'texture.png')
  for i in range(7):banks[8+i]=bytearray(bitmap(a))
  stats=[]
+ cached_topology={}
  for season in range(4):
   for k in range(6):
-   data,v,f=foliage(season,k*2*math.pi/6);assert len(data)<=16384;banks[15+season*6+k][:len(data)]=data
+   data,v,f=foliage(season,k*2*math.pi/6);assert len(data)<16384;banks[15+season*6+k][:len(data)]=data
+   # Cache key is valid only when face records and UVs match across all poses.
+   topology=data[6+v*6:]
+   if season in cached_topology:assert topology==cached_topology[season]
+   cached_topology[season]=topology
+   banks[15+season*6+k][-1]=season
   stats.append({'season':season,'vertices':v,'faces':f,'per_group':[18,48,6,18][season]})
  frames=bytearray()
  for f in range(N):
