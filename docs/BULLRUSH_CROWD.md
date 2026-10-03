@@ -1,5 +1,7 @@
 # BULLRUSH CROWD — にぎやか負荷実験版
 
+**2026-10-03 Z80 update / Z80最適化版:** [ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [測定・検証範囲 / Measurements and verification scope](Z80_OPTIMIZATION.md). Existing previews and earlier validation below describe previous releases. 以下の既存映像・過去検証は旧版の記録です。
+
 通常のBULLRUSH／ゲーム本編とは別の、自動走行による負荷実験です。**自機1＋赤1＋青3の計5機**を街に配置します。操作可能なゲームではありません。通常版とそのリリースは変更しません。
 
 [ROM・無音MP4・GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-v0.1.0)

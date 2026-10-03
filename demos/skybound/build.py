@@ -178,6 +178,14 @@ def build():
         rec+=bytes(256-len(rec));frames+=rec
         stats.append({'f':f,'segment':k,'banks':[p[0] for p in poses]})
     banks.extend(bytearray(frames[i:i+16384]) for i in range(0,len(frames),16384));assert len(banks)==64
+    # Face records include normals/materials; UV bytes must also match exactly.
+    topology_ids=[255]*64; topology_groups={}
+    for bank in [1,2,3]+list(range(8,40)):
+        nv,nf,vb,fb=struct.unpack_from('<BBHH',banks[bank])
+        assert vb==nv*6 and fb==nf*11
+        topology=bytes(banks[bank][6+vb:6+vb+fb+nf*8])
+        topology_ids[bank]=topology_groups.setdefault(topology,len(topology_groups))
+    (ROOT/'src/topology.inc').write_text('topology_ids:\n .db '+','.join(map(str,topology_ids))+'\n')
     pal=[]
     for rgb in COLORS:
         r,g,b=[round(c/255*7) for c in rgb];pal.extend([(r<<4)|b,g])

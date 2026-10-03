@@ -1,5 +1,7 @@
 # NIGHT RAVEN — Flight Development Demo
 
+**2026-10-03 Z80 update / Z80最適化版:** [ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [測定・検証範囲 / Measurements and verification scope](Z80_OPTIMIZATION.md). Existing previews and earlier validation below describe previous releases. 以下の既存映像・過去検証は旧版の記録です。
+
 **あくまでデモです。空間を飛行する感覚を少しだけ楽しめる、操作可能な開発体験版です。完成ゲーム・最終版ではありません。** 内容、操作、敵の挙動、バランス、演出は今後変更する可能性があります。
 
 **効果音は仮のPSG音です。最終版の音ではなく、操作・演出を確認するための暫定音です。BGMは未収録です。**

@@ -66,6 +66,9 @@ start:
  ld a,#0x81
  call 0x0180
  di
+ ; Restore the original bulk loop for R800. Z80 keeps the unrolled loop.
+ ld hl,#block
+ ld (geoblock+3),hl
 cpu_ready:
  xor a
  ld (PAGE),a
@@ -608,8 +611,43 @@ send15:
  otir
  ret
 geoblock:
+ ; Geo3D-only bulk upload: 16 OUTI instructions per loop.
+ ; Leave VDP transfers and short Geo3D tails at their original timing.
  ld c,#0x9F
- jr block
+ jp geo_fast_body
+geo_fast_body:
+ ld a,d
+ or a
+ jr z,geo_fast_tail
+geo_fast_page:
+ ld b,#0
+geo_fast_chunk:
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ jp nz,geo_fast_chunk
+ dec a
+ jr nz,geo_fast_page
+geo_fast_tail:
+ ld a,e
+ or a
+ ret z
+ ld b,e
+ otir
+ ret
 vramblock:
  ld c,#0x98
 block:

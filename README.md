@@ -1,5 +1,29 @@
 # V9968 + Geo3D Sample Demos
 
+## Z80 optimization update / Z80最適化更新
+
+**Nine demos updated for Z80:** SKYBOUND, VECTOR RUSH, ORBITAL (both editions), OBSIDIAN, NIGHT RAVEN (both editions), BULLRUSH and BULLRUSH CROWD. Measured gains are approximately **8–33%** in developer openMSX with unchanged visuals. R800 retains its original bulk-transfer loop. **This update is unverified on physical hardware and BlueMSX+.** BASIC FUNCTIONS is unchanged because no speed improvement was measured; FOUR SEASONS v0.2.0 remains available below.
+
+Z80で効果を確認した9本を更新しました。描画内容を維持し、専用openMSXで約8～33%改善。R800は従来の転送ループを使用します。本更新の実機・BlueMSX+検証は未実施です。効果のなかった基本機能デモと、更新済みの花びらデモは変更していません。
+
+| Demo | Before / 旧版 | After / 最適化版 | Gain / 改善 |
+|---|---:|---:|---:|
+| BULLRUSH | 5.54 fps | 6.25 fps | +12.9% |
+| BULLRUSH CROWD (5 robots) | 4.70 fps | 5.20 fps | +10.7% |
+| NIGHT RAVEN | 9.95 fps | 10.75 fps | +8.0% |
+| NIGHT RAVEN FLIGHT | 9.64 fps | 10.45 fps | +8.4% |
+| OBSIDIAN | 5.13 fps | 5.99 fps | +16.8% |
+| ORBITAL | 9.73 fps | 11.27 fps | +15.8% |
+| ORBITAL TYPE REAL | 9.73 fps | 11.27 fps | +15.8% |
+| SKYBOUND | 9.69 fps | 12.91 fps | +33.3% |
+| VECTOR RUSH | 8.99 fps | 10.34 fps | +15.1% |
+| FOUR SEASONS (v0.2.0 / 更新済み) | 4.12 fps | 12.69 fps | 3.08× |
+
+NIGHT RAVEN FLIGHT uses scripted keyboard input; other rows use automatic playback. / NIGHT RAVEN FLIGHTはキー操作付き、ほかは自動再生での比較です。
+
+[Updated ROMs / 更新ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [Measurements, setup and disclaimer / 測定・実行・免責](docs/Z80_OPTIMIZATION.md)
+
+
 ## Geo3D BASIC FUNCTIONS — 基本機能デモ
 
 A minimal, silent demonstration of **focal length, projection center and texture-origin scrolling**, followed by a combined scene. Fixed geometry, a black background and live register values make each effect easy to compare. **1 MiB / ASCII16.** Tested only in the dedicated Geo3D openMSX build; physical hardware and BlueMSX Plus are unverified.

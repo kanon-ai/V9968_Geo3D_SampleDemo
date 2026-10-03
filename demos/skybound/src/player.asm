@@ -20,6 +20,7 @@ CMD = 0xE400
 PTR = 0xE410
 COUNT = 0xE412
 DONE = 0xE420
+TOPOLOGY = 0xE41A
 MODEL = 0xE414
 MODEL_PTR = 0xE416
 SOUND = 0xE418
@@ -66,7 +67,12 @@ start:
  ld a,#0x81
  call 0x0180
  di
+ ; Restore the original bulk loop for R800. Z80 keeps the unrolled loop.
+ ld hl,#block
+ ld (geoblock+3),hl
 cpu_ready:
+ ld a,#255
+ ld (TOPOLOGY),a
  xor a
  ld (PAGE),a
  ld hl,#0
@@ -231,6 +237,7 @@ object_loop:
  cp #255
  jr z,skip_object
  ld (0x6000),a
+ ld (MODEL),a
  call load_geometry
  xor a
  out (0x9D),a
@@ -320,6 +327,21 @@ load_geometry:
  ld hl,#0x4006
  ld de,(0x4002)
  call geoblock
+ ; Reuse exactly identical face/UV data across terrain meshes.
+push hl
+ld a,(MODEL)
+ld e,a
+ld d,#0
+ld hl,#topology_ids
+add hl,de
+ld a,(hl)
+pop hl
+ld b,a
+ld a,(TOPOLOGY)
+cp b
+ret z
+ld a,b
+ld (TOPOLOGY),a
  ld a,#0x58
  out (0x9D),a
  xor a
@@ -387,8 +409,43 @@ send15:
  otir
  ret
 geoblock:
+ ; Geo3D-only bulk upload: 16 OUTI instructions per loop.
+ ; Leave VDP transfers and short Geo3D tails at their original timing.
  ld c,#0x9F
- jr block
+ jp geo_fast_body
+geo_fast_body:
+ ld a,d
+ or a
+ jr z,geo_fast_tail
+geo_fast_page:
+ ld b,#0
+geo_fast_chunk:
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ jp nz,geo_fast_chunk
+ dec a
+ jr nz,geo_fast_page
+geo_fast_tail:
+ ld a,e
+ or a
+ ret z
+ ld b,e
+ otir
+ ret
 vramblock:
  ld c,#0x98
 block:
@@ -423,3 +480,5 @@ hudbottom:
  .dw 0,710,0,198,256,14
  .db 0,0,0xD0
 .include "palette.inc"
+
+.include "topology.inc"

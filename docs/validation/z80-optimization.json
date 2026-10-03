@@ -1,0 +1,330 @@
+{
+  "date": "2026-10-03",
+  "emulator_commit": "de29fb854885a38251c03e24596ad4ff95770ef2",
+  "scope": "V9968_Geo3D_SampleDemo; remaining public demos after FOUR SEASONS v0.2.0",
+  "physical_hardware_verified": false,
+  "bluemsx_plus_verified": false,
+  "method": "Completed-frame intervals in emulated time; byte comparison of displayed VRAM pages, same input per frame.",
+  "demos": [
+    {
+      "demo": "bullrush",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 5.5371187681771765,
+          "after_fps": 6.251656717786968,
+          "speedup": 1.1290450827452665,
+          "before_sha256": "4ddfa63598225c65f36713f13031e02bc4ab62a6c29a2855200c43ab47b3d406",
+          "after_sha256": "9e69cd5375fd9f014c53f018bac123cac09f5a8e474d1c341f0b031d654e029a"
+        },
+        {
+          "cpu": "z80",
+          "inputs": "scripted keys",
+          "identical_frames": 512,
+          "before_fps": 5.808093252052029,
+          "after_fps": 6.573763039480171,
+          "speedup": 1.1318280809554195,
+          "before_sha256": "4ddfa63598225c65f36713f13031e02bc4ab62a6c29a2855200c43ab47b3d406",
+          "after_sha256": "9e69cd5375fd9f014c53f018bac123cac09f5a8e474d1c341f0b031d654e029a"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 12.663540925848972,
+          "after_fps": 12.663431950321147,
+          "speedup": 0.9999913945452964,
+          "before_sha256": "4ddfa63598225c65f36713f13031e02bc4ab62a6c29a2855200c43ab47b3d406",
+          "after_sha256": "9e69cd5375fd9f014c53f018bac123cac09f5a8e474d1c341f0b031d654e029a"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "scripted keys",
+          "identical_frames": 512,
+          "before_fps": 13.13602339434067,
+          "after_fps": 13.141609396189946,
+          "speedup": 1.0004252429888092,
+          "before_sha256": "4ddfa63598225c65f36713f13031e02bc4ab62a6c29a2855200c43ab47b3d406",
+          "after_sha256": "9e69cd5375fd9f014c53f018bac123cac09f5a8e474d1c341f0b031d654e029a"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "bullrush-crowd",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 4.697155748696978,
+          "after_fps": 5.200527189719139,
+          "speedup": 1.107165158651978,
+          "before_sha256": "6bbb7e19ce411e12c8eedf3aa9440142e7b882ec14907b24f8285b0b6ce104b1",
+          "after_sha256": "3ac93eb9875fbff31e4a595b4f1a99a7007a203aad320c6825d692d0dd61a498"
+        },
+        {
+          "cpu": "z80",
+          "inputs": "scripted keys",
+          "identical_frames": 512,
+          "before_fps": 4.8914728137176455,
+          "after_fps": 5.453362237579111,
+          "speedup": 1.1148712147158835,
+          "before_sha256": "6bbb7e19ce411e12c8eedf3aa9440142e7b882ec14907b24f8285b0b6ce104b1",
+          "after_sha256": "3ac93eb9875fbff31e4a595b4f1a99a7007a203aad320c6825d692d0dd61a498"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 11.054330141425758,
+          "after_fps": 11.034553534786056,
+          "speedup": 0.9982109629089518,
+          "before_sha256": "6bbb7e19ce411e12c8eedf3aa9440142e7b882ec14907b24f8285b0b6ce104b1",
+          "after_sha256": "3ac93eb9875fbff31e4a595b4f1a99a7007a203aad320c6825d692d0dd61a498"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "scripted keys",
+          "identical_frames": 512,
+          "before_fps": 11.57681363867792,
+          "after_fps": 11.537636259085792,
+          "speedup": 0.9966158754200518,
+          "before_sha256": "6bbb7e19ce411e12c8eedf3aa9440142e7b882ec14907b24f8285b0b6ce104b1",
+          "after_sha256": "3ac93eb9875fbff31e4a595b4f1a99a7007a203aad320c6825d692d0dd61a498"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "geo3d-basics",
+      "updated": false,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 384,
+          "before_fps": 29.962210501481817,
+          "after_fps": 29.96166570219454,
+          "speedup": 0.9999818171196931,
+          "before_sha256": "aa5f0398df8400915627057d2924af78030ab8ce5f3b7fa91fff70fb3441c26d",
+          "after_sha256": "1433d46803ed451ce43452f532fa5186c26e23b5253d9acc06c01acf6a4db00b"
+        }
+      ]
+    },
+    {
+      "demo": "night-raven",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 9.954738680336666,
+          "after_fps": 10.751595575058884,
+          "speedup": 1.0800479972715133,
+          "before_sha256": "10c9a14a337b4ce530058842a44cac83bf3872573f5eb6af48c241bea8335374",
+          "after_sha256": "985db722e8b736dac66e9310e32948fe46e98e3bf3b3706e7f09425a70c916d2"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 20.647693865379054,
+          "after_fps": 20.648081475207118,
+          "speedup": 1.0000187725481882,
+          "before_sha256": "10c9a14a337b4ce530058842a44cac83bf3872573f5eb6af48c241bea8335374",
+          "after_sha256": "985db722e8b736dac66e9310e32948fe46e98e3bf3b3706e7f09425a70c916d2"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "night-raven-flight",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 11.078171236014544,
+          "after_fps": 11.984537530664413,
+          "speedup": 1.081815515877144,
+          "before_sha256": "2ad70fcb2e992e6a1fa6c049fc606169430e9567358538e458e21ffff2d482ac",
+          "after_sha256": "51abac8237ae749a01c284c0a64e1e4a1e52896588887cb6c093cd9b0ae3b4d4"
+        },
+        {
+          "cpu": "z80",
+          "inputs": "scripted keys",
+          "identical_frames": 512,
+          "before_fps": 9.644255249385367,
+          "after_fps": 10.450807212050144,
+          "speedup": 1.0836303002988414,
+          "before_sha256": "2ad70fcb2e992e6a1fa6c049fc606169430e9567358538e458e21ffff2d482ac",
+          "after_sha256": "51abac8237ae749a01c284c0a64e1e4a1e52896588887cb6c093cd9b0ae3b4d4"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 20.264547962059652,
+          "after_fps": 20.25145277371962,
+          "speedup": 0.9993537882826428,
+          "before_sha256": "2ad70fcb2e992e6a1fa6c049fc606169430e9567358538e458e21ffff2d482ac",
+          "after_sha256": "51abac8237ae749a01c284c0a64e1e4a1e52896588887cb6c093cd9b0ae3b4d4"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "scripted keys",
+          "identical_frames": 512,
+          "before_fps": 19.97410613459458,
+          "after_fps": 19.97360742658648,
+          "speedup": 0.9999750322740482,
+          "before_sha256": "2ad70fcb2e992e6a1fa6c049fc606169430e9567358538e458e21ffff2d482ac",
+          "after_sha256": "51abac8237ae749a01c284c0a64e1e4a1e52896588887cb6c093cd9b0ae3b4d4"
+        }
+      ],
+      "runtime_game_state_identical_on_both_cpus": true,
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "obsidian",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 5.129072142274159,
+          "after_fps": 5.99226411288075,
+          "speedup": 1.1682939811846482,
+          "before_sha256": "e71b04b9e521858c4e8ca47dca8c3675228391314ad88075f84678583d821d89",
+          "after_sha256": "8b4b98520dcf3d53450524214d72d941263a04a8e0201399e1a512404a665571"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 14.980561565565052,
+          "after_fps": 14.980881914747293,
+          "speedup": 1.0000213843240013,
+          "before_sha256": "e71b04b9e521858c4e8ca47dca8c3675228391314ad88075f84678583d821d89",
+          "after_sha256": "8b4b98520dcf3d53450524214d72d941263a04a8e0201399e1a512404a665571"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "orbital",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 9.73314897819861,
+          "after_fps": 11.273953879625454,
+          "speedup": 1.158304871822892,
+          "before_sha256": "d1f9127917da21c2b5cb3c16c9974a69a7471bd34d29a046cbdf9fad3378d0b0",
+          "after_sha256": "ca391be4c02360148362edf4d6155174d99cefa8d30c27c3f13e3753a76a46f8"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 19.974759301991636,
+          "after_fps": 19.97409337486212,
+          "speedup": 0.9999666615692612,
+          "before_sha256": "d1f9127917da21c2b5cb3c16c9974a69a7471bd34d29a046cbdf9fad3378d0b0",
+          "after_sha256": "ca391be4c02360148362edf4d6155174d99cefa8d30c27c3f13e3753a76a46f8"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "orbital-type-real",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 9.733124014786897,
+          "after_fps": 11.274116620610673,
+          "speedup": 1.158324562954571,
+          "before_sha256": "0d5e23ca3f2cf66c110c0ec00f9e8004e3a639255ec2bd61662ad28216d1378b",
+          "after_sha256": "147ec42e0b363a9d6d4214d6e942cd0844eaa0958c58a5e8c48b0f06530eba17"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 19.974797256594915,
+          "after_fps": 19.974408774053494,
+          "speedup": 0.9999805513649811,
+          "before_sha256": "0d5e23ca3f2cf66c110c0ec00f9e8004e3a639255ec2bd61662ad28216d1378b",
+          "after_sha256": "147ec42e0b363a9d6d4214d6e942cd0844eaa0958c58a5e8c48b0f06530eba17"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "skybound",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 9.686890220970442,
+          "after_fps": 12.914496911364788,
+          "speedup": 1.3331932763527283,
+          "before_sha256": "a23831d20036e1d4968b2f1864784605d2385bdd30a1218554848e5fd292d4a4",
+          "after_sha256": "48d56e7dc4000f8eb9afa45433f425396b6d6de85c796998e75a651beafab445"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 19.974284227262995,
+          "after_fps": 20.132019463066317,
+          "speedup": 1.0078969155544522,
+          "before_sha256": "a23831d20036e1d4968b2f1864784605d2385bdd30a1218554848e5fd292d4a4",
+          "after_sha256": "48d56e7dc4000f8eb9afa45433f425396b6d6de85c796998e75a651beafab445"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    },
+    {
+      "demo": "vector-rush",
+      "updated": true,
+      "checks": [
+        {
+          "cpu": "z80",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 8.987497659459109,
+          "after_fps": 10.341279393755228,
+          "speedup": 1.1506294394270355,
+          "before_sha256": "d05290237a312132e443ccd1eed2d9c84557322eae497b52a0c2c486b248c538",
+          "after_sha256": "4ab10dad3d540f07b4309d4236b7f0eddab4281ee17f2e726f8387290e5248f7"
+        },
+        {
+          "cpu": "r800",
+          "inputs": "none",
+          "identical_frames": 512,
+          "before_fps": 19.974737270937506,
+          "after_fps": 19.974555025813885,
+          "speedup": 0.9999908762192389,
+          "before_sha256": "d05290237a312132e443ccd1eed2d9c84557322eae497b52a0c2c486b248c538",
+          "after_sha256": "4ab10dad3d540f07b4309d4236b7f0eddab4281ee17f2e726f8387290e5248f7"
+        }
+      ],
+      "asset_and_animation_banks_unchanged": true
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # GR-9 BULLRUSH — 256-color city pursuit demo
 
+**2026-10-03 Z80 update / Z80最適化版:** [ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [測定・検証範囲 / Measurements and verification scope](Z80_OPTIMIZATION.md). Existing previews and earlier validation below describe previous releases. 以下の既存映像・過去検証は旧版の記録です。
+
 TurboR + V9968 + Geo3Dで、市街地をローラーダッシュするロボットを描く無音・自動走行デモです。探索から青い機体の発見、追跡、急旋回、屋上へのショートカットへ進みます。膝・腕・胴体の姿勢、旋回時の体重移動を見せる実験です。
 
 **操作可能なゲームではありません。** 移動・カメラ・ポーズは事前計算したデータです。ポリゴンの投影・描画はGeo3Dで実行し、ROMに収録した動画を再生しているものではありません。追跡AI、自由操作、格闘、被害スコア、時間制限、ヘリによる回収は未実装です。

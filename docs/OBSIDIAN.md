@@ -1,5 +1,7 @@
 # OBSIDIAN / TITAN PASS
 
+**2026-10-03 Z80 update / Z80最適化版:** [ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [測定・検証範囲 / Measurements and verification scope](Z80_OPTIMIZATION.md). Existing previews and earlier validation below describe previous releases. 以下の既存映像・過去検証は旧版の記録です。
+
 最初の巨大戦艦への接近飛行デモです。TurboR + V9968 + Geo3Dによるリアルタイム・ポリゴン描画を観察する、自動再生の技術実験です。操作はできません。ROMに動画を収録しているものではありません。
 
 **効果音・BGMはありません。カッコいいBGMを付けたいのですが、まだ決まらず悩み中です。今後BGMを追加する予定です。それまでは、それぞれの「心のBGM」を重ねてお楽しみください。** 追加時期は未定です。
