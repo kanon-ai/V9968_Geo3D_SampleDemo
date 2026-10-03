@@ -1,0 +1,10 @@
+{
+  "rom_bytes": 1048576,
+  "sha256": "4ddfa63598225c65f36713f13031e02bc4ab62a6c29a2855200c43ab47b3d406",
+  "geometry_player_animation_unchanged": true,
+  "pursuit_unchanged_after_frame156": true,
+  "search_intro_frames": 52,
+  "palette_entries": 256,
+  "restore_hashes_verified": true,
+  "hardware_verified": false
+}

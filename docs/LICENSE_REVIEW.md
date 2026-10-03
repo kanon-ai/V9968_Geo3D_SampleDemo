@@ -24,3 +24,8 @@ See [NIGHT RAVEN usage, technical details, validation and license review](NIGHT_
 ## OBSIDIAN / TITAN PASS (v0.2.0)
 
 [起動・ビルド・技術・検証・素材の来歴](OBSIDIAN.md)。256KiB / ASCII16、無音の自動再生デモです。
+
+
+## BULLRUSH (2026-10-03)
+
+[詳細と免責](BULLRUSH.md)。公開対象の独自ソース、手続き的形状、HUD、参照画像なしのAI生成テクスチャとその来歴を確認。MITで提供し、Geo3D / V9968の既存MIT帰属と全文を保持します。商用ゲーム素材、BIOS、エミュレータ、フォント、開発ツールは同梱しません。AI素材は保有する権利の範囲で提供します。

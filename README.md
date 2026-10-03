@@ -1,5 +1,14 @@
 # V9968 + Geo3D Sample Demos
 
+## GR-9 BULLRUSH — 256色の市街地追跡デモ
+
+探索から青い機体を発見し、ローラーダッシュ・横スライド・急旋回で市街地を追跡する無音の自動走行デモを追加しました。関節の姿勢と体重移動、屋上ショートカットを描きます。**まだ操作可能なゲームではありません。専用Geo3D openMSXで確認、実機未検証です。**
+
+[ROM・GIF・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-v0.1.0) · [使い方・技術・検証・ライセンス・免責](docs/BULLRUSH.md)
+
+![BULLRUSH](docs/media/bullrush.gif)
+
+
 ## NIGHT RAVEN — 操作できる開発体験デモ / Flight Development Demo
 
 **完成ゲームではなく、空間を飛行する感覚を少しだけ楽しめる開発体験版です。** 従来の無音・自動再生デモとは別に追加しました。

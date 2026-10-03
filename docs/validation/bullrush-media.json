@@ -1,0 +1,21 @@
+{
+  "seconds": 30.27231196221588,
+  "gif_seconds": 30.28,
+  "gif_dimensions": [
+    480,
+    390
+  ],
+  "silent": true,
+  "speed_adjustment": false,
+  "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+  "files": {
+    "BULLRUSH-256color-search-v3.mp4": {
+      "bytes": 5448325,
+      "sha256": "733027a4226812322ee9f9a8577970511864ecaf4c87cd3686f3e53bee87ccfa"
+    },
+    "BULLRUSH-256color-search-v3-under15MB.gif": {
+      "bytes": 9210906,
+      "sha256": "7d70b68b85a50a3b25b01f688c565b0900be353c7a6f6ec36ce8b66eb19f4cf1"
+    }
+  }
+}
