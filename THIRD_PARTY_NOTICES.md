@@ -45,3 +45,8 @@ Additional interactive development demo using the original procedural geometry, 
 ## GR-9 BULLRUSH
 
 Original procedural robot/city geometry and HUD glyphs are defined in source. Sky/building materials are AI-generated without reference images; the original atlas and prompt are in demos/bullrush/assets. Offered under MIT to the extent rights are held. Geo3D setup/transfer conventions retain the upstream notices above. No commercial game artwork, models, music, firmware or tool executables are included. Video captions are rasterized using a locally installed font; no font file is distributed.
+
+
+## BULLRUSH CROWD (2026-10-03)
+
+The separate crowd load experiment in demos/bullrush-crowd reuses BULLRUSH code and the same reference-free AI-generated atlas, with original crowd scheduling changes. The same MIT and retained Geo3D/V9968 notices apply. Asset provenance is included in assets/PROVENANCE.md. No emulator, BIOS, firmware, tool binaries or font files are included. This is an emulator-tested experiment, not physical-hardware certification.

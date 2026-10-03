@@ -1,0 +1,14 @@
+{
+  "placed": 5,
+  "red": 1,
+  "blue": 3,
+  "player": 1,
+  "max_submitted_bodies": 5,
+  "average_submitted_bodies": 3.892361111111111,
+  "stable_ids": true,
+  "original_poses_identical": true,
+  "original_rom_unchanged": true,
+  "restore_hashes_verified": 92,
+  "rom_sha256": "6bbb7e19ce411e12c8eedf3aa9440142e7b882ec14907b24f8285b0b6ce104b1",
+  "hardware_verified": false
+}

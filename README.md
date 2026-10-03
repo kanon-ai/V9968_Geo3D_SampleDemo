@@ -1,5 +1,11 @@
 # V9968 + Geo3D Sample Demos
 
+## BULLRUSH CROWD — 別バージョンの負荷実験
+
+自機1＋赤1＋青3の5機を配置した「にぎやか版」です。ゲーム本編とは別の自動走行負荷実験として追加しました。通常版も引き続き提供します。1 MiB / ASCII16、無音。専用openMSXとBlueMSX+ experimental-2で確認、実機未検証。
+
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-v0.1.0) · [技術・軽量化・測定条件・使い方](docs/BULLRUSH_CROWD.md)
+
 ## GR-9 BULLRUSH — 256色の市街地追跡デモ
 
 探索から青い機体を発見し、ローラーダッシュ・横スライド・急旋回で市街地を追跡する無音の自動走行デモを追加しました。関節の姿勢と体重移動、屋上ショートカットを描きます。**まだ操作可能なゲームではありません。専用Geo3D openMSXで確認。BlueMSX+第2版でもASCII16指定で起動・複数場面を確認、実機未検証です。**

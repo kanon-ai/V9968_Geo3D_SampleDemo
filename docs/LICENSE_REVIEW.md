@@ -29,3 +29,8 @@ See [NIGHT RAVEN usage, technical details, validation and license review](NIGHT_
 ## BULLRUSH (2026-10-03)
 
 [詳細と免責](BULLRUSH.md)。公開対象の独自ソース、手続き的形状、HUD、参照画像なしのAI生成テクスチャとその来歴を確認。MITで提供し、Geo3D / V9968の既存MIT帰属と全文を保持します。商用ゲーム素材、BIOS、エミュレータ、フォント、開発ツールは同梱しません。AI素材は保有する権利の範囲で提供します。
+
+
+## BULLRUSH CROWD (2026-10-03)
+
+The separate crowd load experiment in demos/bullrush-crowd reuses BULLRUSH code and the same reference-free AI-generated atlas, with original crowd scheduling changes. The same MIT and retained Geo3D/V9968 notices apply. Asset provenance is included in assets/PROVENANCE.md. No emulator, BIOS, firmware, tool binaries or font files are included. This is an emulator-tested experiment, not physical-hardware certification.

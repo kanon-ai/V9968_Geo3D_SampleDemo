@@ -1,0 +1,21 @@
+{
+  "seconds": 34.461038700096914,
+  "gif_seconds": 34.46,
+  "gif_dimensions": [
+    480,
+    390
+  ],
+  "silent": true,
+  "speed_adjustment": false,
+  "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+  "files": {
+    "BULLRUSH-crowd-local.mp4": {
+      "bytes": 6017606,
+      "sha256": "ae57f88cc32991bdf6ef440bb93e6e559844610fd3151f19fab15632e8fad113"
+    },
+    "BULLRUSH-crowd-local-under15MB.gif": {
+      "bytes": 9695146,
+      "sha256": "0e63189111a6a64ef88c7245029e1483556fdabdcd78a84cf64a75ec8722d3b4"
+    }
+  }
+}
