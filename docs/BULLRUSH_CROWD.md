@@ -63,6 +63,10 @@ python demos/bullrush-crowd/variants.py
 
 BIOS、エミュレータ、FPGAビットストリーム、ツール、フォントファイル、個人設定は配布しません。現状有姿・無保証で提供します。将来の仕様変更への互換性、実機性能、ゲームとしての完成を保証するものではありません。公式承認を意味しません。
 
+### 負荷実験版の免責事項
+
+本配布物はゲーム本編とは別の技術・負荷実験用サンプルです。実機での動作、安全性、速度、互換性、および将来のゲーム化を保証しません。測定値は記載したエミュレータ環境に限定され、実機性能や最大処理能力を示すものではありません。利用・改変は利用者の判断と責任で行ってください。適用法令で認められる範囲で、作者・貢献者は利用または利用不能により生じた損害について責任を負いません。V9968・Geo3D・各エミュレータの開発者による公式な承認・性能保証を意味しません。詳細は同梱MIT Licenseの免責条項に従います。
+
 ## English
 
 A separate, silent automatic load experiment, not the main game: one player, one red and three blue robots. 1 MiB ASCII16. Real-time polygon rendering with precomputed paths and poses. Additional robots omit separate wheel meshes. Checked in developer Geo3D openMSX and BlueMSX+ experimental-2; physical hardware is unverified. Media is not sped up. MIT with retained upstream notices; provided as is.
