@@ -30,7 +30,7 @@ openmsx -machine Panasonic_FS-A1ST_V9968 -ext geo3d -cart BULLRUSH.ROM -romtype 
 
 専用Geo3D openMSXで一周の等速キャプチャ、探索開始と屋上からの降下の表示、Tキー切り替えを確認。公開ソースからの再ビルドと配布ROMのSHA-256一致も確認済みです。元の16色版の形状・自機ポーズの比較検証を実施しています。
 
-最新映像は約30.27秒、記録区間の描画更新は平均約12.49fps。MP4/GIFは無音で、動画の速度変更や補間による高速化は行っていません。**これはエミュレータ上の測定であり、実機・FPGA・カートリッジの処理性能を証明するものではありません。BlueMSX Geo3Dでの本デモ検証も未実施です。**
+最新映像は約30.27秒、記録区間の描画更新は平均約12.49fps。MP4/GIFは無音で、動画の速度変更や補間による高速化は行っていません。**これはエミュレータ上の測定であり、実機・FPGA・カートリッジの処理性能を証明するものではありません。BlueMSX+第2版の追加確認範囲は下記を参照してください。**
 
 [検証ログ](validation/bullrush-capture.txt)・[比較検証](validation/bullrush-mode.json)・[メディア情報](validation/bullrush-media.json)
 
@@ -57,4 +57,27 @@ python demos/bullrush/build.py
 
 ## English summary
 
-A silent, automatic 1 MiB ASCII16 robot city-pursuit experiment for TurboR + V9968 + Geo3D. T toggles textures. Polygon rendering is real time; movement, camera and joint poses are precomputed. This is not an interactive game. Validated only in the developer Geo3D openMSX environment, not physical hardware or BlueMSX. Original code/assets are offered under MIT to the extent rights are held, with upstream notices retained. No emulator, BIOS, firmware or proprietary game assets are included. Provided as is, without warranty.
+A silent, automatic 1 MiB ASCII16 robot city-pursuit experiment for TurboR + V9968 + Geo3D. T toggles textures. Polygon rendering is real time; movement, camera and joint poses are precomputed. This is not an interactive game. Validated in developer Geo3D openMSX, with an additional startup/scene check in BlueMSX+ experimental-2 using explicit ASCII16; physical hardware remains unverified. Original code/assets are offered under MIT to the extent rights are held, with upstream notices retained. No emulator, BIOS, firmware or proprietary game assets are included. Provided as is, without warranty.
+
+
+## BlueMSX+ 第2版の追加確認（2026-10-03）
+
+[experimental-2 / 2090cd2](https://github.com/Hesoten/blueMSX-plus/releases/tag/V9968-geo3d-experimental-2)で、公開済みROMを変更せずに起動し、ロボット・街・空・建物テクスチャ、複数場面への進行を確認しました。ローカル検証機種はMSXturboR - C-BIOS FDDのVideoをV9968 / 256kBに設定したものです。Geo3DはこのVDP設定で作成されます。
+
+**ROMは1 MiB、マッパーを必ずASCII16に指定してください。自動判定はASCII8を選び、黒画面と上下の乱れた帯になることを再現しました。** 自動判定はROM全体の命令らしいバイト列を数えるため、画像・形状データも影響します。今回の判定スコアはASCII8=12、ASCII16=11。Geo3Dの描画非互換と判断する前に、マッパーを確認してください。
+
+```text
+"blueMSX+.exe" /machine "MSXturboR - C-BIOS FDD" /rom1 "BULLRUSH.ROM" /romtype1 ASCII16
+```
+
+上の機種名を使う場合、事前にその機種のVideoをV9968に設定する必要があります。通常のV9958設定のままでは動作条件を満たしません。既存のV9968対応TurboR機種を選んでも構いません。
+
+### 実装差と配布方針
+
+比較対象のopenMSX Geo3Dブランチ先頭は `de29fb854885a38251c03e24596ad4ff95770ef2`、BlueMSX+第2版は `2090cd265928e5290b7939d7447cf76184dd6d07` です。
+
+- BlueMSX+第2版ではR800のVDPアクセス間隔適用が98h–9Bhに限定され、以前の9Dh/9FhへのVDP待ち時間付加が修正されています。
+- BlueMSX+はGeo3Dの頂点変換・面処理・コマンド発行の所要時間と、VDPのHS/ネイティブモードのRTL由来タイミングを追加しています。比較対象openMSXではGeo3Dの変換段階自体は時間を消費しません。両者の速度が一致する保証はありません。
+- Busyのbit0を待つ本ROMの処理は両実装で使用できます。256色VRAMのアドレス式も、調べたCPU転送・描画経路で同じ配置を表します。
+
+現在の確認では別ROMを必要とする描画仕様差は特定していないため、**共通ROMを維持**します。BlueMSX+では起動と複数場面の目視確認までで、全フレームの画素一致・厳密な速度測定・実機検証は未実施です。先の30.27秒・約12.49fpsはopenMSXの数値であり、BlueMSX+の測定値ではありません。[調査記録](validation/bullrush-bluemsx.json)

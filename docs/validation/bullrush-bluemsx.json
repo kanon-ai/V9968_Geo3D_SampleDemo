@@ -1,0 +1,23 @@
+{
+  "blue_release": "V9968-geo3d-experimental-2",
+  "blue_commit": "2090cd265928e5290b7939d7447cf76184dd6d07",
+  "openmsx_geo3d_commit": "de29fb854885a38251c03e24596ad4ff95770ef2",
+  "rom_sha256": "4ddfa63598225c65f36713f13031e02bc4ab62a6c29a2855200c43ab47b3d406",
+  "rom_bytes": 1048576,
+  "required_mapper": "ASCII16",
+  "heuristic_scores": {
+    "standard": 0,
+    "dos2": 0,
+    "konami5": 4,
+    "konami4": 11,
+    "ascii8": 12,
+    "ascii16": 11
+  },
+  "automatic_mapper": "ASCII8",
+  "observed_auto": "black screen with two corrupted horizontal bands",
+  "observed_explicit": "city, robot, sky and building textures render; progression through several scenes observed",
+  "machine": "MSXturboR - C-BIOS FDD (local config V9968, 256kB VRAM)",
+  "pixel_equivalence_tested": false,
+  "hardware_verified": false,
+  "rom_modified": false
+}
