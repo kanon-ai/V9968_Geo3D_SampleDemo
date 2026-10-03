@@ -1,5 +1,16 @@
 # V9968 + Geo3D Sample Demos
 
+## Geo3D BASIC FUNCTIONS — 基本機能デモ
+
+A minimal, silent demonstration of **focal length, projection center and texture-origin scrolling**, followed by a combined scene. Fixed geometry, a black background and live register values make each effect easy to compare. **1 MiB / ASCII16.** Tested only in the dedicated Geo3D openMSX build; physical hardware and BlueMSX Plus are unverified.
+
+焦点距離・投影中心・テクスチャ原点を個別に動かし、最後に組み合わせる無音の基本デモです。図形は固定し、上端に設定値を表示します。1 MiB / ASCII16、専用Geo3D openMSXで確認。実機・BlueMSX Plusは未検証です。
+
+[ROM / GIF / MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-basics-v0.1.0) · [Guide / 技術・使い方・検証・免責](docs/GEO3D_BASICS.md)
+
+![Geo3D BASIC FUNCTIONS](docs/media/geo3d-basics.gif)
+
+
 ## FOUR SEASONS — ポリゴン・テクスチャの基本デモ / Polygon & Texture Basics
 
 桜・蛍・紅葉・雪が黒背景を舞う、無音・自動の基本サンプルです。1 MiB / ASCII16。専用Geo3D openMSXで確認、BlueMSX+・実機は本デモ未検証です。

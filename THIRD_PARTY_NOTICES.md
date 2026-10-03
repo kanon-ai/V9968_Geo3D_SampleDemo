@@ -55,3 +55,7 @@ The separate crowd load experiment in demos/bullrush-crowd reuses BULLRUSH code 
 ## FOUR SEASONS (2026-10-03)
 
 Original procedural foliage, texture and movement code under the repository MIT license. Reuses ORBITAL initialization, transfer and mesh helpers; Geo3D and V9968 MIT notices remain applicable. No external images, AI-generated artwork, music, BIOS, emulator, firmware, tool binaries or font files are included. Captions are rasterized.
+
+## Geo3D BASIC FUNCTIONS
+
+Original cube/plane geometry, grid texture, parameter tables and Z80 demo code, under the repository MIT license. Setup/transfer and mesh helpers reuse the existing lab demos; the retained Geo3D and V9968 notices above apply. Labels were rasterized locally with Consolas; no font files are distributed. Set ROM_FONT to a locally licensed TrueType font for other systems. No generated scenery, external artwork, music, BIOS, emulator or tool binaries are included.
