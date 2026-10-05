@@ -1,0 +1,8 @@
+{
+  "audible_notes": 56,
+  "missing_notes": 0,
+  "max_pitch_error_Hz": 0.7000000000000455,
+  "peak_dBFS": -13.7797269821167,
+  "export_gain_dB": 6,
+  "method": "FFT peak and RMS in each note attack window from actual emulator PCM capture"
+}

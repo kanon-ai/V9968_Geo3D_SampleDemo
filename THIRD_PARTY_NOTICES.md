@@ -59,3 +59,7 @@ Original procedural foliage, texture and movement code under the repository MIT 
 ## Geo3D BASIC FUNCTIONS
 
 Original cube/plane geometry, grid texture, parameter tables and Z80 demo code, under the repository MIT license. Setup/transfer and mesh helpers reuse the existing lab demos; the retained Geo3D and V9968 notices above apply. Labels were rasterized locally with Consolas; no font files are distributed. Set ROM_FONT to a locally licensed TrueType font for other systems. No generated scenery, external artwork, music, BIOS, emulator or tool binaries are included.
+
+## PAWS & BEATS (2026-10-05)
+
+Original procedural models/instruments/animation and OPLL arrangement, with reused AI-generated cat/rabbit face atlas; see demos/paws-beats/assets/PROVENANCE.md. Traditional Ah! vous dirai-je, maman melody; public-domain score reference https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2236 . No existing recording or lyrics. Geo3D/V9968 upstream notices above remain applicable. The author's test-only emulator collision patch informed validation but is not redistributed here. Windows Consolas rasterizes captions in the verified build; no font files are included. Tools, BIOS and emulator binaries are excluded.

@@ -1,5 +1,18 @@
 # V9968 + Geo3D Sample Demos
 
+## PAWS & BEATS — Contact sparkles / 接触で星がきらめく演奏会
+
+A cat on xylophone and a rabbit on drums play **Twinkle, Twinkle, Little Star** with **Geo3D + OPLL**. Sprites embedded in the mallet tips meet transparent receiver sprites at the instruments; the collision flag triggers stars. **Collision is used only for this visual effect.**
+
+猫とうさぎの演奏会。バチ先端と楽器の打面に仕込んだスプライトの接触で星がきらめきます。当たり判定は演出専用です。
+
+**Experimental patched-openMSX validation only; physical hardware untested. Transparent contact support requires the test patch described below.** / 専用パッチ版で検証、実機未確認。対応条件をご確認ください。
+
+[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/paws-beats-v0.1.0) · [Usage, mechanism, licenses & disclaimer / 使い方・仕組み・ライセンス・免責](demos/paws-beats/README.md)
+
+![PAWS & BEATS](docs/media/paws-beats.gif)
+
+
 **Upstream audit — 2026-10-04:** The official cartridge RTL now agrees between HRA and Alex, but the Geo3D openMSX branch is unchanged. The default `msx2pp` branch has no Geo3D device. We therefore retain the tested emulator and ROMs; this is not a new hardware validation. [Comparison and migration decision](docs/UPSTREAM_COMPATIBILITY_20261004.md)
 
 **上流確認（2026-10-04）：** カートリッジの主要RTLは一致しましたが、Geo3D対応openMSXは未更新で、既定のmsx2ppにはGeo3Dがありません。現行エミュレータ・ROMを維持しています。[全11本の影響確認と移行を見送る理由](docs/UPSTREAM_COMPATIBILITY_20261004.md)
