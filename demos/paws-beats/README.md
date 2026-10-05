@@ -1,4 +1,4 @@
-# PAWS & BEATS — Sprite-contact sparkles / 接触で星がきらめく演奏会
+# PAWS & BEATS — A Magical Concert of Twinkling Stars / 星がきらめく魔法の演奏会
 
 A cat plays the melody of **Twinkle, Twinkle, Little Star** on a xylophone while a rabbit accompanies it on drums. Geo3D draws the textured polygon characters and instruments in real time; OPLL produces the melody and percussion. This automatic, approximately 32-second demo needs no controls.
 

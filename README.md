@@ -1,6 +1,6 @@
 # V9968 + Geo3D Sample Demos
 
-## PAWS & BEATS — Contact sparkles / 接触で星がきらめく演奏会
+## PAWS & BEATS — A Magical Concert of Twinkling Stars / 星がきらめく魔法の演奏会
 
 A cat on xylophone and a rabbit on drums play **Twinkle, Twinkle, Little Star** with **Geo3D + OPLL**. Sprites embedded in the mallet tips meet transparent receiver sprites at the instruments; the collision flag triggers stars. **Collision is used only for this visual effect.**
 
