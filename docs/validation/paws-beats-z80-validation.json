@@ -1,0 +1,34 @@
+{
+  "old_z80": {
+    "seconds": 71.92559221912282,
+    "fps": 8.911987794930907,
+    "cat_hits": 56,
+    "rabbit_hits": 96
+  },
+  "new_z80": {
+    "seconds": 59.89341047535371,
+    "fps": 10.702345966152205,
+    "cat_hits": 56,
+    "rabbit_hits": 96
+  },
+  "old_r800": {
+    "seconds": 32.091205586184834,
+    "fps": 19.974319701966838,
+    "cat_hits": 56,
+    "rabbit_hits": 96
+  },
+  "new_r800": {
+    "seconds": 32.09093027186416,
+    "fps": 19.974491065533215,
+    "cat_hits": 56,
+    "rabbit_hits": 96
+  },
+  "z80_frames": {
+    "compared": 17,
+    "identical": 17
+  },
+  "r800_frames": {
+    "compared": 17,
+    "identical": 17
+  }
+}

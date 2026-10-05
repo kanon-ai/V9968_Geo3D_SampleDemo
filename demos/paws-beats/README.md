@@ -1,14 +1,14 @@
 # PAWS & BEATS — A Magical Concert of Twinkling Stars / 星がきらめく魔法の演奏会
 
-A cat plays the melody of **Twinkle, Twinkle, Little Star** on a xylophone while a rabbit accompanies it on drums. Geo3D draws the textured polygon characters and instruments in real time; OPLL produces the melody and percussion. This automatic, approximately 32-second demo needs no controls.
+A cat plays the melody of **Twinkle, Twinkle, Little Star** on a xylophone while a rabbit accompanies it on drums. Geo3D draws the textured polygon characters and instruments in real time; OPLL produces the melody and percussion. This automatic, demo (approximately 32 seconds on R800, 60 seconds in our Z80 test) needs no controls.
 
-猫が木琴で「きらきら星」を弾き、うさぎがたいこで伴奏します。Geo3Dのテクスチャ付きポリゴンとOPLLを組み合わせた、約32秒の自動演奏デモです。
+猫が木琴で「きらきら星」を弾き、うさぎがたいこで伴奏します。Geo3Dのテクスチャ付きポリゴンとOPLLを組み合わせた、自動演奏デモ（R800で約32秒、今回のZ80測定で約60秒）です。
 
 ## Download / ダウンロード
 
-[ROM, sound MP4, silent GIF and checksums](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/paws-beats-v0.1.0)
+[ROM, sound MP4, silent GIF and checksums](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/paws-beats-v0.1.1)
 
-- ROM: **1 MiB / ASCII16**. Target: TurboR + V9968 + Geo3D + MSX-MUSIC (OPLL).
+- ROM: **1 MiB / ASCII16**. Target: MSX2/2+ (Z80) or TurboR (R800), with V9968 + Geo3D + MSX-MUSIC (OPLL).
 - MP4 includes audio; GIF is silent. Neither is sped up. MP4 gain is adjusted for listening.
 - Tested on a dedicated patched openMSX build only. **Physical hardware, BlueMSX+, and stock/current upstream openMSX are not certified by this release.**
 - 専用パッチ版openMSXで確認しています。実機・BlueMSX+・一般配布版openMSXでの同等動作を保証するものではありません。
@@ -57,10 +57,20 @@ python build.py
 
 Run from this demo directory. Default locally installed fonts are Consolas; set `ROM_FONT` and `ROM_SMALL_FONT` to alternative licensed font paths. Fonts are not bundled. Font changes can change the ROM's rasterized captions/hash. Output: `out/PAWS-CONCERT.ROM`.
 
+## Z80 optimization v0.1.1 / Z80最適化
+
+The same ROM selects Z80 on MSX2/2+ and R800 on TurboR. Z80 uses unrolled OUTI geometry transfers and CPU-appropriate OPLL settling waits. R800 retains its original transfer loop and audio waits. Models, textures, choreography and music data are unchanged.
+
+A complete cycle in the dedicated patched emulator, with TurboR forced to Z80, improved from **8.91 to 10.70 fps (+20.1%)**. R800 remains **19.97 fps**. All 17 sampled images per CPU match the previous version pixel-for-pixel; collision polling counts match, and recorded audio contains all 56 melody attacks. This is not MSX2/2+ hardware validation. Frame-driven music remains slower on Z80.
+
+Z80用のGeo3D転送とOPLL待ち時間を最適化。専用エミュレータのTurboRをZ80固定にした比較で平均8.91→10.70fps（約20%改善）、R800は19.97fpsを維持しました。各CPUで17場面の画像一致・接触回数一致・実音声56音を確認済み。MSX2/2+実機での確認ではありません。Z80では曲も描画速度に合わせてゆっくりになります。
+
+[Timing and image comparison](../../docs/validation/paws-beats-z80-validation.json) · [Recorded audio check](../../docs/validation/paws-beats-z80-audio-validation.json)
+
 ## Verification / 検証
 
 - Complete 640-frame cycle plus restart captured in the dedicated emulator.
-- Exported public source rebuild is byte-identical to the approved ROM: `6c2049e47ace75e3c1b8ddfd9a23877e4032635ab65bd8b2de2d96439a13f292`.
+- Exported public source rebuild is byte-identical to the approved ROM: `ab5299b409fcaaec396061a43e87f0f647ac618911cb099a74dd82d2b2e1bdf6`.
 - Actual recorded PCM checked: **all 56 melody attacks present**, FFT peaks within 3 Hz of intended pitches. OPLL pitch/key/rhythm register checks were also performed. Runtime writes include R800-safe settling delays; key-off preserves pitch bits.
 - A receiver-offset control produced no star triggers, while the score and animation continued. Both instruments triggered in the normal run. This control preceded the final audio-only fixes; collision geometry/code was unchanged by those fixes.
 - Motion matrices are precomputed; geometry/texture drawing is real-time Geo3D. Emulator timing is not a physical-hardware benchmark. Music is frame-driven and can slow on a slower system.

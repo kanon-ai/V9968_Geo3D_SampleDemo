@@ -8,7 +8,9 @@ A cat on xylophone and a rabbit on drums play **Twinkle, Twinkle, Little Star** 
 
 **Experimental patched-openMSX validation only; physical hardware untested. Transparent contact support requires the test patch described below.** / 専用パッチ版で検証、実機未確認。対応条件をご確認ください。
 
-[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/paws-beats-v0.1.0) · [Usage, mechanism, licenses & disclaimer / 使い方・仕組み・ライセンス・免責](demos/paws-beats/README.md)
+[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/paws-beats-v0.1.1) · [Usage, mechanism, licenses & disclaimer / 使い方・仕組み・ライセンス・免責](demos/paws-beats/README.md)
+
+**PAWS & BEATS v0.1.1 — Z80 optimized:** 8.91 → 10.70 fps (+20.1%) in a forced-Z80 emulator test; R800 performance unchanged. Music runs slower on Z80. / Z80最適化で約20%改善。実機未検証。
 
 ![PAWS & BEATS](docs/media/paws-beats.gif)
 

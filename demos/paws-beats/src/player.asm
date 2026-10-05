@@ -60,11 +60,17 @@ start:
  in a,(0xFF)
  xor #1
  out (0xFE),a
+ xor a
+ ld (0xE49F),a
  ld a,(0x002D)
  cp #3
  jr c,cpu_ready
  ld a,#0x81
+ push af
  call 0x0180
+ pop af
+ and #1
+ ld (0xE49F),a
  di
 cpu_ready:
  xor a
@@ -452,18 +458,284 @@ send15:
  ret
 geoblock:
  ld c,#0x9F
- jr block
+ ld a,(0xE49F)
+ or a
+ jp nz,block
+ ld a,d
+ or a
+ jp z,tail
+z80_geoblock:
+ ld b,#0
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ outi
+ dec a
+ jp nz,z80_geoblock
+ jp tail
 vramblock:
  ld c,#0x98
 block:
  ld a,d
  or a
- jr z,tail
+ jp z,tail
 blockloop:
  ld b,#0
  otir
  dec a
- jr nz,blockloop
+ jp nz,blockloop
 tail:
  ld a,e
  or a

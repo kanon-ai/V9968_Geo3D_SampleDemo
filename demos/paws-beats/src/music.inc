@@ -4,14 +4,22 @@ fmwrite:
  ld a,b
  out (0x7C),a
  ; R800-safe OPLL address/data and successive-write settling times.
+ ld a,(0xE49F)
+ or a
  ld b,#32
+ jr nz,fm_address_wait
+ ld b,#3
 fm_address_wait:
  djnz fm_address_wait
  pop bc
  pop af
  out (0x7D),a
  push bc
+ ld a,(0xE49F)
+ or a
  ld b,#128
+ jr nz,fmdelay
+ ld b,#10
 fmdelay:
  djnz fmdelay
  pop bc
