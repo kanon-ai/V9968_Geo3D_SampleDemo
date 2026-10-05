@@ -13,9 +13,9 @@ A cat on xylophone and a rabbit on drums play **Twinkle, Twinkle, Little Star** 
 ![PAWS & BEATS](docs/media/paws-beats.gif)
 
 
-**Upstream audit — 2026-10-04:** The official cartridge RTL now agrees between HRA and Alex, but the Geo3D openMSX branch is unchanged. The default `msx2pp` branch has no Geo3D device. We therefore retain the tested emulator and ROMs; this is not a new hardware validation. [Comparison and migration decision](docs/UPSTREAM_COMPATIBILITY_20261004.md)
+**Running the demos (2026-10-04):** Use the Geo3D-compatible emulator version listed for each demo. Newer emulator releases may not include Geo3D support. See each demo's documentation for tested environments and hardware verification status. [Compatibility details](docs/UPSTREAM_COMPATIBILITY_20261004.md)
 
-**上流確認（2026-10-04）：** カートリッジの主要RTLは一致しましたが、Geo3D対応openMSXは未更新で、既定のmsx2ppにはGeo3Dがありません。現行エミュレータ・ROMを維持しています。[全11本の影響確認と移行を見送る理由](docs/UPSTREAM_COMPATIBILITY_20261004.md)
+**実行環境について（2026-10-04）：** 各デモで案内しているGeo3D対応エミュレータをご利用ください。最新版でもGeo3Dに対応していない場合があります。動作確認済みの環境や実機での検証状況は、各デモの説明をご確認ください。[互換性の詳細](docs/UPSTREAM_COMPATIBILITY_20261004.md)
 
 
 ## Z80 optimization update / Z80最適化更新
