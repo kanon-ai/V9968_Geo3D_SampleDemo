@@ -4,13 +4,15 @@
 
 **My commute felt like 380,000 km today. / 通勤が38万キロくらいに感じた。**
 
-A beautiful Earthrise becomes a cat and rabbit's trip home by rocket. Real-time textured Geo3D animation with V9968 SCREEN 8 / EPAL 256 colours, silent and automatic. 1 MiB / ASCII16. Tested in dedicated openMSX and BlueMSX+ Geo3D experimental builds with TurboR/R800; physical hardware unverified; Z80 evaluated by forcing a TurboR profile to Z80.
+A beautiful Earthrise becomes a cat and rabbit's trip home by rocket. They land at an unnamed harbor, hop onto the quay, and watch their empty rocket fly away. Real-time textured Geo3D animation with V9968 SCREEN 8 / EPAL 256 colours, silent and automatic. 1 MiB / ASCII16. Tested in dedicated openMSX and BlueMSX+ Geo3D experimental builds with TurboR/R800; physical hardware unverified; Z80 evaluated by forcing a TurboR profile to Z80.
 
-地球の出から、猫とうさぎがロケットで帰宅する無音デモ。最後は地球へ接近します。専用openMSXとBlueMSX+のGeo3D実験版で検証、Z80固定テストも実施、実機は未検証です。
+地球の出から、猫とうさぎがロケットで帰宅する無音デモ。地球へ帰還し、港で二匹が降りるとロケットだけが飛び立ちます。専用openMSXとBlueMSX+のGeo3D実験版で検証、Z80固定テストも実施、実機は未検証です。
 
-[ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.1) · [Usage, technology, licenses & disclaimer / 使い方・技術・ライセンス・免責](demos/lunar-commute/README.md)
+[ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.2) · [Usage, technology, licenses & disclaimer / 使い方・技術・ライセンス・免責](demos/lunar-commute/README.md)
 
-**LUNAR COMMUTE v0.1.1 — Z80 optimized:** 12.21 → 13.42 fps (+9.9%); R800 +2.4%. All 602 compared pages per CPU are unchanged. Both emulators checked; hardware untested. / Z80で約9.9%改善、両エミュレータで確認済み。
+**v0.1.2 harbor ending:** both emulators checked in R800; new harbor not retested on Z80. / 港追加版は両エミュレータのR800で確認、追加場面のZ80再検証は未実施。
+
+**Previous v0.1.1 — Z80 optimization measurements:** 12.21 → 13.42 fps (+9.9%); R800 +2.4%. All 602 compared pages per CPU are unchanged. Both emulators checked; hardware untested. / Z80で約9.9%改善、両エミュレータで確認済み。
 
 ![LUNAR COMMUTE](docs/media/lunar-commute.gif)
 

@@ -82,7 +82,7 @@ def can():
  m.cube(0,2,0,17,2,23,12)
  return m
 
-def rocket():
+def rocket(power=0):
  m=Model();n=10;first=len(m.v)
  rings=[(-123,5),(-100,25),(-65,36),(65,36),(96,29)]
  for x,r in rings:
@@ -92,6 +92,23 @@ def rocket():
   for k in range(n):
    a=j*n+k;b=j*n+(k+1)%n;m.face([a,b,b+n,a+n],[4,4,3,3,2,2,3,3,4,5][k])
  for k in range(1,n-1):m.face([40,40+k,40+k+1],12)
+ # Rear nozzle: local +X is aft; the nose points toward -X.
+ start=len(m.v)
+ for x,r in [(96,22),(113,27)]:
+  for k in range(8):
+   a=k*math.pi/4;m.v.append((x,r*math.cos(a),r*math.sin(a)))
+ for k in range(8):
+  a=start+k;b=start+(k+1)%8;m.face([a,b,b+8,a+8],12 if k%2 else 2)
+ center=len(m.v);m.v.append((114,0,0))
+ for k in range(8):m.face([center,start+8+k,start+8+(k+1)%8],1)
+ if power:
+  for radius,length,color in [(23,155*power,8),(13,105*power,9)]:
+   first=len(m.v)
+   for k in range(6):
+    a=k*math.pi/3;m.v.append((115,radius*math.cos(a),radius*math.sin(a)))
+   tip=len(m.v);m.v.append((115+length,0,0))
+   for k in range(6):
+    ids=[first+k,tip,first+(k+1)%6];m.face(ids,color);m.face(ids[::-1],color)
  # Four playful swept fins.
  for sign in [-1,1]:
   m.polygon([(48,0,sign*25),(88,0,sign*75),(105,0,sign*29)],4,True)
@@ -142,4 +159,38 @@ def beacon():
  for i in range(12):
   a=i*math.pi/6;b=(i+1)*math.pi/6
   m.polygon([(22*math.cos(a),140,22*math.sin(a)),(26*math.cos(a),140,26*math.sin(a)),(26*math.cos(b),140,26*math.sin(b)),(22*math.cos(b),140,22*math.sin(b))],9,True)
+ return m
+
+
+def harbor_backdrop():
+ m=Model()
+ # Sky, pale horizon and sea, deliberately without location-specific landmarks.
+ for y0,y1,col in [(1400,240,2),(240,90,3),(90,0,5),(0,-1400,3)]:
+  m.polygon([(-1800,y0,6000),(1800,y0,6000),(1800,y1,6000),(-1800,y1,6000)],col,True)
+ for j in range(8):
+  y=-70-j*70
+  m.polygon([(-900+j*60,y,5990),(650-j*35,y,5990),(650-j*35,y-5,5990),(-900+j*60,y-5,5990)],5,True)
+ return m
+
+def harbor_distance():
+ m=Model()
+ # Warehouse silhouettes, dock cranes and a small moored cargo boat.
+ for x,h,w in [(-580,120,150),(-390,75,170),(400,110,170),(590,140,130)]:
+  m.cube(x,-45+h/2,4300,w,h,90,12)
+  m.cube(x,h-43,4300,w+14,12,110,2)
+ for x in [-360,480]:
+  m.cube(x,95,4200,12,220,12,8);m.cube(x-65,200,4200,160,10,12,8)
+  m.cube(x-120,145,4200,3,110,3,2)
+ m.cube(-70,-28,4600,210,35,100,2);m.cube(-20,10,4600,75,45,70,14)
+ m.cube(-20,40,4600,45,12,60,3)
+ return m
+
+def harbor_quay():
+ m=Model()
+ m.cube(0,-175,3200,1600,70,1800,12)
+ m.cube(0,-140,3890,1600,8,30,13)
+ for x in [-400,-210,230,410]:
+  m.cube(x,-123,3750,24,28,24,2)
+ for x in [-480,480]:
+  m.cube(x,-12,3500,8,260,8,2);m.cube(x,122,3500,38,16,18,9)
  return m

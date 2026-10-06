@@ -2,9 +2,9 @@ from pathlib import Path
 import math,struct,subprocess,json,hashlib,os,shutil
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont,ImageFilter
-from models import Model,cat,rabbit,rocket
+from models import Model,cat,rabbit,rocket,harbor_backdrop,harbor_distance,harbor_quay
 from mesh import words
-P=Path(__file__).resolve().parent;O=P/'out';O.mkdir(exist_ok=True);N=600
+P=Path(__file__).resolve().parent;O=P/'out';O.mkdir(exist_ok=True);N=900
 found=shutil.which('sdasz80') or shutil.which('sdasz80.exe')
 T=Path(os.environ['SDCC_BIN']) if 'SDCC_BIN' in os.environ else Path(found).parent if found else None
 if T is None:raise SystemExit('Set SDCC_BIN to the SDCC bin directory.')
@@ -97,12 +97,15 @@ for who,bank0 in [('cat',16),('rabbit',20)]:
    if y<13 and z<15:m.v[i]=(x,y+max(0,math.sin(k*math.pi/2+(0 if x<0 else math.pi)))*9,z+math.sin(k*math.pi/2+(0 if x<0 else math.pi))*12)
   for i,uv in getattr(m,'uv',{}).items():m.uv[i]=[v+128 if n%2 else v for n,v in enumerate(uv)]
   save(bank0+k,m)
+save(12,harbor_backdrop());save(13,harbor_distance());save(14,harbor_quay())
 save(15,rocket())
+save(10,rocket(.85));save(11,rocket(1.05))
 # Conservative offline visibility pruning: no visible face or UV is modified.
-variant_cache={};free_banks=[10,11,12,13,14]+list(range(28,40))+list(range(50,64));pool_index=0;pool_offset=0
+variant_cache={};free_banks=[12,13,14]+list(range(28,40))+list(range(55,64))+[1,2,3,8,9]+list(range(16,24));pool_index=0;pool_offset=0
 def compact(bank,mat,pos):
  global pool_index,pool_offset
  if bank==255:return 255,0x4000
+ if bank in (10,11,15):return bank,0x4000
  model=source_models[bank];v=np.asarray(model.v)@mat.T+np.asarray(pos);keep=[]
  for i,(ids,n,c) in enumerate(model.f):
   pts=v[ids]
@@ -147,7 +150,7 @@ for output_frame in range(N):
   cpos[1]+=math.sin(u*math.pi)*45;rpos[1]+=math.sin(u*math.pi)*55
  if f>=820:
   u=ease((f-820)/180);sp=mix([1220,ground(1220,3450)+62,3450],[0,1000,28000],u);shipmat=ry(math.pi/2*ease(u*3))@rz(-.20*math.sin(u*math.pi));cpos=sp+shipmat@np.array([-40,18,0]);rpos=sp+shipmat@np.array([35,18,0]);charscale=.65
- poses.extend([(15,view@shipmat,view@(sp-[0,cam,0])),(cbank,view@(shipmat if f>=820 else ry(cr))*charscale,view@(cpos-[0,cam,0])),(rbank,view@(shipmat if f>=820 else ry(cr))*charscale,view@(rpos-[0,cam,0]))])
+ poses.extend([((10+int(f//5)%2) if f>=820 else 15,view@shipmat,view@(sp-[0,cam,0])),(cbank,view@(shipmat if f>=820 else ry(cr))*charscale,view@(cpos-[0,cam,0])),(rbank,view@(shipmat if f>=820 else ry(cr))*charscale,view@(rpos-[0,cam,0]))])
  if f>=820:
   follow=ease((f-820)/180)
   camera_delta=view@np.array([0,765*follow,20000*follow])
@@ -165,6 +168,22 @@ for output_frame in range(N):
  # Opening camera advances toward the ridge; later choreography is unchanged.
  advance=1200*(1-ease(f/250))
  poses=[(bank,mat,pos+view@np.array([0,0,advance])) for bank,mat,pos in poses]
+ if output_frame>=600:
+  t=output_frame-600;pan=0
+  u=ease(t/75);ship=np.array([0.,100+420*(1-u),3000.])
+  # Dock surface is y=-140. Hull underside settles on it.
+  ship[1]=-104+420*(1-u)
+  powered=t<65 or t>=205
+  shiprot=np.eye(3)
+  if t>=205:
+   launch=ease((t-205)/65);ship+=np.array([-900*launch,900*launch,500*launch]);shiprot=rz(-.5*launch)
+  pets=[]
+  for bank,x,start,endx in [(16,-40,85,-105),(20,35,115,105)]:
+   jump=ease((t-start)/45)
+   origin=np.array([x,-86.,3000.]) if t>=75 else ship+np.array([x,18.,0.])
+   pos=mix(origin,[endx,-140,2700],jump);pos[1]+=math.sin(jump*math.pi)*100
+   pets.append((bank,np.eye(3)*(.65+.35*jump),pos))
+  poses=[(12,np.eye(3),np.zeros(3)),(13,np.eye(3),np.zeros(3)),(14,np.eye(3),np.zeros(3)),(255,np.eye(3),np.zeros(3)),(255,np.eye(3),np.zeros(3)),((10+int(t//5)%2) if powered else 15,shiprot,ship),*pets]
  addresses=[];newposes=[]
  for bank,mat,pos in poses:
   resource,address=compact(bank,mat,pos);addresses.append(address);newposes.append((resource,mat,pos))
@@ -184,6 +203,3 @@ for line in (O/'player.ihx').read_text().splitlines():
   banks[0][a-0x4000:a-0x4000+n]=r[4:4+n]
 rom=b''.join(banks);assert len(rom)==1048576;(O/'EARTHRISE-HOME.ROM').write_bytes(rom)
 report={'frames':N,'rom_bytes':len(rom),'sha256':hashlib.sha256(rom).hexdigest(),'models':stats,'mode':'SCREEN8 EPAL 256 colors'};(O/'build.json').write_text(json.dumps(report,indent=2));(O/'motion.json').write_text(json.dumps(motion));print(report)
-
-
-

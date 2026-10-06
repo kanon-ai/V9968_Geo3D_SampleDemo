@@ -3,13 +3,13 @@
 > My commute felt like 380,000 km today.
 > 通勤が38万キロくらいに感じた。
 
-A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their rocket, board it and leave for Earth; the final camera follows them toward Earth. A silent, automatic **TurboR + V9968 + Geo3D** animation in **SCREEN 8 / EPAL 256 colours**.
+A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their rocket, board it and leave for Earth; the camera follows them toward Earth. At an unnamed harbor, they hop onto the quay and their empty rocket flies away. A silent, automatic **TurboR + V9968 + Geo3D** animation in **SCREEN 8 / EPAL 256 colours**.
 
-美しい地球の出を眺めていたら、猫とうさぎが帰宅するだけのデモでした。月面を歩いてロケットへ乗り込み、最後は地球へ向かいます。無音・操作不要・自動ループです。
+美しい地球の出を眺めていたら、猫とうさぎが帰宅するだけのデモでした。月面を歩いてロケットへ乗り込み、地球へ帰還し、どこかの港で二匹がぴょんと降りると、ロケットだけが空へ飛び立ちます。無音・操作不要・自動ループです。
 
 ## Download and run / 実行方法
 
-[ROM, MP4 and GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.1)
+[ROM, MP4 and GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.2)
 
 - ROM: **1,048,576 bytes (1 MiB), ASCII16 mapper**.
 - Use a V9968 + Geo3D capable openMSX build and its matching machine/extension definitions. A stock openMSX installation is insufficient. TurboR/R800 is the tested CPU configuration.
@@ -17,6 +17,14 @@ A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their
 - Machine names vary by distribution. BIOS, emulator, machine definitions and FPGA bitstreams are not bundled.
 
 V9968とGeo3Dの両方に対応したエミュレータ・機種設定を使用し、ASCII16でROMを挿入してください。通常版openMSXだけでは実行できません。検証はTurboR/R800構成です。
+
+## v0.1.2 — Home at last / 港へ帰宅
+
+Adds a rear engine nozzle and pulsing exhaust, followed by a harbor epilogue: landing, separate cat/rabbit hops onto the quay, then the uncrewed rocket leaves. No location names or signs. The scene uses original polygon geometry for warehouses, cranes, a moored boat and the quay. No new external assets.
+
+**Current-release verification:** 900-frame playback and restart checked in dedicated openMSX and BlueMSX+ Geo3D experimental-2, both TurboR/R800. Approximately 43-second silent MP4, original emulated playback timing; GIF 15 fps, under 15 MB. 1 MiB / ASCII16. The previous Z80 optimization is retained, but the new harbor scene has not been retested on Z80. Physical hardware remains unverified. [Validation](../../docs/validation/lunar-commute-harbor.json).
+
+後部エンジンと噴射炎、港での着陸・降船・無人出発を追加しました。両エミュレータのTurboR/R800で900フレームとループ再開を確認。約43秒・無音・速度加工なし、GIFは15MB以下。Z80最適化は維持していますが、追加した港のZ80再検証は未実施、実機も未検証です。
 
 ## v0.1.1 — Z80 optimization / Z80最適化
 
@@ -28,15 +36,15 @@ BlueMSX+ experimental-2 also passed full-route and loop checks for the optimized
 
 見えない裏面の転送をROM生成時に省くことでZ80で約9.9%改善。形状・テクスチャ・見えるディテール・演出内容を維持し、両CPUで各602枚の描画ページ一致を確認しました。BlueMSX+でもR800・Z80固定の進行とループを確認。実機未検証で、遅いCPUでは演出の実時間も長くなります。
 
-## Technology and verification / 技術と検証
+## Technology and earlier verification / 技術と旧版の検証
 
 Geo3D renders textured polygons for Earth, lunar terrain, characters and rocket in real time. V9968 copies the star background and switches display pages. Camera/model matrices and animation are precomputed ROM data, not prerecorded video. Earth lighting is baked into its texture. Conservative off-screen polygon removal reduces transfers. The final zoom is a camera approach, not a change to the video playback rate.
 
 Validated on 2026-10-06 with the author's dedicated integrated openMSX evaluation build (including the previously used concert collision patch, which this demo does not use). Executable SHA256: `7ea5b46eefa1d5333d20497db46da50ffc89437301e5a0131dfb3097f5097b5f`.
 
-A complete 600-frame cycle and restart were captured. Representative frames include Earthrise, walking, boarding and departure. Exported MP4 is approximately 28 seconds, silent, with no speed-up or interpolated frames; GIF reduces temporal resolution to 15 fps. **Physical hardware remains unverified. Z80 evaluation uses a TurboR profile forced to Z80; native MSX2/2+ hardware is untested.** Emulator timing is not a hardware benchmark or a compatibility guarantee for other builds.
+For v0.1.0/v0.1.1, a complete 600-frame cycle and restart were captured. Representative frames include Earthrise, walking, boarding and departure. Exported MP4 is approximately 28 seconds, silent, with no speed-up or interpolated frames; GIF reduces temporal resolution to 15 fps. **Physical hardware remains unverified. Z80 evaluation uses a TurboR profile forced to Z80; native MSX2/2+ hardware is untested.** Emulator timing is not a hardware benchmark or a compatibility guarantee for other builds.
 
-600フレームの全編とループ再開を専用openMSXで確認。MP4は約28秒、速度加工・フレーム補間なしです。GIFは15fpsに間引いています。実機は未検証です。Z80評価はTurboRプロファイルをZ80固定にしたもので、MSX2/2+実機の検証ではありません。
+v0.1.0/v0.1.1では600フレームの全編とループ再開を専用openMSXで確認。MP4は約28秒、速度加工・フレーム補間なしです。GIFは15fpsに間引いています。実機は未検証です。Z80評価はTurboRプロファイルをZ80固定にしたもので、MSX2/2+実機の検証ではありません。
 
 ### BlueMSX Plus follow-up / 追加検証
 

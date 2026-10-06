@@ -1,0 +1,14 @@
+{
+  "version": "0.1.2",
+  "rom_bytes": 1048576,
+  "rom_sha256": "c4a76c945557d72f9e8b9da58fe8c1bd013a37274f65d8b6a21b4ac9f8245c97",
+  "openmsx": "dedicated integrated build, TurboR/R800, full 900-frame cycle plus restart",
+  "bluemsx": "V9968-geo3d-experimental-2, 2090cd2 x64, TurboR/R800, ASCII16, speed100/vdpspeed100",
+  "blue_route_min": 0,
+  "blue_route_max": 899,
+  "blue_loop_wraps": 1,
+  "new_scene": "anonymous harbor landing, separate cat/rabbit hops, uncrewed rocket departure",
+  "hardware_verified": false,
+  "z80_retested_for_harbor": false,
+  "gif_bytes": 9275133
+}

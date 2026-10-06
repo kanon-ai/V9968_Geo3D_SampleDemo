@@ -272,7 +272,7 @@ no_extra_hold:
  ld hl,(FRAME)
  inc hl
  push hl
- ld de,#600
+ ld de,#900
  or a
  sbc hl,de
  pop hl
