@@ -9,7 +9,7 @@ A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their
 
 ## Download and run / 実行方法
 
-[ROM, MP4 and GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.0)
+[ROM, MP4 and GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.1)
 
 - ROM: **1,048,576 bytes (1 MiB), ASCII16 mapper**.
 - Use a V9968 + Geo3D capable openMSX build and its matching machine/extension definitions. A stock openMSX installation is insufficient. TurboR/R800 is the tested CPU configuration.
@@ -18,19 +18,29 @@ A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their
 
 V9968とGeo3Dの両方に対応したエミュレータ・機種設定を使用し、ASCII16でROMを挿入してください。通常版openMSXだけでは実行できません。検証はTurboR/R800構成です。
 
+## v0.1.1 — Z80 optimization / Z80最適化
+
+Invisible back-facing polygons are conservatively removed when building each animation frame, reducing CPU-to-Geo3D transfers. Geometry, textures, visible detail and choreography are preserved; existing Z80 unrolled transfers remain in use. No video speed-up.
+
+Dedicated openMSX measurements: **Z80 12.21 → 13.42 fps (+9.9%)**, **R800 21.39 → 21.91 fps (+2.4%)**. All **602 display-page samples per CPU** match v0.1.0 byte-for-byte. Public-source rebuild matches the release ROM. [Measurements](../../docs/validation/lunar-commute-z80.json).
+
+BlueMSX+ experimental-2 also passed full-route and loop checks for the optimized ROM in R800 and forced-Z80 configurations. This is functional validation, not a claim of pixel-exact agreement between emulators or physical hardware speed. Slower CPUs still play the frame-driven animation more slowly.
+
+見えない裏面の転送をROM生成時に省くことでZ80で約9.9%改善。形状・テクスチャ・見えるディテール・演出内容を維持し、両CPUで各602枚の描画ページ一致を確認しました。BlueMSX+でもR800・Z80固定の進行とループを確認。実機未検証で、遅いCPUでは演出の実時間も長くなります。
+
 ## Technology and verification / 技術と検証
 
 Geo3D renders textured polygons for Earth, lunar terrain, characters and rocket in real time. V9968 copies the star background and switches display pages. Camera/model matrices and animation are precomputed ROM data, not prerecorded video. Earth lighting is baked into its texture. Conservative off-screen polygon removal reduces transfers. The final zoom is a camera approach, not a change to the video playback rate.
 
 Validated on 2026-10-06 with the author's dedicated integrated openMSX evaluation build (including the previously used concert collision patch, which this demo does not use). Executable SHA256: `7ea5b46eefa1d5333d20497db46da50ffc89437301e5a0131dfb3097f5097b5f`.
 
-A complete 600-frame cycle and restart were captured. Representative frames include Earthrise, walking, boarding and departure. Exported MP4 is approximately 28 seconds, silent, with no speed-up or interpolated frames; GIF reduces temporal resolution to 15 fps. **Physical hardware and Z80 operation have not been verified for this release.** Emulator timing is not a hardware benchmark or a compatibility guarantee for other builds.
+A complete 600-frame cycle and restart were captured. Representative frames include Earthrise, walking, boarding and departure. Exported MP4 is approximately 28 seconds, silent, with no speed-up or interpolated frames; GIF reduces temporal resolution to 15 fps. **Physical hardware remains unverified. Z80 evaluation uses a TurboR profile forced to Z80; native MSX2/2+ hardware is untested.** Emulator timing is not a hardware benchmark or a compatibility guarantee for other builds.
 
-600フレームの全編とループ再開を専用openMSXで確認。MP4は約28秒、速度加工・フレーム補間なしです。GIFは15fpsに間引いています。本版の実機・Z80での動作は未検証です。
+600フレームの全編とループ再開を専用openMSXで確認。MP4は約28秒、速度加工・フレーム補間なしです。GIFは15fpsに間引いています。実機は未検証です。Z80評価はTurboRプロファイルをZ80固定にしたもので、MSX2/2+実機の検証ではありません。
 
 ### BlueMSX Plus follow-up / 追加検証
 
-The same public ROM also passed a run in **BlueMSX+ V9968-geo3d-experimental-2 (2090cd2, x64)**, with V9968/256kB VRAM, TurboR/R800, explicit ASCII16, CPU speed 100 and VDP command speed 100. Read-only frame-counter sampling covered the full 0–599 route and loop restarts. Representative visual checks showed Earth/terrain, walking characters and the final Earth/rocket close-up. No ROM change was needed. This is not a pixel-exact cross-emulator comparison or a hardware timing claim. [Validation record](../../docs/validation/lunar-commute-bluemsx.json).
+The same public ROM also passed a run in **BlueMSX+ V9968-geo3d-experimental-2 (2090cd2, x64)**, with V9968/256kB VRAM, TurboR/R800, explicit ASCII16, CPU speed 100 and VDP command speed 100. Read-only frame-counter sampling covered the full 0–599 route and loop restarts. Representative visual checks showed Earth/terrain, walking characters and the final Earth/rocket close-up. No ROM change was needed for v0.1.0. This is not a pixel-exact cross-emulator comparison or a hardware timing claim. [Validation record](../../docs/validation/lunar-commute-bluemsx.json).
 
 同一公開ROMをBlueMSX+のGeo3D実験版でも追加検証しました。ASCII16を明示し、全600フレームの進行・ループ再開と代表場面の描画を確認。ROM修正は不要でした。画素単位の完全一致試験や実機の速度保証ではありません。
 

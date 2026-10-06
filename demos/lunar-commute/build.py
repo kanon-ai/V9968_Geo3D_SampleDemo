@@ -99,16 +99,17 @@ for who,bank0 in [('cat',16),('rabbit',20)]:
   save(bank0+k,m)
 save(15,rocket())
 # Conservative offline visibility pruning: no visible face or UV is modified.
-variant_cache={};free_banks=[10,11,12,13,14]+list(range(28,40))+list(range(60,64));pool_index=0;pool_offset=0
+variant_cache={};free_banks=[10,11,12,13,14]+list(range(28,40))+list(range(50,64));pool_index=0;pool_offset=0
 def compact(bank,mat,pos):
  global pool_index,pool_offset
  if bank==255:return 255,0x4000
- if bank not in [1,2,3,8,9]:return bank,0x4000
  model=source_models[bank];v=np.asarray(model.v)@mat.T+np.asarray(pos);keep=[]
  for i,(ids,n,c) in enumerate(model.f):
   pts=v[ids]
   if np.any(pts[:,2]<=4):keep.append(i);continue
   xx=128+1400*pts[:,0]/pts[:,2];yy=106-1400*pts[:,1]/pts[:,2]
+  area=(xx[1]-xx[0])*(yy[2]-yy[0])-(yy[1]-yy[0])*(xx[2]-xx[0])
+  if area < -32:continue
   if xx.max()<-16 or xx.min()>272 or yy.max()<-16 or yy.min()>228:continue
   keep.append(i)
  if not keep:return 255,0x4000
@@ -121,7 +122,7 @@ def compact(bank,mat,pos):
    if old not in remap:remap[old]=len(m.v);m.v.append(model.v[old])
    new.append(remap[old])
   m.f.append((new,n,c))
-  if i in model.uv:m.uv[len(m.f)-1]=model.uv[i]
+  if i in getattr(model,"uv",{}):m.uv[len(m.f)-1]=model.uv[i]
  raw=m.pack()[0];size=6+len(m.v)*6+len(m.f)*19;size=(size+15)//16*16
  if pool_offset+size>16384:pool_index+=1;pool_offset=0
  assert pool_index<len(free_banks), 'visibility variants exceed ROM pool'
@@ -183,5 +184,6 @@ for line in (O/'player.ihx').read_text().splitlines():
   banks[0][a-0x4000:a-0x4000+n]=r[4:4+n]
 rom=b''.join(banks);assert len(rom)==1048576;(O/'EARTHRISE-HOME.ROM').write_bytes(rom)
 report={'frames':N,'rom_bytes':len(rom),'sha256':hashlib.sha256(rom).hexdigest(),'models':stats,'mode':'SCREEN8 EPAL 256 colors'};(O/'build.json').write_text(json.dumps(report,indent=2));(O/'motion.json').write_text(json.dumps(motion));print(report)
+
 
 

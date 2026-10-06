@@ -1,0 +1,36 @@
+{
+  "z80": {
+    "fps": {
+      "old": 12.208064376622422,
+      "new": 13.417903592821272
+    },
+    "gain_percent": 9.910164124917342,
+    "pages_compared": 602,
+    "mismatches": 0
+  },
+  "r800": {
+    "fps": {
+      "old": 21.385329699511686,
+      "new": 21.90651009542047
+    },
+    "gain_percent": 2.4370931064985335,
+    "pages_compared": 602,
+    "mismatches": 0
+  },
+  "scope": "Dedicated openMSX; Z80 test uses TurboR with CPU selection forced to Z80. No physical hardware timing claim.",
+  "rom_sha256": "fc170d5a314848b3e561f765330cfdac4c56cfb8d3c387e564024169084e0523",
+  "bluemsx_optimized_functional_validation": {
+    "z80": {
+      "samples": 881,
+      "route_min": 0,
+      "route_max": 599,
+      "wraps": 2
+    },
+    "r800": {
+      "samples": 835,
+      "route_min": 0,
+      "route_max": 599,
+      "wraps": 1
+    }
+  }
+}
