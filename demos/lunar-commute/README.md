@@ -3,9 +3,9 @@
 > My commute felt like 380,000 km today.
 > 通勤が38万キロくらいに感じた。
 
-A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their rocket, board it and leave for Earth; the final camera follows them toward Spain. A silent, automatic **TurboR + V9968 + Geo3D** animation in **SCREEN 8 / EPAL 256 colours**.
+A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their rocket, board it and leave for Earth; the final camera follows them toward Earth. A silent, automatic **TurboR + V9968 + Geo3D** animation in **SCREEN 8 / EPAL 256 colours**.
 
-美しい地球の出を眺めていたら、猫とうさぎが帰宅するだけのデモでした。月面を歩いてロケットへ乗り込み、最後はスペイン付近を正面にした地球へ向かいます。無音・操作不要・自動ループです。
+美しい地球の出を眺めていたら、猫とうさぎが帰宅するだけのデモでした。月面を歩いてロケットへ乗り込み、最後は地球へ向かいます。無音・操作不要・自動ループです。
 
 ## Download and run / 実行方法
 
@@ -30,7 +30,7 @@ A complete 600-frame cycle and restart were captured. Representative frames incl
 
 ## Artistic astronomy / 天文表現について
 
-This is a visual joke, not an ephemeris or flight simulator. Earth remains fixed in scene space; the reveal uses camera movement and an animated lunar horizon. For a stationary observer on the near side of the real Moon, Earth does not rise daily like the Sun. Lunar geometry, stellar brightness, distances, scale and travel time are staged for readability. Spain (approximately 40 N, 4 W) is oriented toward the final camera; the texture is not mirrored.
+This is a visual joke, not an ephemeris or flight simulator. Earth remains fixed in scene space; the reveal uses camera movement and an animated lunar horizon. For a stationary observer on the near side of the real Moon, Earth does not rise daily like the Sun. Lunar geometry, stellar brightness, distances, scale and travel time are staged for readability. The Earth texture is not mirrored.
 
 天体暦や実際の帰還軌道を再現したものではありません。地球はシーン内で固定し、視点と月面の傾きで出現を演出しています。実際の月の表側では、静止した観測者に地球が毎日昇るわけではありません。月面形状・星空の明るさ・距離・縮尺・所要時間は演出です。
 
