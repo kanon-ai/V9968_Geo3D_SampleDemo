@@ -63,3 +63,7 @@ Original cube/plane geometry, grid texture, parameter tables and Z80 demo code, 
 ## PAWS & BEATS (2026-10-05)
 
 Original procedural models/instruments/animation and OPLL arrangement, with reused AI-generated cat/rabbit face atlas; see demos/paws-beats/assets/PROVENANCE.md. Traditional Ah! vous dirai-je, maman melody; public-domain score reference https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2236 . No existing recording or lyrics. Geo3D/V9968 upstream notices above remain applicable. The author's test-only emulator collision patch informed validation but is not redistributed here. Windows Consolas rasterizes captions in the verified build; no font files are included. Tools, BIOS and emulator binaries are excluded.
+
+## LUNAR COMMUTE (2026-10-06)
+
+Original code, animation and AI-generated lunar/sky/character assets follow the repository terms to the extent rights are held. NASA Blue Marble imagery is separately governed by NASA media guidelines, not MIT; credit NASA / Reto Stockli (NASA GSFC). See [asset provenance](demos/lunar-commute/assets/PROVENANCE.md). Geo3D and V9968 notices above remain applicable. No audio, BIOS, emulator binaries or tool executables are bundled.
