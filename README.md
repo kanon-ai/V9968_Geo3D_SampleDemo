@@ -4,14 +4,16 @@
 
 **My commute felt like 380,000 km today. / 通勤が38万キロくらいに感じた。**
 
-A beautiful Earthrise becomes a cat and rabbit's trip home by rocket. Real-time textured Geo3D animation with V9968 SCREEN 8 / EPAL 256 colours, silent and automatic. 1 MiB / ASCII16. Dedicated TurboR/R800 openMSX evaluation only; hardware, BlueMSX+ and Z80 unverified.
+A beautiful Earthrise becomes a cat and rabbit's trip home by rocket. Real-time textured Geo3D animation with V9968 SCREEN 8 / EPAL 256 colours, silent and automatic. 1 MiB / ASCII16. Tested in dedicated openMSX and BlueMSX+ Geo3D experimental builds with TurboR/R800; hardware and Z80 unverified.
 
-地球の出から、猫とうさぎがロケットで帰宅する無音デモ。最後は地球へ接近します。専用openMSXで検証、実機・BlueMSX+・Z80は未検証です。
+地球の出から、猫とうさぎがロケットで帰宅する無音デモ。最後は地球へ接近します。専用openMSXとBlueMSX+のGeo3D実験版で検証、実機・Z80は未検証です。
 
 [ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.0) · [Usage, technology, licenses & disclaimer / 使い方・技術・ライセンス・免責](demos/lunar-commute/README.md)
 
 ![LUNAR COMMUTE](docs/media/lunar-commute.gif)
 
+
+**Future validation / 今後の検証：** Future demo releases and revisions will be checked in both Geo3D-capable openMSX and BlueMSX+ builds, with exact versions and any limitations recorded per demo. This policy does not retroactively certify older releases. / 今後のデモ公開・更新は両エミュレータで確認し、版と制限を各デモに記載します。過去の全公開版を両方で検証済みとするものではありません。
 
 ## PAWS & BEATS — A Magical Concert of Twinkling Stars / 星がきらめく魔法の演奏会
 

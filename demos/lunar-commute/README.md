@@ -24,9 +24,15 @@ Geo3D renders textured polygons for Earth, lunar terrain, characters and rocket 
 
 Validated on 2026-10-06 with the author's dedicated integrated openMSX evaluation build (including the previously used concert collision patch, which this demo does not use). Executable SHA256: `7ea5b46eefa1d5333d20497db46da50ffc89437301e5a0131dfb3097f5097b5f`.
 
-A complete 600-frame cycle and restart were captured. Representative frames include Earthrise, walking, boarding and departure. Exported MP4 is approximately 28 seconds, silent, with no speed-up or interpolated frames; GIF reduces temporal resolution to 15 fps. **Physical hardware, BlueMSX Plus and Z80 operation have not been verified for this release.** Emulator timing is not a hardware benchmark or a compatibility guarantee for other builds.
+A complete 600-frame cycle and restart were captured. Representative frames include Earthrise, walking, boarding and departure. Exported MP4 is approximately 28 seconds, silent, with no speed-up or interpolated frames; GIF reduces temporal resolution to 15 fps. **Physical hardware and Z80 operation have not been verified for this release.** Emulator timing is not a hardware benchmark or a compatibility guarantee for other builds.
 
-600フレームの全編とループ再開を専用openMSXで確認。MP4は約28秒、速度加工・フレーム補間なしです。GIFは15fpsに間引いています。本版の実機・BlueMSX Plus・Z80での動作は未検証です。
+600フレームの全編とループ再開を専用openMSXで確認。MP4は約28秒、速度加工・フレーム補間なしです。GIFは15fpsに間引いています。本版の実機・Z80での動作は未検証です。
+
+### BlueMSX Plus follow-up / 追加検証
+
+The same public ROM also passed a run in **BlueMSX+ V9968-geo3d-experimental-2 (2090cd2, x64)**, with V9968/256kB VRAM, TurboR/R800, explicit ASCII16, CPU speed 100 and VDP command speed 100. Read-only frame-counter sampling covered the full 0–599 route and loop restarts. Representative visual checks showed Earth/terrain, walking characters and the final Earth/rocket close-up. No ROM change was needed. This is not a pixel-exact cross-emulator comparison or a hardware timing claim. [Validation record](../../docs/validation/lunar-commute-bluemsx.json).
+
+同一公開ROMをBlueMSX+のGeo3D実験版でも追加検証しました。ASCII16を明示し、全600フレームの進行・ループ再開と代表場面の描画を確認。ROM修正は不要でした。画素単位の完全一致試験や実機の速度保証ではありません。
 
 ## Artistic astronomy / 天文表現について
 

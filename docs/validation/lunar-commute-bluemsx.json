@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-06",
+  "blue_release": "V9968-geo3d-experimental-2",
+  "blue_commit": "2090cd265928e5290b7939d7447cf76184dd6d07",
+  "exe_sha256": "4e073055a47679ab3925fe9d75f5c3025917efc09e38d637e19e2f72ba41d774",
+  "rom_sha256": "94aba7d1a6f4aecf69ed0399dbebd35d208e20e41ba922e5456f260434f447a7",
+  "machine": "MSXturboR - C-BIOS FDD, V9968 256kB VRAM",
+  "mapper": "ASCII16 explicitly selected",
+  "speed": 100,
+  "vdp_speed": 100,
+  "observed_distinct_frame_samples": 793,
+  "observed_route_min": 0,
+  "observed_route_max": 599,
+  "observed_loop_wraps": 2,
+  "elapsed_wall_seconds": 44.969964699999764,
+  "frame_counter_advance": 792,
+  "visual_observations": [
+    "Earth and lunar surface with stars",
+    "cat and rabbit walking",
+    "rocket and final Earth close-up"
+  ],
+  "pixel_equivalence_tested": false,
+  "hardware_verified": false,
+  "rom_modified": false
+}
