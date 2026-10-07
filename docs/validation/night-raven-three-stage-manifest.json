@@ -1,0 +1,33 @@
+{
+  "aircraft_types": [
+    "NIGHT RAVEN",
+    "interceptor",
+    "orbital drone",
+    "heavy lancer"
+  ],
+  "model_vertices": [
+    90,
+    36,
+    48,
+    60,
+    12,
+    8,
+    90
+  ],
+  "model_faces": [
+    71,
+    32,
+    40,
+    48,
+    12,
+    8,
+    71
+  ],
+  "frame_count": 1536,
+  "rom_bytes": 1048576,
+  "resident_vertices": 248,
+  "geometry_streaming": "resident vertex pool; face list on type change, six object slots",
+  "gameplay": "runtime input, combat, collision, locks, missiles, shield, progression, boss and retry",
+  "demo_combat_records_used": false,
+  "sha256": "842ce75de1dbfd3aabe6cfefca49ce406a301c342d544a10132802a6a2f7a4dd"
+}

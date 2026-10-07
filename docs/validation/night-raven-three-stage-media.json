@@ -1,0 +1,17 @@
+{
+  "audio": "original provisional OPLL BGM and PSG noise effects",
+  "capture": "keyboard-only automatic test in developer openMSX",
+  "pcm_samples": 2722841,
+  "pcm_peak": 4135,
+  "pcm_rms": 840.116117915802,
+  "files": {
+    "NIGHT-RAVEN-16-Refined.mp4": {
+      "bytes": 10749571,
+      "sha256": "0edd6e152bf1c108113334f186a02ed0bc60dce16598efcfa97fd718c836b7d6"
+    },
+    "night-raven-16-refined.gif": {
+      "bytes": 8936091,
+      "sha256": "7dc1a542910c5f54f97e20fd595ba8cdbcc1afa404d30a7cc1c6b4777ce11e34"
+    }
+  }
+}

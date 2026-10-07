@@ -108,6 +108,18 @@ A silent, automatic robot pursuit through a city: find the blue robot, then foll
 ![BULLRUSH](docs/media/bullrush.gif)
 
 
+## NIGHT RAVEN — 3面構成の開発体験版 / Three-stage development demo
+
+**音楽・効果音は暫定で、今後更新予定です。ステージ進行も最終版とは異なる可能性があります。完成ゲームではありません。**
+
+Playable three-sector preview. **Music and sound effects are provisional and planned for updates. Stage progression may differ from the final version.**
+
+今回の版はGeo3D開発者版openMSXで確認。BlueMSX+・実機は未検証。旧版とは別に公開します。
+
+[ROM / MP4 / GIF — v0.5.0 prerelease](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-three-stage-v0.5.0) · [操作・技術・検証・ライセンス・免責](docs/NIGHT_RAVEN_THREE_STAGE.md)
+
+![Three-stage development demo](docs/media/night-raven-three-stage.gif)
+
 ## NIGHT RAVEN — 操作できる開発体験デモ / Flight Development Demo
 
 **完成ゲームではなく、空間を飛行する感覚を少しだけ楽しめる開発体験版です。** 従来の無音・自動再生デモとは別に追加しました。

@@ -1,0 +1,13 @@
+time=16.95017662859386 stage=1 state=1 tick=95 kills=4 pause=0 shield=8 missiles=1 boss=0
+time=21.95047694609231 stage=1 state=1 tick=195 kills=12 pause=0 shield=8 missiles=2 boss=0
+time=26.95065113024141 stage=1 state=1 tick=295 kills=18 pause=0 shield=8 missiles=2 boss=0
+time=31.95079095248139 stage=1 state=1 tick=395 kills=24 pause=0 shield=8 missiles=3 boss=0
+time=36.950948793771275 stage=1 state=1 tick=478 kills=27 pause=0 shield=8 missiles=0 boss=1
+time=41.95117871126079 stage=2 state=4 tick=536 kills=31 pause=0 shield=8 missiles=0 boss=1
+time=46.95141952398978 stage=2 state=1 tick=97 kills=4 pause=0 shield=8 missiles=1 boss=0
+time=51.95156451448438 stage=2 state=1 tick=229 kills=15 pause=0 shield=8 missiles=2 boss=0
+time=56.95171467323361 stage=2 state=1 tick=369 kills=22 pause=0 shield=8 missiles=0 boss=1
+time=61.95192866691158 stage=3 state=1 tick=38 kills=0 pause=0 shield=8 missiles=1 boss=1
+time=66.95219546059624 stage=3 state=1 tick=188 kills=0 pause=0 shield=4 missiles=0 boss=1
+time=71.45239031776384 stage=3 state=2 tick=323 kills=0 pause=0 shield=0 missiles=0 boss=1
+END
