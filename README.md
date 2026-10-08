@@ -39,6 +39,12 @@ A cat on xylophone and a rabbit on drums play **Twinkle, Twinkle, Little Star** 
 **実行環境について（2026-10-04）：** 各デモで案内しているGeo3D対応エミュレータをご利用ください。最新版でもGeo3Dに対応していない場合があります。動作確認済みの環境や実機での検証状況は、各デモの説明をご確認ください。[互換性の詳細](docs/UPSTREAM_COMPATIBILITY_20261004.md)
 
 
+## BULLRUSH CROWD COCKPIT — 5機・両視点版
+
+追尾とコックピットを周回ごとに切り替える別の負荷実験版です。Cキーでも切替可能。**2 MiB / ASCII16**、無音・自動走行。従来版も維持しています。openMSXで表示確認、BlueMSX+は起動・描画進行の確認のみ。実機未検証。
+
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-cockpit-v0.1.0) · [操作・技術・検証範囲・免責](docs/BULLRUSH_CROWD_COCKPIT.md)
+
 ## Z80 optimization update / Z80最適化更新
 
 **Nine demos updated for Z80:** SKYBOUND, VECTOR RUSH, ORBITAL (both editions), OBSIDIAN, NIGHT RAVEN (both editions), BULLRUSH and BULLRUSH CROWD. Measured gains are approximately **8–33%** in developer openMSX with unchanged visuals. R800 retains its original bulk-transfer loop. **This update is unverified on physical hardware and BlueMSX+.** BASIC FUNCTIONS is unchanged because no speed improvement was measured; FOUR SEASONS v0.2.0 remains available below.

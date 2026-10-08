@@ -1,0 +1,129 @@
+{
+  "title": "BULLRUSH / Eastbank test district",
+  "units": "world units; +X east, +Z north",
+  "tile_size": 960,
+  "rows_south_to_north": [
+    [
+      "office",
+      "office",
+      "tower",
+      "office",
+      "retail",
+      "housing",
+      "service",
+      "office"
+    ],
+    [
+      "office",
+      "tower",
+      "office",
+      "retail",
+      "retail",
+      "housing",
+      "service",
+      "office"
+    ],
+    [
+      "office",
+      "housing",
+      "plaza",
+      "plaza",
+      "retail",
+      "retail",
+      "office",
+      "office"
+    ],
+    [
+      "office",
+      "office",
+      "civic",
+      "civic",
+      "office",
+      "office",
+      "housing",
+      "office"
+    ]
+  ],
+  "districts": {
+    "office": {
+      "height": 430,
+      "width": 280,
+      "wall": 4,
+      "glass": 11,
+      "roof": 3
+    },
+    "tower": {
+      "height": 700,
+      "width": 280,
+      "wall": 14,
+      "glass": 11,
+      "roof": 3
+    },
+    "retail": {
+      "height": 100,
+      "width": 180,
+      "wall": 5,
+      "glass": 11,
+      "roof": 7
+    },
+    "housing": {
+      "height": 260,
+      "width": 260,
+      "wall": 15,
+      "glass": 11,
+      "roof": 3
+    },
+    "service": {
+      "height": 140,
+      "width": 220,
+      "wall": 3,
+      "glass": 11,
+      "roof": 8
+    },
+    "plaza": {
+      "height": 0,
+      "width": 0,
+      "wall": 4,
+      "glass": 11,
+      "roof": 3
+    },
+    "civic": {
+      "height": 220,
+      "width": 300,
+      "wall": 5,
+      "glass": 11,
+      "roof": 4
+    },
+    "corner_office": {
+      "height": 430,
+      "width": 220,
+      "wall": 4,
+      "glass": 11,
+      "roof": 3
+    }
+  },
+  "materials": {
+    "wall": {
+      "texture": null,
+      "uv_basis": "wall-local metres; horizontal along facade, vertical +Y"
+    },
+    "glass": {
+      "texture": null,
+      "uv_basis": "window-panel local rectangle"
+    },
+    "roof": {
+      "texture": null,
+      "uv_basis": "local XZ plane"
+    },
+    "road": {
+      "texture": null,
+      "uv_basis": "world XZ plane"
+    },
+    "shop_sign": {
+      "texture": null,
+      "uv_basis": "facade-local sign rectangle"
+    }
+  },
+  "world_units_per_metre": 18,
+  "robot_reference_height_metres": 8
+}

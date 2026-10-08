@@ -1,0 +1,13 @@
+{
+  "emulator": "BlueMSX+ experimental-2",
+  "ROM_bytes": 2097152,
+  "mapper": "ASCII16",
+  "samples": 847,
+  "updates": 846,
+  "views": [
+    0,
+    1
+  ],
+  "check": "RAM draw counter and view states; no visual or pixel validation",
+  "hardware_verified": false
+}

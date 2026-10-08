@@ -1,0 +1,21 @@
+{
+  "seconds": 57.75770215062247,
+  "gif_seconds": 57.76,
+  "gif_dimensions": [
+    432,
+    351
+  ],
+  "silent": true,
+  "speed_adjustment": false,
+  "source": "dedicated Geo3D openMSX capture; physical hardware unverified",
+  "files": {
+    "BULLRUSH-crowd-cockpit.mp4": {
+      "bytes": 10220958,
+      "sha256": "b795efe66665b044efe773c1e81a4021f4c7f70129f09f0673c53a9d114ddcf8"
+    },
+    "BULLRUSH-crowd-cockpit-under15MB.gif": {
+      "bytes": 13388724,
+      "sha256": "6e7dd51d8b785f54801b184a4a66728d57918097065773e16ae88a172fff758d"
+    }
+  }
+}

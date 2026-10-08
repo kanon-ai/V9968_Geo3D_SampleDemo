@@ -39,3 +39,8 @@ The separate crowd load experiment in demos/bullrush-crowd reuses BULLRUSH code 
 ## FOUR SEASONS (2026-10-03)
 
 Original procedural foliage, texture and movement code under the repository MIT license. Reuses ORBITAL initialization, transfer and mesh helpers; Geo3D and V9968 MIT notices remain applicable. No external images, AI-generated artwork, music, BIOS, emulator, firmware, tool binaries or font files are included. Captions are rasterized.
+
+
+## BULLRUSH CROWD COCKPIT (2026-10-08)
+
+The separate dual-camera prototype reuses BULLRUSH original geometry and reference-free AI atlas. The existing MIT terms and Geo3D/V9968 notices apply; asset provenance is included. New code covers camera selection and wheel transfer reuse. No additional third-party assets, emulator, BIOS or font files are included.

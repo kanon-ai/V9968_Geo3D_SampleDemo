@@ -67,3 +67,7 @@ Original procedural models/instruments/animation and OPLL arrangement, with reus
 ## LUNAR COMMUTE (2026-10-06)
 
 Original code, animation and AI-generated lunar/sky/character assets follow the repository terms to the extent rights are held. NASA Blue Marble imagery is separately governed by NASA media guidelines, not MIT; credit NASA / Reto Stockli (NASA GSFC). See [asset provenance](demos/lunar-commute/assets/PROVENANCE.md). Geo3D and V9968 notices above remain applicable. No audio, BIOS, emulator binaries or tool executables are bundled.
+
+## BULLRUSH CROWD COCKPIT (2026-10-08)
+
+The separate dual-camera prototype reuses BULLRUSH original geometry and reference-free AI atlas. The existing MIT terms and Geo3D/V9968 notices apply; asset provenance is included. New code covers camera selection and wheel transfer reuse. No additional third-party assets, emulator, BIOS or font files are included.
