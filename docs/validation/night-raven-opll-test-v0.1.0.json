@@ -1,0 +1,22 @@
+{
+  "rom_sha256": "565fdd9de4bceb5cbd8f13d5a902704038d3814b75564a55be4e2190f233bc53",
+  "opll_writes": 9794,
+  "reference_sequence_matches": true,
+  "loop_seconds": [
+    30.09581161851576
+  ],
+  "identical_vram_pages": 512,
+  "first_to_last_frame_seconds": 25.383105394680047,
+  "silent_baseline_seconds": 24.74931883800874,
+  "hardware_verified": false,
+  "openmsx_exe_sha256": "ec39fbb8ec658e2358f0d824267eb9e5f2c8927e6a393c226428e58d560ae2f2",
+  "blueMSX": {
+    "release": "v3.1.1 experimental Geo3D 2090cd2",
+    "exe_sha256": "4e073055a47679ab3925fe9d75f5c3025917efc09e38d637e19e2f72ba41d774",
+    "method": "read-only RAM progress sampling; no audio waveform or pixel comparison",
+    "seconds": 37.935566400003154,
+    "samples": 549,
+    "simulation_ticks": 1644,
+    "music_loop_observed": true
+  }
+}

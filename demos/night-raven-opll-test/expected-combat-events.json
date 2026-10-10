@@ -1,0 +1,1491 @@
+[
+  {
+    "frame": 0,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 1,
+    "kind": 1
+  },
+  {
+    "frame": 0,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 2,
+    "kind": 2
+  },
+  {
+    "frame": 0,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 3,
+    "kind": 1
+  },
+  {
+    "frame": 7,
+    "event": "enemy_fire",
+    "enemy": 1,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 7,
+    "event": "enemy_fire",
+    "enemy": 2,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 20,
+    "event": "enemy_homing_launch",
+    "enemy": 2
+  },
+  {
+    "frame": 31,
+    "event": "enemy_fire",
+    "enemy": 2,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 40,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 44,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 55,
+    "event": "enemy_fire",
+    "enemy": 3,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 59,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 1
+  },
+  {
+    "frame": 59,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 4,
+    "kind": 3
+  },
+  {
+    "frame": 79,
+    "event": "enemy_fire",
+    "enemy": 3,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 79,
+    "event": "enemy_homing_launch",
+    "enemy": 4
+  },
+  {
+    "frame": 87,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 2
+  },
+  {
+    "frame": 87,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 5,
+    "kind": 1
+  },
+  {
+    "frame": 112,
+    "event": "player_fire",
+    "weapon": 1
+  },
+  {
+    "frame": 112,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 114,
+    "event": "enemy_fire",
+    "enemy": 4,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 119,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 121,
+    "event": "hit",
+    "enemy": 4,
+    "damage": 1,
+    "hp": 11
+  },
+  {
+    "frame": 121,
+    "event": "hit",
+    "enemy": 4,
+    "damage": 1,
+    "hp": 10
+  },
+  {
+    "frame": 124,
+    "event": "enemy_homing_launch",
+    "enemy": 4
+  },
+  {
+    "frame": 126,
+    "event": "player_fire",
+    "weapon": 1
+  },
+  {
+    "frame": 132,
+    "event": "hit",
+    "enemy": 4,
+    "damage": 1,
+    "hp": 9
+  },
+  {
+    "frame": 132,
+    "event": "hit",
+    "enemy": 4,
+    "damage": 1,
+    "hp": 8
+  },
+  {
+    "frame": 134,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 3
+  },
+  {
+    "frame": 134,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 6,
+    "kind": 2
+  },
+  {
+    "frame": 138,
+    "event": "enemy_fire",
+    "enemy": 4,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 140,
+    "event": "player_fire",
+    "weapon": 1
+  },
+  {
+    "frame": 142,
+    "event": "enemy_fire",
+    "enemy": 5,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 142,
+    "event": "hit",
+    "enemy": 4,
+    "damage": 1,
+    "hp": 7
+  },
+  {
+    "frame": 143,
+    "event": "shield_guard",
+    "shield": 5
+  },
+  {
+    "frame": 143,
+    "event": "hit",
+    "enemy": 4,
+    "damage": 1,
+    "hp": 6
+  },
+  {
+    "frame": 154,
+    "event": "enemy_homing_launch",
+    "enemy": 6
+  },
+  {
+    "frame": 154,
+    "event": "player_fire",
+    "weapon": 1
+  },
+  {
+    "frame": 165,
+    "event": "hit",
+    "enemy": 5,
+    "damage": 1,
+    "hp": 2
+  },
+  {
+    "frame": 165,
+    "event": "hit",
+    "enemy": 5,
+    "damage": 1,
+    "hp": 1
+  },
+  {
+    "frame": 166,
+    "event": "enemy_fire",
+    "enemy": 5,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 168,
+    "event": "player_fire",
+    "weapon": 1
+  },
+  {
+    "frame": 172,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 4
+  },
+  {
+    "frame": 172,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 7,
+    "kind": 1
+  },
+  {
+    "frame": 176,
+    "event": "hit",
+    "enemy": 5,
+    "damage": 1,
+    "hp": 0
+  },
+  {
+    "frame": 176,
+    "event": "destroyed",
+    "enemy": 5,
+    "score": 1000
+  },
+  {
+    "frame": 176,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 8,
+    "kind": 3
+  },
+  {
+    "frame": 189,
+    "event": "enemy_fire",
+    "enemy": 6,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 193,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 199,
+    "event": "enemy_homing_launch",
+    "enemy": 6
+  },
+  {
+    "frame": 213,
+    "event": "enemy_fire",
+    "enemy": 6,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 217,
+    "event": "shield_guard",
+    "shield": 5
+  },
+  {
+    "frame": 227,
+    "event": "enemy_fire",
+    "enemy": 7,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 231,
+    "event": "enemy_fire",
+    "enemy": 8,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 239,
+    "event": "pickup",
+    "weapon": 2
+  },
+  {
+    "frame": 241,
+    "event": "enemy_homing_launch",
+    "enemy": 8
+  },
+  {
+    "frame": 251,
+    "event": "enemy_fire",
+    "enemy": 7,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 253,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 6
+  },
+  {
+    "frame": 253,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 9,
+    "kind": 1
+  },
+  {
+    "frame": 255,
+    "event": "enemy_fire",
+    "enemy": 8,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 262,
+    "event": "shield_guard",
+    "shield": 5
+  },
+  {
+    "frame": 294,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 8
+  },
+  {
+    "frame": 294,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 10,
+    "kind": 2
+  },
+  {
+    "frame": 308,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 7
+  },
+  {
+    "frame": 308,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 11,
+    "kind": 1
+  },
+  {
+    "frame": 308,
+    "event": "enemy_fire",
+    "enemy": 9,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 332,
+    "event": "enemy_fire",
+    "enemy": 9,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 349,
+    "event": "enemy_fire",
+    "enemy": 10,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 359,
+    "event": "enemy_homing_launch",
+    "enemy": 10
+  },
+  {
+    "frame": 363,
+    "event": "enemy_fire",
+    "enemy": 11,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 373,
+    "event": "enemy_fire",
+    "enemy": 10,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 380,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 384,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 9
+  },
+  {
+    "frame": 384,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 12,
+    "kind": 3
+  },
+  {
+    "frame": 387,
+    "event": "enemy_fire",
+    "enemy": 11,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 404,
+    "event": "enemy_homing_launch",
+    "enemy": 12
+  },
+  {
+    "frame": 411,
+    "event": "enemy_fire",
+    "enemy": 11,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 418,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 10
+  },
+  {
+    "frame": 418,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 13,
+    "kind": 1
+  },
+  {
+    "frame": 439,
+    "event": "enemy_fire",
+    "enemy": 12,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 442,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 449,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 11
+  },
+  {
+    "frame": 449,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 14,
+    "kind": 2
+  },
+  {
+    "frame": 449,
+    "event": "enemy_homing_launch",
+    "enemy": 12
+  },
+  {
+    "frame": 463,
+    "event": "enemy_fire",
+    "enemy": 12,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 465,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 473,
+    "event": "enemy_fire",
+    "enemy": 13,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 493,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 12
+  },
+  {
+    "frame": 493,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 15,
+    "kind": 1
+  },
+  {
+    "frame": 497,
+    "event": "enemy_fire",
+    "enemy": 13,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 504,
+    "event": "enemy_fire",
+    "enemy": 14,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 514,
+    "event": "enemy_homing_launch",
+    "enemy": 14
+  },
+  {
+    "frame": 528,
+    "event": "enemy_fire",
+    "enemy": 14,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 537,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 548,
+    "event": "enemy_fire",
+    "enemy": 15,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 554,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 13
+  },
+  {
+    "frame": 554,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 16,
+    "kind": 3
+  },
+  {
+    "frame": 572,
+    "event": "enemy_fire",
+    "enemy": 15,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 574,
+    "event": "enemy_homing_launch",
+    "enemy": 16
+  },
+  {
+    "frame": 574,
+    "event": "player_fire",
+    "weapon": 2
+  },
+  {
+    "frame": 577,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 14
+  },
+  {
+    "frame": 577,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 17,
+    "kind": 1
+  },
+  {
+    "frame": 579,
+    "event": "hit",
+    "enemy": 15,
+    "damage": 1,
+    "hp": 2
+  },
+  {
+    "frame": 579,
+    "event": "hit",
+    "enemy": 15,
+    "damage": 1,
+    "hp": 1
+  },
+  {
+    "frame": 579,
+    "event": "hit",
+    "enemy": 15,
+    "damage": 1,
+    "hp": 0
+  },
+  {
+    "frame": 579,
+    "event": "destroyed",
+    "enemy": 15,
+    "score": 3500
+  },
+  {
+    "frame": 579,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 18,
+    "kind": 2
+  },
+  {
+    "frame": 599,
+    "event": "enemy_homing_launch",
+    "enemy": 18
+  },
+  {
+    "frame": 605,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 609,
+    "event": "enemy_fire",
+    "enemy": 16,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 615,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 619,
+    "event": "enemy_homing_launch",
+    "enemy": 16
+  },
+  {
+    "frame": 632,
+    "event": "enemy_fire",
+    "enemy": 17,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 633,
+    "event": "enemy_fire",
+    "enemy": 16,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 634,
+    "event": "enemy_fire",
+    "enemy": 18,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 638,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 639,
+    "event": "shield_guard",
+    "shield": 5
+  },
+  {
+    "frame": 641,
+    "event": "pickup",
+    "weapon": 3
+  },
+  {
+    "frame": 644,
+    "event": "enemy_homing_launch",
+    "enemy": 18
+  },
+  {
+    "frame": 656,
+    "event": "enemy_fire",
+    "enemy": 17,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 658,
+    "event": "enemy_fire",
+    "enemy": 18,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 662,
+    "event": "shield_guard",
+    "shield": 4
+  },
+  {
+    "frame": 667,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 16
+  },
+  {
+    "frame": 667,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 19,
+    "kind": 1
+  },
+  {
+    "frame": 680,
+    "event": "enemy_fire",
+    "enemy": 17,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 698,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 18
+  },
+  {
+    "frame": 698,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 20,
+    "kind": 3
+  },
+  {
+    "frame": 718,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 17
+  },
+  {
+    "frame": 718,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 21,
+    "kind": 1
+  },
+  {
+    "frame": 722,
+    "event": "enemy_fire",
+    "enemy": 19,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 746,
+    "event": "enemy_fire",
+    "enemy": 19,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 753,
+    "event": "enemy_fire",
+    "enemy": 20,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 763,
+    "event": "enemy_homing_launch",
+    "enemy": 20
+  },
+  {
+    "frame": 773,
+    "event": "enemy_fire",
+    "enemy": 21,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 777,
+    "event": "enemy_fire",
+    "enemy": 20,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 784,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 797,
+    "event": "enemy_fire",
+    "enemy": 21,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 803,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 19
+  },
+  {
+    "frame": 803,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 22,
+    "kind": 2
+  },
+  {
+    "frame": 816,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 20
+  },
+  {
+    "frame": 816,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 23,
+    "kind": 1
+  },
+  {
+    "frame": 849,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 21
+  },
+  {
+    "frame": 849,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 24,
+    "kind": 3
+  },
+  {
+    "frame": 858,
+    "event": "enemy_fire",
+    "enemy": 22,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 868,
+    "event": "enemy_homing_launch",
+    "enemy": 22
+  },
+  {
+    "frame": 869,
+    "event": "enemy_homing_launch",
+    "enemy": 24
+  },
+  {
+    "frame": 871,
+    "event": "enemy_fire",
+    "enemy": 23,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 882,
+    "event": "enemy_fire",
+    "enemy": 22,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 889,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 895,
+    "event": "enemy_fire",
+    "enemy": 23,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 904,
+    "event": "enemy_fire",
+    "enemy": 24,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 907,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 914,
+    "event": "enemy_homing_launch",
+    "enemy": 24
+  },
+  {
+    "frame": 919,
+    "event": "enemy_fire",
+    "enemy": 23,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 927,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 22
+  },
+  {
+    "frame": 927,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 25,
+    "kind": 1
+  },
+  {
+    "frame": 928,
+    "event": "enemy_fire",
+    "enemy": 24,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 930,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 957,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 23
+  },
+  {
+    "frame": 957,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 26,
+    "kind": 2
+  },
+  {
+    "frame": 958,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 24
+  },
+  {
+    "frame": 958,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 27,
+    "kind": 1
+  },
+  {
+    "frame": 982,
+    "event": "enemy_fire",
+    "enemy": 25,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1006,
+    "event": "enemy_fire",
+    "enemy": 25,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1012,
+    "event": "enemy_fire",
+    "enemy": 26,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 1013,
+    "event": "enemy_fire",
+    "enemy": 27,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1022,
+    "event": "enemy_homing_launch",
+    "enemy": 26
+  },
+  {
+    "frame": 1036,
+    "event": "enemy_fire",
+    "enemy": 26,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 1037,
+    "event": "enemy_fire",
+    "enemy": 27,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1045,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 1063,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 25
+  },
+  {
+    "frame": 1063,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 28,
+    "kind": 3
+  },
+  {
+    "frame": 1083,
+    "event": "enemy_homing_launch",
+    "enemy": 28
+  },
+  {
+    "frame": 1085,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 26
+  },
+  {
+    "frame": 1085,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 29,
+    "kind": 1
+  },
+  {
+    "frame": 1089,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 27
+  },
+  {
+    "frame": 1089,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 30,
+    "kind": 2
+  },
+  {
+    "frame": 1101,
+    "event": "homing_launch",
+    "count": 2,
+    "target": 28
+  },
+  {
+    "frame": 1109,
+    "event": "enemy_homing_launch",
+    "enemy": 30
+  },
+  {
+    "frame": 1118,
+    "event": "enemy_fire",
+    "enemy": 28,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 1120,
+    "event": "hit",
+    "enemy": 28,
+    "damage": 8,
+    "hp": 4
+  },
+  {
+    "frame": 1120,
+    "event": "missile_impact",
+    "enemy": 28
+  },
+  {
+    "frame": 1120,
+    "event": "hit",
+    "enemy": 28,
+    "damage": 8,
+    "hp": 0
+  },
+  {
+    "frame": 1120,
+    "event": "destroyed",
+    "enemy": 28,
+    "score": 8500
+  },
+  {
+    "frame": 1120,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 31,
+    "kind": 1
+  },
+  {
+    "frame": 1120,
+    "event": "missile_impact",
+    "enemy": 28
+  },
+  {
+    "frame": 1123,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 1140,
+    "event": "enemy_fire",
+    "enemy": 29,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1144,
+    "event": "enemy_fire",
+    "enemy": 30,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 1148,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 1154,
+    "event": "enemy_homing_launch",
+    "enemy": 30
+  },
+  {
+    "frame": 1164,
+    "event": "enemy_fire",
+    "enemy": 29,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1168,
+    "event": "enemy_fire",
+    "enemy": 30,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 1172,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 1175,
+    "event": "enemy_fire",
+    "enemy": 31,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1188,
+    "event": "enemy_fire",
+    "enemy": 29,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1199,
+    "event": "enemy_fire",
+    "enemy": 31,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1208,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 30
+  },
+  {
+    "frame": 1208,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 32,
+    "kind": 3
+  },
+  {
+    "frame": 1226,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 29
+  },
+  {
+    "frame": 1226,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 33,
+    "kind": 1
+  },
+  {
+    "frame": 1256,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 31
+  },
+  {
+    "frame": 1256,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 34,
+    "kind": 2
+  },
+  {
+    "frame": 1263,
+    "event": "enemy_fire",
+    "enemy": 32,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 1273,
+    "event": "enemy_homing_launch",
+    "enemy": 32
+  },
+  {
+    "frame": 1281,
+    "event": "enemy_fire",
+    "enemy": 33,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1287,
+    "event": "enemy_fire",
+    "enemy": 32,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 1294,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 1305,
+    "event": "enemy_fire",
+    "enemy": 33,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1311,
+    "event": "enemy_fire",
+    "enemy": 34,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 1321,
+    "event": "enemy_homing_launch",
+    "enemy": 34
+  },
+  {
+    "frame": 1326,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 32
+  },
+  {
+    "frame": 1326,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 35,
+    "kind": 1
+  },
+  {
+    "frame": 1335,
+    "event": "enemy_fire",
+    "enemy": 34,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 1343,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 1357,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 33
+  },
+  {
+    "frame": 1357,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 36,
+    "kind": 3
+  },
+  {
+    "frame": 1377,
+    "event": "enemy_homing_launch",
+    "enemy": 36
+  },
+  {
+    "frame": 1380,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 34
+  },
+  {
+    "frame": 1380,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 37,
+    "kind": 1
+  },
+  {
+    "frame": 1381,
+    "event": "enemy_fire",
+    "enemy": 35,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1405,
+    "event": "enemy_fire",
+    "enemy": 35,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1412,
+    "event": "enemy_fire",
+    "enemy": 36,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 1415,
+    "event": "shield_guard",
+    "shield": 7
+  },
+  {
+    "frame": 1422,
+    "event": "enemy_homing_launch",
+    "enemy": 36
+  },
+  {
+    "frame": 1429,
+    "event": "enemy_fire",
+    "enemy": 35,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1435,
+    "event": "enemy_fire",
+    "enemy": 37,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1436,
+    "event": "enemy_fire",
+    "enemy": 36,
+    "kind": 3,
+    "count": 5
+  },
+  {
+    "frame": 1438,
+    "event": "shield_guard",
+    "shield": 6
+  },
+  {
+    "frame": 1459,
+    "event": "enemy_fire",
+    "enemy": 37,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1466,
+    "event": "passed",
+    "slot": 2,
+    "enemy": 36
+  },
+  {
+    "frame": 1466,
+    "event": "spawn",
+    "slot": 2,
+    "enemy": 38,
+    "kind": 2
+  },
+  {
+    "frame": 1467,
+    "event": "passed",
+    "slot": 0,
+    "enemy": 35
+  },
+  {
+    "frame": 1467,
+    "event": "spawn",
+    "slot": 0,
+    "enemy": 39,
+    "kind": 1
+  },
+  {
+    "frame": 1516,
+    "event": "passed",
+    "slot": 1,
+    "enemy": 37
+  },
+  {
+    "frame": 1516,
+    "event": "spawn",
+    "slot": 1,
+    "enemy": 40,
+    "kind": 3
+  },
+  {
+    "frame": 1521,
+    "event": "enemy_fire",
+    "enemy": 38,
+    "kind": 2,
+    "count": 3
+  },
+  {
+    "frame": 1522,
+    "event": "enemy_fire",
+    "enemy": 39,
+    "kind": 1,
+    "count": 2
+  },
+  {
+    "frame": 1531,
+    "event": "enemy_homing_launch",
+    "enemy": 38
+  }
+]

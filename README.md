@@ -1,5 +1,12 @@
 # V9968 + Geo3D Sample Demos
 
+## NIGHT RAVEN — OPLL BGM test
+
+黒烏の1ステージデモにOPLL BGMを追加。**TurboR向けBGMテスト版**。Suno（Premium）で作曲し、MSXミュージックエディタのMCP機能でCodexが編曲。専用openMSXで音楽2周以上と512画面一致、BlueMSX+で映像と音楽ポインターの進行を確認。実機未検証。
+
+[ROM / audio MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-opll-test-v0.1.0) · [使い方・出典・検証範囲](demos/night-raven-opll-test/README.md)
+
+
 ## LUNAR COMMUTE — 通勤が疲れたデモ
 
 **My commute felt like 380,000 km today. / 通勤が38万キロくらいに感じた。**

@@ -71,3 +71,7 @@ Original code, animation and AI-generated lunar/sky/character assets follow the 
 ## BULLRUSH CROWD COCKPIT (2026-10-08)
 
 The separate dual-camera prototype reuses BULLRUSH original geometry and reference-free AI atlas. The existing MIT terms and Geo3D/V9968 notices apply; asset provenance is included. New code covers camera selection and wheel transfer reuse. No additional third-party assets, emulator, BIOS or font files are included.
+
+
+## NIGHT RAVEN OPLL BGM test
+Music created with Suno (Premium), arranged for OPLL by Codex through the MSX Music Editor MCP interface, and supplied for publication by the project owner. Music is separate from the source-code MIT license. See demos/night-raven-opll-test/README.md.
