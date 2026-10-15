@@ -1,0 +1,12 @@
+{
+  "unchanged_source_files": {
+    "src\\fm.inc": true,
+    "src\\game.inc": true,
+    "src\\game_tables.inc": true,
+    "src\\palette.inc": true
+  },
+  "old_rom_sha256": "842ce75de1dbfd3aabe6cfefca49ce406a301c342d544a10132802a6a2f7a4dd",
+  "v2_rom_sha256": "e9a7961ea18c129f18dc56e3794fa64c7edd260575705ba97c7177e482cdbf47",
+  "v2_exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+  "old_exe_sha256": "ec39fbb8ec658e2358f0d824267eb9e5f2c8927e6a393c226428e58d560ae2f2"
+}

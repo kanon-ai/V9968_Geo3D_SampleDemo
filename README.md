@@ -1,5 +1,12 @@
 # V9968 + Geo3D Sample Demos
 
+## NIGHT RAVEN — 3ステージ操作可能デモ・Geo3D v2試験版
+
+**旧3ステージ版とは別のv2専用試験版。** 拡張面RAMに機体を常駐させて転送を削減。通常場面のfpsはほぼ同じで、人工的な多機種表示試験では約30→60fps。作者openMSXで確認、実機・BlueMSX+ v2は未検証です。音楽・効果音は暫定、ステージ進行は変更される可能性があります。下記の1ステージ自動デモ版とは異なります。
+
+[ROM / 配布セット](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-three-stage-geo3d-v2-v0.1.0) · [操作・性能比較・検証範囲・ライセンス](demos/night-raven-three-stage-geo3d-v2/README.md)
+
+
 ## NIGHT RAVEN — Geo3D V2.0 edition
 
 **Geo3D V2.0専用の独立版**。壁・機体824頂点／527面を常駐させ、作者版openMSXの同条件比較で **20.13 → 29.96 fps（約49%向上）**。全512画面一致、OPLL BGMを維持。**TurboR向け・実機とBlueMSX+ V2は未検証**です。Geo3D V1版とは対応環境が異なります。
