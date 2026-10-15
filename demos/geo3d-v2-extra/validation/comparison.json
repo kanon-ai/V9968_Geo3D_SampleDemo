@@ -1,0 +1,485 @@
+{
+  "results": [
+    {
+      "demo": "obsidian",
+      "rom": "OBSIDIAN_GEO3D-GEO3D-V2.ROM",
+      "rom_bytes": 262144,
+      "sha256": "b6635224e34077f7caa1b0ef4e85524a7394dba95581644ef91fe94d47fca4be",
+      "slots": 4,
+      "models": 9,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "obsidian",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 34.24441933262467,
+            "fps": 14.980543107392236,
+            "rom_sha256": "8b4b98520dcf3d53450524214d72d941263a04a8e0201399e1a512404a665571",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "obsidian",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 34.24358179601039,
+            "fps": 14.980909504617534,
+            "rom_sha256": "b6635224e34077f7caa1b0ef4e85524a7394dba95581644ef91fe94d47fca4be",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 0.0024458207066979654,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "obsidian",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 100.21222753171142,
+            "fps": 5.119135784479643,
+            "rom_sha256": "ec9631d24ae698714dbf5c5bee717059863e5aa2cf940ee3e64f2d156067ff8c",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "obsidian",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 70.82396142526494,
+            "fps": 7.243311298554365,
+            "rom_sha256": "bc4c4cc0200ae98ab6490e477eda657a75518ff5f83fd497232b45717bac1d1c",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 41.49480700462887,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        }
+      }
+    },
+    {
+      "demo": "orbital-type-real",
+      "rom": "ORBITAL-TYPE-REAL-GEO3D-V2.ROM",
+      "rom_bytes": 1048576,
+      "sha256": "48bd6068f7d3c8924bb2951d6d27d0aa224655b8441a975b91377ff2ff2975af",
+      "slots": 4,
+      "models": 12,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "orbital-type-real",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 25.6831957692947,
+            "fps": 19.974149814070735,
+            "rom_sha256": "147ec42e0b363a9d6d4214d6e942cd0844eaa0958c58a5e8c48b0f06530eba17",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "orbital-type-real",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 17.12257926635927,
+            "fps": 29.96043948868679,
+            "rom_sha256": "48bd6068f7d3c8924bb2951d6d27d0aa224655b8441a975b91377ff2ff2975af",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 49.99606875673497,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "orbital-type-real",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 52.7016405716369,
+            "fps": 9.734042326494246,
+            "rom_sha256": "bd3408b5561126f8fc0ec419f5dc221d9eaeb0d2a389c9cbcef570cab385fa0e",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "orbital-type-real",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 17.67217816789564,
+            "fps": 29.028679720530835,
+            "rom_sha256": "d9cd67d0be6a26c7ee19616f665bd5f1af7b8f1642ec9b0fe3bdebf836997dcc",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 198.21813740752071,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        }
+      }
+    },
+    {
+      "demo": "orbital",
+      "rom": "ORBITAL-GEO3D-V2.ROM",
+      "rom_bytes": 1048576,
+      "sha256": "aa51512c7452e6672f84b41c6c81ef1645fd9800487bc8eda410888c738b8fd8",
+      "slots": 4,
+      "models": 12,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "orbital",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 25.68275660733417,
+            "fps": 19.974491361784104,
+            "rom_sha256": "ca391be4c02360148362edf4d6155174d99cefa8d30c27c3f13e3753a76a46f8",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "orbital",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 17.12228705044915,
+            "fps": 29.960950805724465,
+            "rom_sha256": "aa51512c7452e6672f84b41c6c81ef1645fd9800487bc8eda410888c738b8fd8",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 49.99606379487993,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "orbital",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 52.701780533559436,
+            "fps": 9.734016475464845,
+            "rom_sha256": "a12fd16f32b5120bf5e46b3d1cec9a6a454bd891b77917843a3b46bcb1875ba8",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "orbital",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 17.67236450442724,
+            "fps": 29.02837364357692,
+            "rom_sha256": "5bad782e654502f9fbf83f882242f12870baa43fa496e18a013878eec80f23fe",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 198.21578499219336,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        }
+      }
+    },
+    {
+      "demo": "skybound",
+      "rom": "SKYBOUND-GEO3D-V2.ROM",
+      "rom_bytes": 1048576,
+      "sha256": "965592064b7aa8ce06038c671832ba2bb765c36922e1ba91c86f86552b944d6b",
+      "slots": 7,
+      "models": 35,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "skybound",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 25.482265902509955,
+            "fps": 20.131647709926394,
+            "rom_sha256": "48d56e7dc4000f8eb9afa45433f425396b6d6de85c796998e75a651beafab445",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "skybound",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 17.139024373209445,
+            "fps": 29.93169207471848,
+            "rom_sha256": "965592064b7aa8ce06038c671832ba2bb765c36922e1ba91c86f86552b944d6b",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 48.67979266277314,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "skybound",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 43.02178852340171,
+            "fps": 11.92419045342463,
+            "rom_sha256": "2d033d98510d6c0cb4c1f80bf0d6ecebfdc5f5c1e1583429e46fadfa316ab10c",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "skybound",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 18.691507160826305,
+            "fps": 27.44561985216186,
+            "rom_sha256": "900ab90a0a257f8c2c71e9757487ba9c495d84a09d12b6678da3cc5151059198",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 130.16757371800844,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        }
+      }
+    },
+    {
+      "demo": "vector-rush",
+      "rom": "VECTOR_RUSH-GEO3D-V2.ROM",
+      "rom_bytes": 1048576,
+      "sha256": "830f62faa5b6580bf860d49698814c3e03986977a28e10b96a522cefe2a813a6",
+      "slots": 5,
+      "models": 35,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "vector-rush",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 25.68263927398594,
+            "fps": 19.97458261696725,
+            "rom_sha256": "4ab10dad3d540f07b4309d4236b7f0eddab4281ee17f2e726f8387290e5248f7",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "vector-rush",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 17.973189748976473,
+            "fps": 28.542512885294276,
+            "rom_sha256": "830f62faa5b6580bf860d49698814c3e03986977a28e10b96a522cefe2a813a6",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 42.894164211717076,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "vector-rush",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 514,
+            "seconds": 57.10739269935145,
+            "fps": 8.983075145817784,
+            "rom_sha256": "f89dec4320d1dbb5e96a50276f08bc98163d0038008748dff5f032d9e73b0512",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "vector-rush",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 514,
+            "seconds": 29.871457405899356,
+            "fps": 17.173584570356013,
+            "rom_sha256": "ca67b3eca901f06b3819936c370bf451faaf11ee498d50d34db3124f624fec7e",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 91.17712243954068,
+          "compared_pages": 514,
+          "all_display_pages_equal": true
+        }
+      }
+    },
+    {
+      "demo": "four-seasons",
+      "rom": "FOUR-SEASONS-GEO3D-V2.ROM",
+      "rom_bytes": 1048576,
+      "sha256": "9fa30806e71f94c6e0bc882dd7bbf34c5a1f711207cd5aa26d8cf3bb7b044dd8",
+      "slots": 4,
+      "models": 24,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "four-seasons",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 1538,
+            "seconds": 56.43968297646768,
+            "fps": 27.232612214367798,
+            "rom_sha256": "9398616f80129a34ffb0c30346c4d2aea791f28dd93d5abfdbd81add98d5d8ee",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "four-seasons",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 1538,
+            "seconds": 51.3494527935813,
+            "fps": 29.932159280811764,
+            "rom_sha256": "9fa30806e71f94c6e0bc882dd7bbf34c5a1f711207cd5aa26d8cf3bb7b044dd8",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 9.912920013672789,
+          "compared_pages": 1538,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "four-seasons",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 1538,
+            "seconds": 121.17188860595411,
+            "fps": 12.684460213360703,
+            "rom_sha256": "1788c9d7d200ea55ae017411aaaba672c8a62113d3339f9770966ab64212b6f2",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "four-seasons",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 1538,
+            "seconds": 91.70072481279044,
+            "fps": 16.76104527131959,
+            "rom_sha256": "e23185cd5fcf9f5b2b4f68d444712d2414499184af21a5e2e7bb727c037b9b55",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 32.138419683519274,
+          "compared_pages": 1538,
+          "all_display_pages_equal": true
+        }
+      }
+    },
+    {
+      "demo": "geo3d-basics",
+      "rom": "GEO3D-BASICS-GEO3D-V2.ROM",
+      "rom_bytes": 1048576,
+      "sha256": "701639bbe0edf6c02da8536dd39a69583bd4aba27ada4000a76157243b5408df",
+      "slots": 8,
+      "models": 2,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "geo3d-basics",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 386,
+            "seconds": 12.849253187206752,
+            "fps": 29.962830865790856,
+            "rom_sha256": "aa5f0398df8400915627057d2924af78030ab8ce5f3b7fa91fff70fb3441c26d",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "geo3d-basics",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 386,
+            "seconds": 12.84930919991228,
+            "fps": 29.962700251825858,
+            "rom_sha256": "701639bbe0edf6c02da8536dd39a69583bd4aba27ada4000a76157243b5408df",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": -0.0004359199755943344,
+          "compared_pages": 386,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "geo3d-basics",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 386,
+            "seconds": 12.850023955558598,
+            "fps": 29.96103363943214,
+            "rom_sha256": "d22d3f1a052af1426f8d33d35f946a40decf06484881594155f5c996f93e3917",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "geo3d-basics",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 386,
+            "seconds": 12.84987002538032,
+            "fps": 29.961392546350297,
+            "rom_sha256": "0ba06a2337c8f99d989cb190cfdff5d75a750046094e5ba5b049530fcdf544c0",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 0.0011979123366590017,
+          "compared_pages": 386,
+          "all_display_pages_equal": true
+        }
+      }
+    },
+    {
+      "demo": "lunar-commute",
+      "rom": "EARTHRISE-HOME-GEO3D-V2.ROM",
+      "rom_bytes": 1048576,
+      "sha256": "325c976571ae256caa6cd352d1765d41134e2780da82cb4024e3c7ef3a5721f4",
+      "slots": 5,
+      "models": 235,
+      "measurements": {
+        "r800": {
+          "old": {
+            "demo": "lunar-commute",
+            "cpu": "r800",
+            "variant": "old",
+            "updates": 902,
+            "seconds": 42.70575073088898,
+            "fps": 21.097861168105133,
+            "rom_sha256": "c4a76c945557d72f9e8b9da58fe8c1bd013a37274f65d8b6a21b4ac9f8245c97",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "lunar-commute",
+            "cpu": "r800",
+            "variant": "new",
+            "updates": 902,
+            "seconds": 30.97319449818343,
+            "fps": 29.08966978052081,
+            "rom_sha256": "325c976571ae256caa6cd352d1765d41134e2780da82cb4024e3c7ef3a5721f4",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 37.879709932385765,
+          "compared_pages": 902,
+          "all_display_pages_equal": true
+        },
+        "z80": {
+          "old": {
+            "demo": "lunar-commute",
+            "cpu": "z80",
+            "variant": "old",
+            "updates": 902,
+            "seconds": 75.44746972031362,
+            "fps": 11.942083721827096,
+            "rom_sha256": "5c9f9692594ab5c46d2fde3769bb14ea9cba2e1a10501f6b22973b6e30a2ac6e",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "new": {
+            "demo": "lunar-commute",
+            "cpu": "z80",
+            "variant": "new",
+            "updates": 902,
+            "seconds": 39.96816606579887,
+            "fps": 22.542940762323195,
+            "rom_sha256": "eab52d8a6cd6413b873e144d1a6a07704c3a2bc79bd8aefc3d0d86d27ab1775d",
+            "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002"
+          },
+          "gain_percent": 88.7689057238849,
+          "compared_pages": 902,
+          "all_display_pages_equal": true
+        }
+      }
+    }
+  ],
+  "total_compared_pages": 10792
+}

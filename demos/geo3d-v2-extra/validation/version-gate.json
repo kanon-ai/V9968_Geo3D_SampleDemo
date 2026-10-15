@@ -1,0 +1,50 @@
+[
+  {
+    "demo": "obsidian",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  },
+  {
+    "demo": "orbital-type-real",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  },
+  {
+    "demo": "orbital",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  },
+  {
+    "demo": "skybound",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  },
+  {
+    "demo": "vector-rush",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  },
+  {
+    "demo": "four-seasons",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  },
+  {
+    "demo": "geo3d-basics",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  },
+  {
+    "demo": "lunar-commute",
+    "old_geo3d_rejected": true,
+    "border_register": 6,
+    "completed_updates": 0
+  }
+]

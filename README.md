@@ -1,5 +1,13 @@
 # V9968 + Geo3D Sample Demos
 
+## Eight more demos — Geo3D V2.0 editions / 公開8デモのV2専用版
+
+**Separate V2-only editions; original versions remain available.** Resident geometry and VFIRST/FFIRST reduce CPU uploads. R800 measurements: ORBITAL ≈20→30 fps, SKYBOUND ≈20→30, VECTOR RUSH ≈20→29, LUNAR COMMUTE ≈21→29. FOUR SEASONS: ≈27→30 on R800 and ≈12.7→16.8 with TurboR forced to Z80. BASIC FUNCTIONS remains ≈30 fps. Author openMSX evaluation only; physical hardware and BlueMSX+ V2 are unverified.
+
+従来版を維持した別バージョンです。V2の拡張モデルRAMを使って転送を削減。地球・月、フライト、レース、四季、月面からの帰宅などを改修し、両CPU条件で計10,792画面が旧版と一致しました。ロボット・NIGHT RAVEN・演奏会は今回の変更に含みません。**Geo3D V2.0必須、実機・BlueMSX+ V2未検証。**
+
+[ROMs / Source / ダウンロード](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-v2-extra-v0.1.0) · [Benchmarks, usage, licenses / 比較・使い方・ライセンス](demos/geo3d-v2-extra/README.md)
+
 ## NIGHT RAVEN — 3ステージ操作可能デモ・Geo3D v2試験版
 
 **旧3ステージ版とは別のv2専用試験版。** 拡張面RAMに機体を常駐させて転送を削減。通常場面のfpsはほぼ同じで、人工的な多機種表示試験では約30→60fps。作者openMSXで確認、実機・BlueMSX+ v2は未検証です。音楽・効果音は暫定、ステージ進行は変更される可能性があります。下記の1ステージ自動デモ版とは異なります。
