@@ -1,5 +1,16 @@
 # V9968 + Geo3D Sample Demos
 
+## BULLRUSH — Geo3D V2.0対応版
+
+通常2機（1 MiB）とにぎやか5機（2 MiB）の両視点デモ。ASCII16 / TurboR。Geo3D v2.0の拡張面メモリを活用し、追尾視点で約18–20%改善（作者openMSX測定）。旧版は維持しています。**V2.0専用、BlueMSX+ v2・実機未検証。**
+
+[ROM・GIF・無音MP4・ソース](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-geo3d-v2-v0.1.0) · [使い方・技術・測定条件・免責](docs/BULLRUSH_GEO3D_V2.md)
+
+Geo3D v2.0-only experimental editions. Original-speed media; developer openMSX tested, physical hardware and BlueMSX+ v2 unverified.
+
+![5機V2版](docs/media/bullrush-crowd-cockpit-v2.gif)
+
+
 ## NIGHT RAVEN — OPLL BGM test
 
 黒烏の1ステージデモにOPLL BGMを追加。**TurboR向けBGMテスト版**。Suno（Premium）で作曲し、MSXミュージックエディタのMCP機能でCodexが編曲。専用openMSXで音楽2周以上と512画面一致、BlueMSX+で映像と音楽ポインターの進行を確認。実機未検証。

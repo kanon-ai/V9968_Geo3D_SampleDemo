@@ -1,0 +1,7 @@
+# Original generated materials
+
+`material-atlas-v1.png` was generated with the built-in image generation tool, without reference images, for this project. Quadrants: sky, office facade, robot armor, shop facade. `textures.py` downsamples and quantizes the materials to the ROM's palette; blue armor is a palette variant of the same generated armor. No commercial-game texture was used.
+
+Prompt:
+
+Create one original production texture atlas, exactly square with a clean 2 by 2 grid of four equal square material tiles, no gaps, no borders, no captions. Top left: airy blue daytime sky with elegant soft wispy white cloud layers, no sun, no ground, no buildings. Top right: straight-on orthographic repeating modern office facade, grey concrete structural strips and restrained blue glass windows, subtle interior depth, no perspective. Bottom left: straight-on original science-fiction robot armor material, warm ivory ceramic steel panels, narrow charcoal seams, small amber maintenance marks, no logos or writing, no character or silhouette, suitable for mapping onto a small polygon robot. Bottom right: straight-on low shop facade with clean large blue window panes, warm muted ochre sign strip with no text, ivory pillars, original architecture. This is a real material sheet for a 16-color retro polygon game; use broad clearly readable detail, no micro-grain, low visual noise, plausible painted material shading, crisp edges. Four quadrants strictly equal, textures fill every pixel in each quadrant. No named franchises or existing characters.

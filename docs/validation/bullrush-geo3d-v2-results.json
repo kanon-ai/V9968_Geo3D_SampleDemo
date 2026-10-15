@@ -1,0 +1,48 @@
+{
+  "bullrush-cockpit": {
+    "chase": {
+      "seconds": 27.81857414839037,
+      "fps": 13.588043656862684
+    },
+    "cockpit": {
+      "seconds": 22.24553372006777,
+      "fps": 16.99217491280081
+    },
+    "rom_sha256": "211afd5eeb0d8c6fb2881c127630025cba75c8871815b3420249583a75b59b0d"
+  },
+  "bullrush-cockpit-v2": {
+    "chase": {
+      "seconds": 23.647111713918946,
+      "fps": 15.985038873796377
+    },
+    "cockpit": {
+      "seconds": 21.027604905092684,
+      "fps": 17.976369715242843
+    },
+    "rom_sha256": "061c0f68dc4ba003c792c04052a34a96754fdc008a8f1ea38a3c8cd9fcfad5eb",
+    "frame_differences": []
+  },
+  "bullrush-crowd-cockpit": {
+    "chase": {
+      "seconds": 31.85739290887529,
+      "fps": 11.865377718799184
+    },
+    "cockpit": {
+      "seconds": 25.766367932237202,
+      "fps": 14.670286514346905
+    },
+    "rom_sha256": "25af1729bedd33e0b8c3da21687b7d1878944060000f534c0b5d0dbc08458112"
+  },
+  "bullrush-crowd-cockpit-v2": {
+    "chase": {
+      "seconds": 26.48359372490079,
+      "fps": 14.272987417285115
+    },
+    "cockpit": {
+      "seconds": 22.76261424287165,
+      "fps": 16.606176951681842
+    },
+    "rom_sha256": "e266559dba9436e23290fc0cb62891a98cdbb19b5a517558ce8c3ba8540622dd",
+    "frame_differences": []
+  }
+}
