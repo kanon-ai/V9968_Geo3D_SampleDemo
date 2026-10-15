@@ -1,5 +1,13 @@
 # V9968 + Geo3D Sample Demos
 
+## Geo3D v2.0 — other public demos / その他の公開デモの検証
+
+**Nine existing demos tested with the latest author openMSX (2026-10-15).** Emulator replacement alone gave essentially unchanged speed; 45 sampled display pages matched. ROM downloads remain unchanged. This excludes the separately published robot/NIGHT RAVEN v2 editions. Emulator-only results; PAWS & BEATS retains its dedicated collision-patch requirement.
+
+ロボット・NIGHT RAVEN以外の公開9本を作者最新版で比較。エミュレータ交換だけの高速化はなく、抽出45画面は一致しました。既存ROMは維持し、実機性能の保証とは区別しています。演奏会の接触演出は専用パッチ条件が残ります。
+
+[Results, method and limitations / 結果・測定条件・制限](docs/GEO3D_V2_OTHER_DEMOS_20261015.md)
+
 ## NIGHT RAVEN — 3ステージ操作可能デモ・Geo3D v2試験版
 
 **旧3ステージ版とは別のv2専用試験版。** 拡張面RAMに機体を常駐させて転送を削減。通常場面のfpsはほぼ同じで、人工的な多機種表示試験では約30→60fps。作者openMSXで確認、実機・BlueMSX+ v2は未検証です。音楽・効果音は暫定、ステージ進行は変更される可能性があります。下記の1ステージ自動デモ版とは異なります。
