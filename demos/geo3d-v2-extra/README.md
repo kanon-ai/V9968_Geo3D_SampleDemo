@@ -1,8 +1,8 @@
 # Geo3D V2.0 Extra Demos v0.1.0 / V2専用・別バージョン
 
-Eight existing public demos now use **Geo3D V2.0 resident geometry**, extended face indices and VFIRST/FFIRST to reduce repeated CPU uploads. These are separate experimental editions. Original downloads, robot/NIGHT RAVEN editions, and PAWS & BEATS are unchanged.
+Eight existing public demos now use **Geo3D V2.0 resident geometry**, extended face indices and VFIRST/FFIRST to reduce repeated CPU uploads. These are separate experimental editions. Original downloads and PAWS & BEATS are unchanged.
 
-公開済み8デモを、**Geo3D V2.0のモデルRAM常駐・拡張面インデックス・VFIRST/FFIRST**を使う別バージョンにしました。従来版、ロボット系、NIGHT RAVEN系、演奏会は変更していません。
+公開済み8デモを、**Geo3D V2.0のモデルRAM常駐・拡張面インデックス・VFIRST/FFIRST**を使う別バージョンにしました。従来版、演奏会は変更していません。
 
 [Download eight ROMs and source](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-v2-extra-v0.1.0)
 

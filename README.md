@@ -4,7 +4,7 @@
 
 **Separate V2-only editions; original versions remain available.** Resident geometry and VFIRST/FFIRST reduce CPU uploads. R800 measurements: ORBITAL ≈20→30 fps, SKYBOUND ≈20→30, VECTOR RUSH ≈20→29, LUNAR COMMUTE ≈21→29. FOUR SEASONS: ≈27→30 on R800 and ≈12.7→16.8 with TurboR forced to Z80. BASIC FUNCTIONS remains ≈30 fps. Author openMSX evaluation only; physical hardware and BlueMSX+ V2 are unverified.
 
-従来版を維持した別バージョンです。V2の拡張モデルRAMを使って転送を削減。地球・月、フライト、レース、四季、月面からの帰宅などを改修し、両CPU条件で計10,792画面が旧版と一致しました。ロボット・NIGHT RAVEN・演奏会は今回の変更に含みません。**Geo3D V2.0必須、実機・BlueMSX+ V2未検証。**
+従来版を維持した別バージョンです。V2の拡張モデルRAMを使って転送を削減。地球・月、フライト、レース、四季、月面からの帰宅などを改修し、両CPU条件で計10,792画面が旧版と一致しました。演奏会は今回の変更に含みません。**Geo3D V2.0必須、実機・BlueMSX+ V2未検証。**
 
 [ROMs / Source / ダウンロード](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-v2-extra-v0.1.0) · [Benchmarks, usage, licenses / 比較・使い方・ライセンス](demos/geo3d-v2-extra/README.md)
 
