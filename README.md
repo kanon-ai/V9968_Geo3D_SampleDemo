@@ -1,5 +1,15 @@
 # V9968 + Geo3D Sample Demos
 
+## NIGHT RAVEN — Geo3D V2.0 edition
+
+**Geo3D V2.0専用の独立版**。壁・機体824頂点／527面を常駐させ、作者版openMSXの同条件比較で **20.13 → 29.96 fps（約49%向上）**。全512画面一致、OPLL BGMを維持。**TurboR向け・実機とBlueMSX+ V2は未検証**です。Geo3D V1版とは対応環境が異なります。
+
+Resident models with VFIRST/FFIRST and extended indices. Requires Geo3D V2.0 with 1024-entry model RAM; measured gains are emulator results, not hardware performance guarantees.
+
+[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-geo3d-v2-v0.1.0) · [Usage, benchmarks, provenance / 詳細](demos/night-raven-geo3d-v2/README.md)
+
+![NIGHT RAVEN Geo3D V2.0](docs/media/night-raven-geo3d-v2.gif)
+
 ## BULLRUSH — Geo3D V2.0対応版
 
 通常2機（1 MiB）とにぎやか5機（2 MiB）の両視点デモ。ASCII16 / TurboR。Geo3D v2.0の拡張面メモリを活用し、追尾視点で約18–20%改善（作者openMSX測定）。旧版は維持しています。**V2.0専用、BlueMSX+ v2・実機未検証。**

@@ -76,6 +76,9 @@ The separate dual-camera prototype reuses BULLRUSH original geometry and referen
 ## NIGHT RAVEN OPLL BGM test
 Music created with Suno (Premium), arranged for OPLL by Codex through the MSX Music Editor MCP interface, and supplied for publication by the project owner. Music is separate from the source-code MIT license. See demos/night-raven-opll-test/README.md.
 
+
+The NIGHT RAVEN Geo3D V2.0 edition reuses the same authorized OPLL music as the NIGHT RAVEN OPLL BGM test. Its music remains separate from the source-code MIT license. See demos/night-raven-geo3d-v2/README.md.
+
 ## BULLRUSH Geo3D v2.0 editions (2026-10-15)
 
 The two separate v2 editions reuse the original BULLRUSH geometry and reference-free AI atlas. MIT and existing Geo3D/V9968 notices remain applicable. Face residency and version checks introduce no additional third-party assets. Asset provenance is retained in each assets directory. No emulator, BIOS, firmware, tools or fonts are distributed.

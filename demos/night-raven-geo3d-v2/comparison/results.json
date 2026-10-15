@@ -1,0 +1,27 @@
+{
+  "old-emu-old-rom": {
+    "seconds": 25.38352486139998,
+    "fps": 20.13116786538435,
+    "data_writes": 5039678,
+    "rom_sha256": "565fdd9de4bceb5cbd8f13d5a902704038d3814b75564a55be4e2190f233bc53",
+    "exe_sha256": "ec39fbb8ec658e2358f0d824267eb9e5f2c8927e6a393c226428e58d560ae2f2"
+  },
+  "v2-emu-old-rom": {
+    "seconds": 25.383337826455595,
+    "fps": 20.13131620016553,
+    "data_writes": 5039678,
+    "rom_sha256": "565fdd9de4bceb5cbd8f13d5a902704038d3814b75564a55be4e2190f233bc53",
+    "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+    "matching_vram_pages": 512,
+    "music_matching_prefix": true
+  },
+  "v2-emu-v2-rom": {
+    "seconds": 17.05555468641964,
+    "fps": 29.960913578898726,
+    "data_writes": 163210,
+    "rom_sha256": "b155e9b25120e70c2e737b95df45e328603b8a40848007d4660e62ff784849e6",
+    "exe_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+    "matching_vram_pages": 512,
+    "music_matching_prefix": true
+  }
+}

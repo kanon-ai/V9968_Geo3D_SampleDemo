@@ -1,0 +1,18 @@
+{
+  "source": "simultaneous video/audio capture of tested ROM in author Geo3D v2 openMSX",
+  "speed_adjustment": false,
+  "seconds": 34.2107163850841,
+  "video_fps": 59.922744,
+  "gif_seconds": 17.1,
+  "audio": "emulated OPLL, AAC",
+  "files": {
+    "NIGHT-RAVEN-Geo3D-V2-v0.1.0.mp4": {
+      "bytes": 20512452,
+      "sha256": "bb1aeab3bdfc96c0380697ceefa3be487da024a67c2216e7da621defbb480ceb"
+    },
+    "NIGHT-RAVEN-Geo3D-V2-v0.1.0.gif": {
+      "bytes": 9594602,
+      "sha256": "16e73071e81a39e761cc3c45f6997358885d85ef18a718585d22623974d83de0"
+    }
+  }
+}
