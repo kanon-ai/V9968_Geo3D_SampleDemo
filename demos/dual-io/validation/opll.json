@@ -1,0 +1,37 @@
+[
+  {
+    "id": "night-raven-geo3d-v2",
+    "internal_writes": 8780,
+    "external_writes": 8878,
+    "common_prefix_writes": 8780,
+    "sequence_equal": true
+  },
+  {
+    "id": "night-raven-opll-test",
+    "internal_writes": 8782,
+    "external_writes": 8878,
+    "common_prefix_writes": 8782,
+    "sequence_equal": true
+  },
+  {
+    "id": "night-raven-three-stage",
+    "internal_writes": 3014,
+    "external_writes": 3104,
+    "common_prefix_writes": 3014,
+    "sequence_equal": true
+  },
+  {
+    "id": "night-raven-three-stage-geo3d-v2",
+    "internal_writes": 3014,
+    "external_writes": 3104,
+    "common_prefix_writes": 3014,
+    "sequence_equal": true
+  },
+  {
+    "id": "paws-beats",
+    "internal_writes": 2082,
+    "external_writes": 2182,
+    "common_prefix_writes": 2082,
+    "sequence_equal": true
+  }
+]

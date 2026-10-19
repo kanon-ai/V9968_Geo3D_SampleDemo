@@ -1,0 +1,342 @@
+{
+  "id": "geo3d-basics",
+  "relocations": [
+    [
+      59392,
+      61440,
+      16640
+    ]
+  ],
+  "code_bytes": 1691,
+  "operand_changes": [
+    {
+      "line": 73,
+      "before": "out (0x9C),a",
+      "after": "out (0x8C),a"
+    },
+    {
+      "line": 90,
+      "before": "ld bc,#0x009A",
+      "after": "ld bc,#0x008A"
+    },
+    {
+      "line": 109,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 111,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 119,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 121,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 122,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 123,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 125,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 127,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 129,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 131,
+      "before": "ld bc,#0x069F",
+      "after": "ld bc,#0x068F"
+    },
+    {
+      "line": 134,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 136,
+      "before": "ld bc,#0x0C9F",
+      "after": "ld bc,#0x0C8F"
+    },
+    {
+      "line": 176,
+      "before": "ld bc,#0x0E9B",
+      "after": "ld bc,#0x0E8B"
+    },
+    {
+      "line": 182,
+      "before": "ld bc,#0x049B",
+      "after": "ld bc,#0x048B"
+    },
+    {
+      "line": 189,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 191,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 193,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 195,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 197,
+      "before": "ld bc,#0x069F",
+      "after": "ld bc,#0x068F"
+    },
+    {
+      "line": 200,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 202,
+      "before": "ld bc,#0x029F",
+      "after": "ld bc,#0x028F"
+    },
+    {
+      "line": 222,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 232,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 234,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 236,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 238,
+      "before": "ld bc,#0x189F",
+      "after": "ld bc,#0x188F"
+    },
+    {
+      "line": 242,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 244,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 246,
+      "before": "in a,(0x9D)",
+      "after": "in a,(0x8D)"
+    },
+    {
+      "line": 300,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 302,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 334,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 336,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 337,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 339,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 341,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 343,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 345,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 347,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 352,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 354,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 356,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 358,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 362,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 364,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 366,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 379,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 382,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 388,
+      "before": "in a,(0x99)",
+      "after": "in a,(0x89)"
+    },
+    {
+      "line": 414,
+      "before": "ld bc,#0x0F9B",
+      "after": "ld bc,#0x0F8B"
+    },
+    {
+      "line": 418,
+      "before": "ld c,#0x9F",
+      "after": "ld c,#0x8F"
+    },
+    {
+      "line": 421,
+      "before": "ld c,#0x98",
+      "after": "ld c,#0x88"
+    }
+  ],
+  "rom_offsets": [
+    328,
+    356,
+    390,
+    394,
+    410,
+    413,
+    415,
+    417,
+    421,
+    425,
+    429,
+    434,
+    441,
+    446,
+    535,
+    550,
+    567,
+    570,
+    575,
+    579,
+    584,
+    591,
+    596,
+    640,
+    658,
+    661,
+    664,
+    669,
+    679,
+    683,
+    685,
+    800,
+    804,
+    864,
+    867,
+    869,
+    874,
+    877,
+    881,
+    885,
+    889,
+    903,
+    906,
+    911,
+    915,
+    926,
+    929,
+    933,
+    951,
+    956,
+    966,
+    1011,
+    1017,
+    1021
+  ],
+  "internal_sha256": "aa5f0398df8400915627057d2924af78030ab8ce5f3b7fa91fff70fb3441c26d",
+  "external_sha256": "e54123378c642be3933bce7fbe18dd161c33f16450e3fb1d38ab07a3d4e9022d",
+  "bytes": 1048576
+}

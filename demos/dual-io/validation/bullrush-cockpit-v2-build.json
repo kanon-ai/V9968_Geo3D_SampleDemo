@@ -1,0 +1,534 @@
+{
+  "id": "bullrush-cockpit-v2",
+  "relocations": [
+    [
+      59392,
+      61952,
+      16640
+    ]
+  ],
+  "code_bytes": 2442,
+  "operand_changes": [
+    {
+      "line": 87,
+      "before": "out (0x9C),a",
+      "after": "out (0x8C),a"
+    },
+    {
+      "line": 104,
+      "before": "ld bc,#0x009A",
+      "after": "ld bc,#0x008A"
+    },
+    {
+      "line": 123,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 125,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 134,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 136,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 137,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 139,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 141,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 143,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 145,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 147,
+      "before": "ld bc,#0x0C9F",
+      "after": "ld bc,#0x0C8F"
+    },
+    {
+      "line": 198,
+      "before": "ld bc,#0x0E9B",
+      "after": "ld bc,#0x0E8B"
+    },
+    {
+      "line": 204,
+      "before": "ld bc,#0x049B",
+      "after": "ld bc,#0x048B"
+    },
+    {
+      "line": 211,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 213,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 215,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 238,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 240,
+      "before": "ld bc,#0x189F",
+      "after": "ld bc,#0x188F"
+    },
+    {
+      "line": 244,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 249,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 251,
+      "before": "in a,(0x9D)",
+      "after": "in a,(0x8D)"
+    },
+    {
+      "line": 352,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 354,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 355,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 357,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 359,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 361,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 363,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 365,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 375,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 377,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 381,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 383,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 385,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 387,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 402,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 404,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 405,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 408,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 410,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 412,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 414,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 416,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 434,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 437,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 440,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 442,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 446,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 449,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 463,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 465,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 476,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 478,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 480,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 527,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 529,
+      "before": "ld bc,#0x189F",
+      "after": "ld bc,#0x188F"
+    },
+    {
+      "line": 532,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 537,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 539,
+      "before": "in a,(0x9D)",
+      "after": "in a,(0x8D)"
+    },
+    {
+      "line": 639,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 642,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 648,
+      "before": "in a,(0x99)",
+      "after": "in a,(0x89)"
+    },
+    {
+      "line": 674,
+      "before": "ld bc,#0x0F9B",
+      "after": "ld bc,#0x0F8B"
+    },
+    {
+      "line": 678,
+      "before": "ld c,#0x9F",
+      "after": "ld c,#0x8F"
+    },
+    {
+      "line": 681,
+      "before": "ld c,#0x98",
+      "after": "ld c,#0x88"
+    },
+    {
+      "line": 718,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 720,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 722,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 726,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 727,
+      "before": "in a,(0x9F)",
+      "after": "in a,(0x8F)"
+    },
+    {
+      "line": 731,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 732,
+      "before": "in a,(0x9F)",
+      "after": "in a,(0x8F)"
+    },
+    {
+      "line": 739,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 741,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 743,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 745,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 747,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 749,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 766,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 768,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 770,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 772,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 778,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 784,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 786,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    }
+  ],
+  "rom_offsets": [
+    346,
+    374,
+    408,
+    412,
+    431,
+    434,
+    436,
+    440,
+    444,
+    447,
+    451,
+    456,
+    566,
+    581,
+    598,
+    601,
+    606,
+    657,
+    662,
+    672,
+    681,
+    683,
+    900,
+    903,
+    905,
+    910,
+    913,
+    917,
+    920,
+    924,
+    951,
+    956,
+    961,
+    964,
+    969,
+    973,
+    1004,
+    1007,
+    1009,
+    1017,
+    1020,
+    1024,
+    1027,
+    1031,
+    1065,
+    1069,
+    1073,
+    1076,
+    1082,
+    1086,
+    1118,
+    1123,
+    1139,
+    1142,
+    1146,
+    1227,
+    1232,
+    1239,
+    1248,
+    1250,
+    1568,
+    1573,
+    1583,
+    1628,
+    1634,
+    1638,
+    1777,
+    1780,
+    1783,
+    1788,
+    1790,
+    1798,
+    1800,
+    1809,
+    1813,
+    1816,
+    1820,
+    1824,
+    1828,
+    1851,
+    1854,
+    1858,
+    1861,
+    1877,
+    1887,
+    1890
+  ],
+  "internal_sha256": "061c0f68dc4ba003c792c04052a34a96754fdc008a8f1ea38a3c8cd9fcfad5eb",
+  "external_sha256": "28e1e0eb4267b873f3013e0facae3f916149ae668beae975c827c10ca8ab2517",
+  "bytes": 1048576
+}

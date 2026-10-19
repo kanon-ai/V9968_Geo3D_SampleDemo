@@ -1,0 +1,30 @@
+[
+  {
+    "id": "four-seasons",
+    "updates": 390,
+    "pixel_mismatches": [],
+    "state_mismatches": [],
+    "palette_equal": true
+  },
+  {
+    "id": "four-seasons-v2",
+    "updates": 390,
+    "pixel_mismatches": [],
+    "state_mismatches": [],
+    "palette_equal": true
+  },
+  {
+    "id": "lunar-commute-v2",
+    "updates": 390,
+    "pixel_mismatches": [],
+    "state_mismatches": [],
+    "palette_equal": true
+  },
+  {
+    "id": "orbital-v2",
+    "updates": 390,
+    "pixel_mismatches": [],
+    "state_mismatches": [],
+    "palette_equal": true
+  }
+]

@@ -1,0 +1,795 @@
+; NIGHT RAVEN - Geo3D combat showcase; resident vertices and typed faces.
+.module skyweave
+.area ROM (ABS)
+.org 0x4000
+.ascii "AB"
+.dw boot,0,0,0
+.ds 6
+boot:
+ di
+ ld sp,#0xF300
+ ld hl,#0x4100
+ ld de,#0xE800
+ ld bc,#0x800
+ ldir
+ ld hl,#0x4900
+ ld de,#0xF000
+ ld bc,#0x280
+ ldir
+ jp start
+PAGE = 0xE200
+FRAME = 0xE202
+REC = 0xC000
+CMD = 0xE400
+PTR = 0xE410
+COUNT = 0xE412
+DONE = 0xE420
+MODEL = 0xE414
+MODEL_PTR = 0xE416
+SOUND = 0xE418
+SOUND_KIND = 0xE419
+SKY = 0xE430
+WALL = 0xE450
+WCOUNT = 0xE470
+.org 0xE800
+start:
+ di
+ ld sp,#0xF300
+ call 0x0138
+ rlca
+ rlca
+ and #3
+ ld c,a
+ ld b,#0
+ ld hl,#0xFCC1
+ add hl,bc
+ ld a,(hl)
+ and #0x80
+ or c
+ ld c,a
+ inc hl
+ inc hl
+ inc hl
+ inc hl
+ ld a,(hl)
+ rrca
+ rrca
+ rrca
+ rrca
+ and #12
+ or c
+ ld h,#0x80
+ call 0x0024
+ di
+ in a,(0xFF)
+ xor #1
+ out (0xFE),a
+ ld a,(0x002D)
+ cp #3
+ jr c,cpu_ready
+ ld a,#0x81
+ call 0x0180
+ di
+cpu_ready:
+ xor a
+ ld (0xE480),a
+ xor a
+ ld (PAGE),a
+ ld hl,#0
+ ld (FRAME),hl
+ ld (DONE),hl
+ out (0x9C),a
+ ld hl,#regs
+regloop:
+ ld b,(hl)
+ inc hl
+ ld a,b
+ cp #255
+ jr z,regdone
+ ld a,(hl)
+ inc hl
+ call wreg
+ jr regloop
+regdone:
+ xor a
+ ld b,#16
+ call wreg
+ ld hl,#palette
+ ld bc,#0x209A
+ otir
+ ; Scene atlas on VRAM page 2.
+ ld a,#4
+ ld b,#14
+ call wreg
+ xor a
+ out (0x99),a
+ ld a,#0x40
+ out (0x99),a
+ ld a,#2
+ ld (0x6000),a
+ ld hl,#0x4000
+ ld de,#16384
+ call vramblock
+ ld a,#3
+ ld (0x6000),a
+ ld hl,#0x4000
+ ld de,#16384
+ call vramblock
+ ; Additional HUD atlas in VRAM page 3.
+ ld a,#6
+ ld b,#14
+ call wreg
+ xor a
+ out (0x99),a
+ ld a,#0x40
+ out (0x99),a
+ ld a,#52
+ ld (0x6000),a
+ ld hl,#0x4000
+ ld de,#16384
+ call vramblock
+ ld a,#53
+ ld (0x6000),a
+ ld hl,#0x4000
+ ld de,#16384
+ call vramblock
+ ld a,#0x18
+ out (0x9D),a
+ ld hl,#camera
+ ld bc,#0x0C9F
+ otir
+ ld a,#1
+ ld (0x6000),a
+ ld a,#0x40
+ out (0x9D),a
+ xor a
+ out (0x9F),a
+ out (0x9F),a
+ ld a,(0x400C)
+ out (0x9F),a
+ xor a
+ out (0x9F),a
+ ld a,#15
+ out (0x9F),a
+ xor a
+ out (0x9F),a
+ ld a,#0x50
+ out (0x9D),a
+ ld hl,#0x4010
+ ld de,(0x400D)
+ call geoblock
+ ld a,#255
+ ld (MODEL),a
+ xor a
+ ld (SOUND),a
+ ; Explicitly silence PSG channels without starting any sound.
+ ld a,#8
+ out (0xA0),a
+ xor a
+ out (0xA1),a
+ ld a,#9
+ out (0xA0),a
+ xor a
+ out (0xA1),a
+ ld a,#10
+ out (0xA0),a
+ xor a
+ out (0xA1),a
+ ld a,#0x40
+ ld b,#1
+ call wreg
+ call music_init
+main:
+ call music_poll
+ ; One rendered frame advances three 60-Hz simulation ticks.
+ xor a
+ out (0xE6),a
+ ld hl,#0
+ ld (0xE482),hl
+ ; 512-byte record, 32 records per ASCII16 bank.
+ ld hl,(FRAME)
+ ld a,l
+ and #31
+ add a,a
+ add a,#0x40
+ ld h,a
+ ld l,#0
+ push hl
+ ld hl,(FRAME)
+ add hl,hl
+ add hl,hl
+ add hl,hl
+ ld a,h
+ add a,#4
+ ld (0x6000),a
+ pop hl
+ ld de,#REC
+ ld bc,#512
+ ldir
+ ld a,(PAGE)
+ xor #1
+ ld (PAGE),a
+ ; LRMM sky transform follows the same camera orientation as the scene.
+ ld a,#54
+ ld (0x6000),a
+ ld hl,(FRAME)
+ add hl,hl
+ add hl,hl
+ add hl,hl
+ ld de,#0x4000
+ add hl,de
+ ld de,#SKY
+ ld bc,#8
+ ldir
+ ld hl,#background
+ call load15
+ ld hl,(SKY)
+ ld (CMD),hl
+ ld hl,(SKY+2)
+ ld (CMD+2),hl
+ ld a,(PAGE)
+ ld (CMD+7),a
+ ld a,#32
+ ld b,#17
+ call wreg
+ ld hl,#CMD
+ ld bc,#0x0E9B
+ otir
+ ld a,#47
+ ld b,#17
+ call wreg
+ ld hl,#SKY+4
+ ld bc,#0x049B
+ otir
+ ld a,#0x30
+ ld b,#46
+ call wreg
+ call waitce
+ call draw_wall
+ ; 32 trail, shot, star, targeting and spark segments, before the aircraft.
+ ld hl,#REC+144
+ ld (PTR),hl
+ ld a,#24
+ ld (COUNT),a
+ call draw_lines
+ ; Stream distinct meshes as required; geometry rendered by Geo3D.
+ ld a,#1
+ ld (0x6000),a
+ ld a,#0x46
+ out (0x9D),a
+ xor a
+ out (0x9F),a
+ ld a,(PAGE)
+ out (0x9F),a
+ ld hl,#REC
+ ld (PTR),hl
+ ld a,#6
+ ld (COUNT),a
+jet_loop:
+ ld a,(COUNT)
+ ld e,a
+ ld d,#0
+ ld hl,#REC+512
+ or a
+ sbc hl,de
+ ld a,(hl)
+ cp #255
+ jr nz,visible_object
+ ld hl,(PTR)
+ ld de,#24
+ add hl,de
+ ld (PTR),hl
+ jp next_object
+visible_object:
+ push af
+ call loadmodel
+ pop af
+ or a
+ ld hl,#light
+ jr nz,material_ready
+ ld hl,#ravenlight
+material_ready:
+ ld a,#0x5A
+ out (0x9D),a
+ ld bc,#0x069F
+ otir
+ xor a
+ out (0x9D),a
+ ld hl,(PTR)
+ ld bc,#0x189F
+ otir
+ ld (PTR),hl
+ ld a,#0x48
+ out (0x9D),a
+ ld a,#3
+ out (0x9F),a
+geo_wait:
+ call music_poll
+ in a,(0x9D)
+ and #1
+ jr nz,geo_wait
+next_object:
+ ld a,(COUNT)
+ dec a
+ ld (COUNT),a
+ jp nz,jet_loop
+ ld hl,#REC+408
+ ld (PTR),hl
+ ld a,#8
+ ld (COUNT),a
+ call draw_lines
+ ld hl,#hudtop
+ call load15
+ ld hl,(REC+502)
+ ld (CMD+2),hl
+ ld a,(PAGE)
+ ld (CMD+7),a
+ call send15
+ call waitce
+ ld hl,#hudbottom
+ call load15
+ ld hl,(REC+504)
+ ld (CMD+2),hl
+ ld a,(PAGE)
+ ld (CMD+7),a
+ call send15
+ call waitce
+ ; Remaining shield is a live simulation value.
+ ld hl,#shieldbar
+ call load15
+ ld a,(REC+497)
+ or a
+ jr z,shield_drawn
+ add a,a
+ ld b,a
+ add a,a
+ add a,b
+ ld (CMD+8),a
+ ld a,(PAGE)
+ ld (CMD+7),a
+ call send15
+ call waitce
+shield_drawn:
+ ; Silent edition: no sound playback.
+frame_pace:
+ call music_poll
+ in a,(0xE7)
+ cp #22
+ jr c,frame_pace
+ call vblank
+ ld a,(PAGE)
+ rrca
+ rrca
+ rrca
+ or #31
+ ld b,#2
+ call wreg
+ ld hl,(DONE)
+ inc hl
+ inc hl
+ inc hl
+ ld (DONE),hl
+ ld hl,(FRAME)
+ inc hl
+ inc hl
+ inc hl
+ ld a,h
+ cp #6
+ jr c,frame_ok
+ ld hl,#0
+frame_ok:
+ ld (FRAME),hl
+ jp main
+draw_wall:
+ ld hl,(FRAME)
+ ld a,h
+ srl a
+ add a,#56
+ ld (0x6000),a
+ ld a,h
+ and #1
+ ld h,a
+ add hl,hl
+ add hl,hl
+ add hl,hl
+ add hl,hl
+ add hl,hl
+ ld de,#0x4000
+ add hl,de
+ ld de,#WALL
+ ld bc,#32
+ ldir
+ ld a,#0x46
+ out (0x9D),a
+ xor a
+ out (0x9F),a
+ ld a,(PAGE)
+ out (0x9F),a
+ ld a,#0x5A
+ out (0x9D),a
+ ld hl,#light
+ ld bc,#0x069F
+ otir
+ ; Furthest module first, towards the camera.
+ ld a,#4
+ ld (WCOUNT),a
+wall_far:
+ call wall_advance
+ ld a,(WCOUNT)
+ dec a
+ ld (WCOUNT),a
+ jr nz,wall_far
+ ld a,#5
+ ld (WCOUNT),a
+wall_loop:
+ ld hl,#WALL+31
+ srl (hl)
+ jr nc,wall_skipped
+ call load_wall_district
+ xor a
+ out (0x9D),a
+ ld hl,#WALL
+ ld bc,#0x189F
+ otir
+ ld a,#0x48
+ out (0x9D),a
+ ld a,#3
+ out (0x9F),a
+wall_busy:
+ in a,(0x9D)
+ and #1
+ jr nz,wall_busy
+wall_skipped:
+ ld hl,(WALL+18)
+ ld de,(WALL+24)
+ or a
+ sbc hl,de
+ ld (WALL+18),hl
+ ld hl,(WALL+20)
+ ld de,(WALL+26)
+ or a
+ sbc hl,de
+ ld (WALL+20),hl
+ ld hl,(WALL+22)
+ ld de,(WALL+28)
+ or a
+ sbc hl,de
+ ld (WALL+22),hl
+ ld a,(WCOUNT)
+ dec a
+ ld (WCOUNT),a
+ jr nz,wall_loop
+ ld a,#1
+ ld (0x6000),a
+ ld a,#0x40
+ out (0x9D),a
+ xor a
+ out (0x9F),a
+ out (0x9F),a
+ ld a,(0x400C)
+ out (0x9F),a
+ ld a,#0x50
+ out (0x9D),a
+ ld hl,#0x4010
+ ld de,(0x400D)
+ call geoblock
+ ld a,#255
+ ld (MODEL),a
+ ret
+load_wall_district:
+ ld a,(WALL+30)
+ ld b,a
+ ld a,(WCOUNT)
+ dec a
+ add a,b
+ cp #5
+ jr c,wall_bank_ready
+ sub #5
+wall_bank_ready:
+ ld hl,#wall_banks
+ ld e,a
+ ld d,#0
+ add hl,de
+ ld a,(hl)
+ ld (0x6000),a
+ ld a,#0x40
+ out (0x9D),a
+ xor a
+ out (0x9F),a
+ out (0x9F),a
+ ld a,(0x4000)
+ out (0x9F),a
+ ld a,#0x50
+ out (0x9D),a
+ ld hl,#0x4006
+ ld de,(0x4002)
+ call geoblock
+ ld a,#0x58
+ out (0x9D),a
+ xor a
+ out (0x9F),a
+ ld a,(0x4001)
+ out (0x9F),a
+ ld a,#0x52
+ out (0x9D),a
+ ld de,(0x4004)
+ call geoblock
+ ret
+wall_banks:
+ .db 55,59,60,61,62
+wall_advance:
+ ld hl,(WALL+18)
+ ld de,(WALL+24)
+ add hl,de
+ ld (WALL+18),hl
+ ld hl,(WALL+20)
+ ld de,(WALL+26)
+ add hl,de
+ ld (WALL+20),hl
+ ld hl,(WALL+22)
+ ld de,(WALL+28)
+ add hl,de
+ ld (WALL+22),hl
+ ret
+draw_lines:
+ ld hl,(PTR)
+ ld de,#CMD
+ ld bc,#11
+ ldir
+ ld (PTR),hl
+ ld a,(PAGE)
+ ld (CMD+3),a
+ ld a,#36
+ ld b,#17
+ call wreg
+ ld hl,#CMD
+ ld bc,#0x0B9B
+ otir
+ call waitce
+ ld a,(COUNT)
+ dec a
+ ld (COUNT),a
+ jr nz,draw_lines
+ ret
+loadmodel:
+ ld b,a
+ ld a,(MODEL)
+ cp b
+ ret z
+ ld a,b
+ ld (MODEL),a
+ add a,a
+ ld l,a
+ ld h,#0x40
+ ld e,(hl)
+ inc hl
+ ld d,(hl)
+ ex de,hl
+ ld a,#0x58
+ out (0x9D),a
+ xor a
+ out (0x9F),a
+ ld a,(hl)
+ out (0x9F),a
+ inc hl
+ ld e,(hl)
+ inc hl
+ ld d,(hl)
+ inc hl
+ ld a,#0x52
+ out (0x9D),a
+ call geoblock
+ ret
+wreg:
+ out (0x99),a
+ ld a,b
+ or #0x80
+ out (0x99),a
+ ret
+status2:
+ ld a,#2
+ ld b,#15
+ call wreg
+ in a,(0x99)
+ ret
+waitce:
+ call music_poll
+ call status2
+ and #1
+ jr nz,waitce
+ ret
+vblank:
+ call music_poll
+ call status2
+ and #0x40
+ jr nz,vblank
+vbnext:
+ call music_poll
+ call status2
+ and #0x40
+ jr z,vbnext
+ ret
+load15:
+ ld de,#CMD
+ ld bc,#15
+ ldir
+ ret
+send15:
+ ld a,#32
+ ld b,#17
+ call wreg
+ ld hl,#CMD
+ ld bc,#0x0F9B
+ otir
+ ret
+geoblock:
+ ld c,#0x9F
+ jr block
+vramblock:
+ ld c,#0x98
+block:
+ ld a,d
+ or a
+ jr z,tail
+blockloop:
+ ld b,#0
+ otir
+ dec a
+ jr nz,blockloop
+tail:
+ ld a,e
+ or a
+ ret z
+ ld b,e
+ otir
+ ret
+regs:
+ .db 0,6,1,0,2,31,7,0,8,10,9,128,21,0,20,1,51,0,52,0,53,0,54,2,55,255,56,0,57,255,58,2,255
+camera:
+ .dw 190,128,106,40,256,212
+light:
+ .dw -5000,10500,-11500
+background:
+ .dw 0,512,0,14,256,184
+ .db 0,0,0x30
+hudtop:
+ .dw 0,512,0,0,256,14
+ .db 0,0,0xD0
+hudbottom:
+ .dw 0,710,0,198,256,14
+ .db 0,0,0xD0
+.include "palette.inc"
+
+ravenlight:
+ .dw -2900,6090,-6670
+
+shieldbar:
+ .dw 0,0,23,202,48,6
+ .db 13,0,0xC0
+
+pickup_notes:
+ .db 42,56,70
+
+.org 0xF000
+music_init:
+ ld a,(0x002D)
+ cp #3
+ ret c
+ ld a,#63
+ ld (0x6000),a
+ ld hl,#0x4000
+ ld de,#0x8000
+ ld bc,#11391
+ ldir
+ ld hl,#0x8000
+ ld (0xE486),hl
+ ld hl,#1805
+ ld (0xE488),hl
+ ld hl,#0
+ ld (0xE484),hl
+ xor a
+ out (0xE6),a
+ ld (0xE482),hl
+ inc a
+ ld (0xE480),a
+ call music_tick
+ ret
+music_poll:
+ push af
+ ld a,(0xE480)
+ or a
+ jr z,music_exit
+ push bc
+ push de
+ push hl
+music_clock:
+ in a,(0xE7)
+ ld h,a
+ in a,(0xE6)
+ ld l,a
+ in a,(0xE7)
+ cp h
+ jr nz,music_clock
+ ld de,(0xE482)
+ ld (0xE482),hl
+ or a
+ sbc hl,de
+ ld de,(0xE484)
+ add hl,de
+music_due:
+ ld de,#4261
+ or a
+ sbc hl,de
+ jr c,music_rest
+ push hl
+ call music_tick
+ pop hl
+ jr music_due
+music_rest:
+ add hl,de
+ ld (0xE484),hl
+ pop hl
+ pop de
+ pop bc
+music_exit:
+ pop af
+ ret
+music_tick:
+ ld hl,(0xE486)
+ ld b,(hl)
+ inc hl
+ ld a,b
+ or a
+ jr z,music_advance
+music_writes:
+ ld a,(hl)
+ inc hl
+ out (0x7C),a
+ call music_delay
+ ld a,(hl)
+ inc hl
+ out (0x7D),a
+ call music_data_delay
+ djnz music_writes
+music_advance:
+ ld (0xE486),hl
+ ld hl,(0xE488)
+ dec hl
+ ld (0xE488),hl
+ ld a,h
+ or l
+ ret nz
+ ld hl,#0x8000
+ ld (0xE486),hl
+ ld hl,#1805
+ ld (0xE488),hl
+ ret
+music_delay:
+ ; At least two TurboR timer ticks (~7.8 us), including worst phase.
+ push af
+ push bc
+ in a,(0xE6)
+ ld c,a
+music_delay_loop:
+ in a,(0xE6)
+ sub c
+ cp #3
+ jr c,music_delay_loop
+ pop bc
+ pop af
+ ret
+
+music_data_delay:
+ ; Eight ticks guarantee >=27 us after an OPLL data write on R800.
+ push af
+ push bc
+ in a,(0xE6)
+ ld c,a
+music_data_delay_loop:
+ in a,(0xE6)
+ sub c
+ cp #8
+ jr c,music_data_delay_loop
+ pop bc
+ pop af
+ ret

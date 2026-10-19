@@ -1,5 +1,14 @@
 # V9968 + Geo3D Sample Demos
 
+## Choose your connection — 内蔵98h / 外付け88h
+
+**Both I/O editions are now available for all 28 current public variants (56 ROMs).** Choose `INTERNAL-98H` for V9968 as the main VDP, or `EXTERNAL-88H` for a second-VDP cartridge. Each archive separates Geo3D V1 and V2. Verified in developer openMSX; physical hardware and BlueMSX+ external-88h remain unverified. Original releases are retained.
+
+**公開中の現行28種類に、内蔵98h用・外付け88h用の計56 ROMを用意しました。** 外付けカートリッジは `EXTERNAL-88H` を選び、カートリッジ側の映像出力をご覧ください。ZIP内でGeo3D V1/V2も分けています。実機・BlueMSX+外付け88h構成は未検証です。
+
+[Download both editions / 内蔵用・外付け用ZIP](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/dual-io-v0.1.0) · [ROM list, setup, validation and licenses / 一覧・使い方・検証・ライセンス](demos/dual-io/README.md)
+
+
 ## Eight more demos — Geo3D V2.0 editions / 公開8デモのV2専用版
 
 **Separate V2-only editions; original versions remain available.** Resident geometry and VFIRST/FFIRST reduce CPU uploads. R800 measurements: ORBITAL ≈20→30 fps, SKYBOUND ≈20→30, VECTOR RUSH ≈20→29, LUNAR COMMUTE ≈21→29. FOUR SEASONS: ≈27→30 on R800 and ≈12.7→16.8 with TurboR forced to Z80. BASIC FUNCTIONS remains ≈30 fps. Author openMSX evaluation only; physical hardware and BlueMSX+ V2 are unverified.

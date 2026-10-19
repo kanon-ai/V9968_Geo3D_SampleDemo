@@ -1,5 +1,7 @@
 # OBSIDIAN / TITAN PASS
 
+> Separate **INTERNAL-98H / EXTERNAL-88H** downloads are now available: [Dual-I/O editions](../demos/dual-io/README.md). The original ROMs described below remain internal-98h builds. / 内蔵用・外付け用の別ROMを追加しました。以下の従来版ROMは98h用です。
+
 **2026-10-03 Z80 update / Z80最適化版:** [ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [測定・検証範囲 / Measurements and verification scope](Z80_OPTIMIZATION.md). Existing previews and earlier validation below describe previous releases. 以下の既存映像・過去検証は旧版の記録です。
 
 最初の巨大戦艦への接近飛行デモです。TurboR + V9968 + Geo3Dによるリアルタイム・ポリゴン描画を観察する、自動再生の技術実験です。操作はできません。ROMに動画を収録しているものではありません。

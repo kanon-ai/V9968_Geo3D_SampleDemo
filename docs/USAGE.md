@@ -1,5 +1,7 @@
 # Usage / 使い方
 
+> Separate **INTERNAL-98H / EXTERNAL-88H** downloads are now available: [Dual-I/O editions](../demos/dual-io/README.md). The original ROMs described below remain internal-98h builds. / 内蔵用・外付け用の別ROMを追加しました。以下の従来版ROMは98h用です。
+
 ## 必要な環境
 
 - Geo3D開発者 Alex Moncks氏の [openMSX fork](https://github.com/alexmoncks/openMSX)。検証コミットは `de29fb854885a38251c03e24596ad4ff95770ef2` です。一般配布版openMSXやV9968対応だけのビルドではなく、**Geo3D拡張を含むビルド**が必要です。

@@ -1,5 +1,7 @@
 # Validation / 検証記録
 
+> Separate **INTERNAL-98H / EXTERNAL-88H** downloads are now available: [Dual-I/O editions](../demos/dual-io/README.md). The original ROMs described below remain internal-98h builds. / 内蔵用・外付け用の別ROMを追加しました。以下の従来版ROMは98h用です。
+
 Date: 2026-09-29. **Geo3D開発者 Alex Moncks氏のopenMSXでまず確認した版**です。
 
 ## Environment

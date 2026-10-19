@@ -1,0 +1,254 @@
+[
+  {
+    "id": "obsidian",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "OBSIDIAN_GEO3D.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/OBSIDIAN_GEO3D.ROM",
+    "source": "obsidian",
+    "version": 1,
+    "sha256": "8b4b98520dcf3d53450524214d72d941263a04a8e0201399e1a512404a665571"
+  },
+  {
+    "id": "orbital",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "ORBITAL.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/ORBITAL.ROM",
+    "source": "orbital",
+    "version": 1,
+    "sha256": "ca391be4c02360148362edf4d6155174d99cefa8d30c27c3f13e3753a76a46f8"
+  },
+  {
+    "id": "orbital-type-real",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "ORBITAL-TYPE-REAL.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/ORBITAL-TYPE-REAL.ROM",
+    "source": "orbital-type-real",
+    "version": 1,
+    "sha256": "147ec42e0b363a9d6d4214d6e942cd0844eaa0958c58a5e8c48b0f06530eba17"
+  },
+  {
+    "id": "skybound",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "SKYBOUND.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/SKYBOUND.ROM",
+    "source": "skybound",
+    "version": 1,
+    "sha256": "48d56e7dc4000f8eb9afa45433f425396b6d6de85c796998e75a651beafab445"
+  },
+  {
+    "id": "vector-rush",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "VECTOR_RUSH.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/VECTOR_RUSH.ROM",
+    "source": "vector-rush",
+    "version": 1,
+    "sha256": "4ab10dad3d540f07b4309d4236b7f0eddab4281ee17f2e726f8387290e5248f7"
+  },
+  {
+    "id": "bullrush",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "BULLRUSH.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/BULLRUSH.ROM",
+    "source": "bullrush",
+    "version": 1,
+    "sha256": "9e69cd5375fd9f014c53f018bac123cac09f5a8e474d1c341f0b031d654e029a"
+  },
+  {
+    "id": "bullrush-crowd",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "BULLRUSH-CROWD.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/BULLRUSH-CROWD.ROM",
+    "source": "bullrush-crowd",
+    "version": 1,
+    "sha256": "3ac93eb9875fbff31e4a595b4f1a99a7007a203aad320c6825d692d0dd61a498"
+  },
+  {
+    "id": "night-raven",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "NIGHT_RAVEN_GEO3D.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/NIGHT_RAVEN_GEO3D.ROM",
+    "source": "night-raven",
+    "version": 1,
+    "sha256": "985db722e8b736dac66e9310e32948fe46e98e3bf3b3706e7f09425a70c916d2"
+  },
+  {
+    "id": "night-raven-flight",
+    "tag": "z80-optimization-v0.1.0",
+    "asset": "NIGHT_RAVEN_FLIGHT_DEMO.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/z80-optimization-v0.1.0/NIGHT_RAVEN_FLIGHT_DEMO.ROM",
+    "source": "night-raven-flight",
+    "version": 1,
+    "sha256": "51abac8237ae749a01c284c0a64e1e4a1e52896588887cb6c093cd9b0ae3b4d4"
+  },
+  {
+    "id": "four-seasons",
+    "tag": "four-seasons-v0.2.0",
+    "asset": "FOUR-SEASONS.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/four-seasons-v0.2.0/FOUR-SEASONS.ROM",
+    "source": "four-seasons",
+    "version": 1,
+    "sha256": "9398616f80129a34ffb0c30346c4d2aea791f28dd93d5abfdbd81add98d5d8ee"
+  },
+  {
+    "id": "geo3d-basics",
+    "tag": "geo3d-basics-v0.1.0",
+    "asset": "GEO3D-BASICS.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-basics-v0.1.0/GEO3D-BASICS.ROM",
+    "source": "geo3d-basics",
+    "version": 1,
+    "sha256": "aa5f0398df8400915627057d2924af78030ab8ce5f3b7fa91fff70fb3441c26d"
+  },
+  {
+    "id": "lunar-commute",
+    "tag": "lunar-commute-v0.1.2",
+    "asset": "EARTHRISE-HOME.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/lunar-commute-v0.1.2/EARTHRISE-HOME.ROM",
+    "source": "lunar-commute",
+    "version": 1,
+    "sha256": "c4a76c945557d72f9e8b9da58fe8c1bd013a37274f65d8b6a21b4ac9f8245c97"
+  },
+  {
+    "id": "paws-beats",
+    "tag": "paws-beats-v0.1.1",
+    "asset": "PAWS-BEATS.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/paws-beats-v0.1.1/PAWS-BEATS.ROM",
+    "source": "paws-beats",
+    "version": 1,
+    "sha256": "ab5299b409fcaaec396061a43e87f0f647ac618911cb099a74dd82d2b2e1bdf6"
+  },
+  {
+    "id": "night-raven-opll-test",
+    "tag": "night-raven-opll-test-v0.1.0",
+    "asset": "NIGHT_RAVEN_OPLL_TEST.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/night-raven-opll-test-v0.1.0/NIGHT_RAVEN_OPLL_TEST.ROM",
+    "source": "night-raven-opll-test",
+    "version": 1,
+    "sha256": "565fdd9de4bceb5cbd8f13d5a902704038d3814b75564a55be4e2190f233bc53"
+  },
+  {
+    "id": "night-raven-three-stage",
+    "tag": "night-raven-three-stage-v0.5.0",
+    "asset": "NIGHT_RAVEN_THREE_STAGE.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/night-raven-three-stage-v0.5.0/NIGHT_RAVEN_THREE_STAGE.ROM",
+    "source": "night-raven-three-stage",
+    "version": 1,
+    "sha256": "842ce75de1dbfd3aabe6cfefca49ce406a301c342d544a10132802a6a2f7a4dd"
+  },
+  {
+    "id": "bullrush-crowd-cockpit",
+    "tag": "bullrush-crowd-cockpit-v0.1.0",
+    "asset": "BULLRUSH-CROWD-COCKPIT.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/bullrush-crowd-cockpit-v0.1.0/BULLRUSH-CROWD-COCKPIT.ROM",
+    "source": "bullrush-crowd-cockpit",
+    "version": 1,
+    "sha256": "25af1729bedd33e0b8c3da21687b7d1878944060000f534c0b5d0dbc08458112"
+  },
+  {
+    "id": "obsidian-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "OBSIDIAN_GEO3D-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/OBSIDIAN_GEO3D-GEO3D-V2.ROM",
+    "source": "extra/obsidian",
+    "version": 2,
+    "sha256": "b6635224e34077f7caa1b0ef4e85524a7394dba95581644ef91fe94d47fca4be"
+  },
+  {
+    "id": "orbital-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "ORBITAL-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/ORBITAL-GEO3D-V2.ROM",
+    "source": "extra/orbital",
+    "version": 2,
+    "sha256": "aa51512c7452e6672f84b41c6c81ef1645fd9800487bc8eda410888c738b8fd8"
+  },
+  {
+    "id": "orbital-type-real-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "ORBITAL-TYPE-REAL-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/ORBITAL-TYPE-REAL-GEO3D-V2.ROM",
+    "source": "extra/orbital-type-real",
+    "version": 2,
+    "sha256": "48bd6068f7d3c8924bb2951d6d27d0aa224655b8441a975b91377ff2ff2975af"
+  },
+  {
+    "id": "skybound-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "SKYBOUND-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/SKYBOUND-GEO3D-V2.ROM",
+    "source": "extra/skybound",
+    "version": 2,
+    "sha256": "965592064b7aa8ce06038c671832ba2bb765c36922e1ba91c86f86552b944d6b"
+  },
+  {
+    "id": "vector-rush-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "VECTOR_RUSH-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/VECTOR_RUSH-GEO3D-V2.ROM",
+    "source": "extra/vector-rush",
+    "version": 2,
+    "sha256": "830f62faa5b6580bf860d49698814c3e03986977a28e10b96a522cefe2a813a6"
+  },
+  {
+    "id": "four-seasons-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "FOUR-SEASONS-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/FOUR-SEASONS-GEO3D-V2.ROM",
+    "source": "extra/four-seasons",
+    "version": 2,
+    "sha256": "9fa30806e71f94c6e0bc882dd7bbf34c5a1f711207cd5aa26d8cf3bb7b044dd8"
+  },
+  {
+    "id": "geo3d-basics-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "GEO3D-BASICS-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/GEO3D-BASICS-GEO3D-V2.ROM",
+    "source": "extra/geo3d-basics",
+    "version": 2,
+    "sha256": "701639bbe0edf6c02da8536dd39a69583bd4aba27ada4000a76157243b5408df"
+  },
+  {
+    "id": "lunar-commute-v2",
+    "tag": "geo3d-v2-extra-v0.1.0",
+    "asset": "EARTHRISE-HOME-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/geo3d-v2-extra-v0.1.0/EARTHRISE-HOME-GEO3D-V2.ROM",
+    "source": "extra/lunar-commute",
+    "version": 2,
+    "sha256": "325c976571ae256caa6cd352d1765d41134e2780da82cb4024e3c7ef3a5721f4"
+  },
+  {
+    "id": "bullrush-cockpit-v2",
+    "tag": "bullrush-geo3d-v2-v0.1.0",
+    "asset": "BULLRUSH-COCKPIT-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/bullrush-geo3d-v2-v0.1.0/BULLRUSH-COCKPIT-GEO3D-V2.ROM",
+    "source": "bullrush-cockpit-v2",
+    "version": 2,
+    "sha256": "061c0f68dc4ba003c792c04052a34a96754fdc008a8f1ea38a3c8cd9fcfad5eb"
+  },
+  {
+    "id": "bullrush-crowd-cockpit-v2",
+    "tag": "bullrush-geo3d-v2-v0.1.0",
+    "asset": "BULLRUSH-CROWD-COCKPIT-GEO3D-V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/bullrush-geo3d-v2-v0.1.0/BULLRUSH-CROWD-COCKPIT-GEO3D-V2.ROM",
+    "source": "bullrush-crowd-cockpit-v2",
+    "version": 2,
+    "sha256": "e266559dba9436e23290fc0cb62891a98cdbb19b5a517558ce8c3ba8540622dd"
+  },
+  {
+    "id": "night-raven-geo3d-v2",
+    "tag": "night-raven-geo3d-v2-v0.1.0",
+    "asset": "NIGHT_RAVEN_GEO3D_V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/night-raven-geo3d-v2-v0.1.0/NIGHT_RAVEN_GEO3D_V2.ROM",
+    "source": "night-raven-geo3d-v2",
+    "version": 2,
+    "sha256": "b155e9b25120e70c2e737b95df45e328603b8a40848007d4660e62ff784849e6"
+  },
+  {
+    "id": "night-raven-three-stage-geo3d-v2",
+    "tag": "night-raven-three-stage-geo3d-v2-v0.1.0",
+    "asset": "NIGHT_RAVEN_GEO3D_V2.ROM",
+    "url": "https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/download/night-raven-three-stage-geo3d-v2-v0.1.0/NIGHT_RAVEN_GEO3D_V2.ROM",
+    "source": "night-raven-three-stage-geo3d-v2",
+    "version": 2,
+    "sha256": "e9a7961ea18c129f18dc56e3794fa64c7edd260575705ba97c7177e482cdbf47"
+  }
+]

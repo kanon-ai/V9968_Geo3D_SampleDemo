@@ -1,0 +1,258 @@
+{
+  "results": [
+    {
+      "id": "obsidian",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "8b4b98520dcf3d53450524214d72d941263a04a8e0201399e1a512404a665571",
+      "external_rom_sha256": "57370865cf13a5a947f60a6671031710d5fda2f61db310c10b587ff974032729"
+    },
+    {
+      "id": "orbital",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "ca391be4c02360148362edf4d6155174d99cefa8d30c27c3f13e3753a76a46f8",
+      "external_rom_sha256": "390550ab5160ac00a99df165184105670ebeeb197b7e631e63dcd622b093a1da"
+    },
+    {
+      "id": "orbital-type-real",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "147ec42e0b363a9d6d4214d6e942cd0844eaa0958c58a5e8c48b0f06530eba17",
+      "external_rom_sha256": "a910b60d96804cc101fbf478ae6909006a20153758b9463fadea96ddbaeb47c6"
+    },
+    {
+      "id": "skybound",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "48d56e7dc4000f8eb9afa45433f425396b6d6de85c796998e75a651beafab445",
+      "external_rom_sha256": "e5562801b2e455f9732f48330bdc4b3f60b24ba616afd2f9c060235c1fe12391"
+    },
+    {
+      "id": "vector-rush",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "4ab10dad3d540f07b4309d4236b7f0eddab4281ee17f2e726f8387290e5248f7",
+      "external_rom_sha256": "f5140d5b7bf2ba90935a25037b12ad6af65faa5a44fde16e0de2b80b457a84c2"
+    },
+    {
+      "id": "bullrush",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "9e69cd5375fd9f014c53f018bac123cac09f5a8e474d1c341f0b031d654e029a",
+      "external_rom_sha256": "34535be38c7945f80d03ff5fe6530f24dee223cd8cb89487c37115fbe0647297"
+    },
+    {
+      "id": "bullrush-crowd",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "3ac93eb9875fbff31e4a595b4f1a99a7007a203aad320c6825d692d0dd61a498",
+      "external_rom_sha256": "5b1b417534734c7422bb4f739c2f50b8e065a8483f52f2d472d7955239c66982"
+    },
+    {
+      "id": "night-raven",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "985db722e8b736dac66e9310e32948fe46e98e3bf3b3706e7f09425a70c916d2",
+      "external_rom_sha256": "a352d78a751dddfe78c9cd7d9b61c7433ccedfabcdee5e577e3f3081a54650ef"
+    },
+    {
+      "id": "night-raven-flight",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "51abac8237ae749a01c284c0a64e1e4a1e52896588887cb6c093cd9b0ae3b4d4",
+      "external_rom_sha256": "fdacb869f1e618f88b83b96a168d1deae87665ecb3ac0a5a3f10b763eebad8ca"
+    },
+    {
+      "id": "four-seasons",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "9398616f80129a34ffb0c30346c4d2aea791f28dd93d5abfdbd81add98d5d8ee",
+      "external_rom_sha256": "fd3d75817a35c96a22b4c96450db05fb8ef6f37ad667591b8fc81f010858dac4"
+    },
+    {
+      "id": "geo3d-basics",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "aa5f0398df8400915627057d2924af78030ab8ce5f3b7fa91fff70fb3441c26d",
+      "external_rom_sha256": "e54123378c642be3933bce7fbe18dd161c33f16450e3fb1d38ab07a3d4e9022d"
+    },
+    {
+      "id": "lunar-commute",
+      "updates": 902,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "c4a76c945557d72f9e8b9da58fe8c1bd013a37274f65d8b6a21b4ac9f8245c97",
+      "external_rom_sha256": "d60d495459cc5ccac14d0072912e2fca9a49e16f5b2e732359cd1da75a12ee78"
+    },
+    {
+      "id": "paws-beats",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7ea5b46eefa1d5333d20497db46da50ffc89437301e5a0131dfb3097f5097b5f",
+      "internal_rom_sha256": "ab5299b409fcaaec396061a43e87f0f647ac618911cb099a74dd82d2b2e1bdf6",
+      "external_rom_sha256": "35dd6cd92da9caaac911451187c7174e6d705b727cecf0d92b68100660ca27d4",
+      "collision_counters_and_music_equal": true
+    },
+    {
+      "id": "night-raven-opll-test",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "565fdd9de4bceb5cbd8f13d5a902704038d3814b75564a55be4e2190f233bc53",
+      "external_rom_sha256": "6669226271b591f90c62ee7574ddd79437b31422ac3a2b6365b6153c0ac9dbfe"
+    },
+    {
+      "id": "night-raven-three-stage",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "842ce75de1dbfd3aabe6cfefca49ce406a301c342d544a10132802a6a2f7a4dd",
+      "external_rom_sha256": "b5dde1d9501a5c70becd056d6b65796a23d52eba7971449bfda54998709382d4"
+    },
+    {
+      "id": "bullrush-crowd-cockpit",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "8e05db1dd1dfbc0f7acfaf4844d20640a080a8907536d6068c3ded0a39033597",
+      "internal_rom_sha256": "25af1729bedd33e0b8c3da21687b7d1878944060000f534c0b5d0dbc08458112",
+      "external_rom_sha256": "a0bdbd3b0b498a6523e232418571d080719a9b81c67eb9a52390b8eeff942626"
+    },
+    {
+      "id": "obsidian-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "b6635224e34077f7caa1b0ef4e85524a7394dba95581644ef91fe94d47fca4be",
+      "external_rom_sha256": "39cf5b2e6efb9551666d609cecf263a8a4309e6bde9006b2dcc398c68a7d3ab1"
+    },
+    {
+      "id": "orbital-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "aa51512c7452e6672f84b41c6c81ef1645fd9800487bc8eda410888c738b8fd8",
+      "external_rom_sha256": "ab6e882ea3926e8ccab1c829d22b08b148392d504c7de9c6c4dd6fb931d01f58"
+    },
+    {
+      "id": "orbital-type-real-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "48bd6068f7d3c8924bb2951d6d27d0aa224655b8441a975b91377ff2ff2975af",
+      "external_rom_sha256": "9ad5fd932e368bd655274283685e8972fe7e33d01634c0f32e8c59d9fe6e91a6"
+    },
+    {
+      "id": "skybound-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "965592064b7aa8ce06038c671832ba2bb765c36922e1ba91c86f86552b944d6b",
+      "external_rom_sha256": "c7e5dd431e32ec01531917ece7f082c4ce448fa26310386bbf505fc3fd6dc976"
+    },
+    {
+      "id": "vector-rush-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "830f62faa5b6580bf860d49698814c3e03986977a28e10b96a522cefe2a813a6",
+      "external_rom_sha256": "7abf59b4a2640f82983c4a769d921f6a8db78f3463962df7ec916bc328223c3f"
+    },
+    {
+      "id": "four-seasons-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "9fa30806e71f94c6e0bc882dd7bbf34c5a1f711207cd5aa26d8cf3bb7b044dd8",
+      "external_rom_sha256": "dbc36fe5a593c62f107766b73e4f9c67c3a3b763ef040c251d7c91b714024879"
+    },
+    {
+      "id": "geo3d-basics-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "701639bbe0edf6c02da8536dd39a69583bd4aba27ada4000a76157243b5408df",
+      "external_rom_sha256": "8cc8c15aecd5b186fbccfbdb11ffbdc976f5aa6dd388236932c904c9348998d6"
+    },
+    {
+      "id": "lunar-commute-v2",
+      "updates": 902,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "325c976571ae256caa6cd352d1765d41134e2780da82cb4024e3c7ef3a5721f4",
+      "external_rom_sha256": "1fea7829405b2f2e8350892092a1eb8e704a89ce570c4f2a66cc9ac526f3677d"
+    },
+    {
+      "id": "bullrush-cockpit-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "061c0f68dc4ba003c792c04052a34a96754fdc008a8f1ea38a3c8cd9fcfad5eb",
+      "external_rom_sha256": "28e1e0eb4267b873f3013e0facae3f916149ae668beae975c827c10ca8ab2517"
+    },
+    {
+      "id": "bullrush-crowd-cockpit-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "e266559dba9436e23290fc0cb62891a98cdbb19b5a517558ce8c3ba8540622dd",
+      "external_rom_sha256": "64fe9027fb231f8684d92d4a78a91b40c24dcd5a6eb25985d766d969baaca056"
+    },
+    {
+      "id": "night-raven-geo3d-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "b155e9b25120e70c2e737b95df45e328603b8a40848007d4660e62ff784849e6",
+      "external_rom_sha256": "1b4869edb6c14abfbf61df2abc99463dd0a8b4229a75827b7ecc030062c1989f"
+    },
+    {
+      "id": "night-raven-three-stage-geo3d-v2",
+      "updates": 650,
+      "display_vram_equal": true,
+      "palette_equal": true,
+      "emulator_sha256": "7b959886acbb8581c03969846666b524a7046f4f1497f6c6e7c49b1506d4c002",
+      "internal_rom_sha256": "e9a7961ea18c129f18dc56e3794fa64c7edd260575705ba97c7177e482cdbf47",
+      "external_rom_sha256": "82e52681eee437e9cbe5664f024fb03c9137ebcdda859845f722d13ccf678dc8"
+    }
+  ],
+  "total_paired_frames": 18704
+}

@@ -1,0 +1,457 @@
+{
+  "id": "paws-beats",
+  "relocations": [
+    [
+      53248,
+      57344,
+      16640
+    ]
+  ],
+  "code_bytes": 2085,
+  "operand_changes": [
+    {
+      "line": 81,
+      "before": "out (0x9C),a",
+      "after": "out (0x8C),a"
+    },
+    {
+      "line": 98,
+      "before": "ld bc,#0x209A",
+      "after": "ld bc,#0x208A"
+    },
+    {
+      "line": 105,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 107,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 123,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 125,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 141,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 143,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 184,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 186,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 193,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 195,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 196,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 198,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 200,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 202,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 204,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 206,
+      "before": "ld bc,#0x069F",
+      "after": "ld bc,#0x068F"
+    },
+    {
+      "line": 209,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 211,
+      "before": "ld bc,#0x0C9F",
+      "after": "ld bc,#0x0C8F"
+    },
+    {
+      "line": 253,
+      "before": "ld bc,#0x0E9B",
+      "after": "ld bc,#0x0E8B"
+    },
+    {
+      "line": 259,
+      "before": "ld bc,#0x049B",
+      "after": "ld bc,#0x048B"
+    },
+    {
+      "line": 282,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 284,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 286,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 304,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 306,
+      "before": "ld bc,#0x189F",
+      "after": "ld bc,#0x188F"
+    },
+    {
+      "line": 310,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 312,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 314,
+      "before": "in a,(0x9D)",
+      "after": "in a,(0x8D)"
+    },
+    {
+      "line": 376,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 378,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 379,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 381,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 383,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 385,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 387,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 389,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 394,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 396,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 398,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 400,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 404,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 406,
+      "before": "out (0x9F),a",
+      "after": "out (0x8F),a"
+    },
+    {
+      "line": 408,
+      "before": "out (0x9D),a",
+      "after": "out (0x8D),a"
+    },
+    {
+      "line": 421,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 424,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a"
+    },
+    {
+      "line": 430,
+      "before": "in a,(0x99)",
+      "after": "in a,(0x89)"
+    },
+    {
+      "line": 456,
+      "before": "ld bc,#0x0F9B",
+      "after": "ld bc,#0x0F8B"
+    },
+    {
+      "line": 460,
+      "before": "ld c,#0x9F",
+      "after": "ld c,#0x8F"
+    },
+    {
+      "line": 729,
+      "before": "ld c,#0x98",
+      "after": "ld c,#0x88"
+    },
+    {
+      "line": 15,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 17,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 19,
+      "before": "ld bc,#0x1098",
+      "after": "ld bc,#0x1088",
+      "file": "spark.inc"
+    },
+    {
+      "line": 22,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 24,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 30,
+      "before": "out (0x98),a",
+      "after": "out (0x88),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 35,
+      "before": "out (0x98),a",
+      "after": "out (0x88),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 40,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 42,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 44,
+      "before": "out (0x98),a",
+      "after": "out (0x88),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 53,
+      "before": "in a,(0x99)",
+      "after": "in a,(0x89)",
+      "file": "spark.inc"
+    },
+    {
+      "line": 62,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 64,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 66,
+      "before": "ld bc,#0x1098",
+      "after": "ld bc,#0x1088",
+      "file": "spark.inc"
+    },
+    {
+      "line": 69,
+      "before": "out (0x98),a",
+      "after": "out (0x88),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 72,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 74,
+      "before": "out (0x99),a",
+      "after": "out (0x89),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 87,
+      "before": "out (0x98),a",
+      "after": "out (0x88),a",
+      "file": "spark.inc"
+    },
+    {
+      "line": 92,
+      "before": "out (0x98),a",
+      "after": "out (0x88),a",
+      "file": "spark.inc"
+    }
+  ],
+  "rom_offsets": [
+    341,
+    369,
+    382,
+    386,
+    424,
+    428,
+    466,
+    470,
+    578,
+    582,
+    600,
+    603,
+    605,
+    609,
+    613,
+    616,
+    620,
+    625,
+    632,
+    637,
+    732,
+    747,
+    796,
+    799,
+    804,
+    841,
+    846,
+    856,
+    860,
+    862,
+    1002,
+    1005,
+    1007,
+    1012,
+    1015,
+    1019,
+    1022,
+    1026,
+    1040,
+    1043,
+    1048,
+    1052,
+    1063,
+    1066,
+    1070,
+    1088,
+    1093,
+    1103,
+    1148,
+    1154,
+    1689,
+    1840,
+    1844,
+    1849,
+    1855,
+    1859,
+    1867,
+    1874,
+    1882,
+    1886,
+    1890,
+    1915,
+    1932,
+    1936,
+    1941,
+    1948,
+    1951,
+    1955,
+    1973,
+    1980
+  ],
+  "internal_sha256": "ab5299b409fcaaec396061a43e87f0f647ac618911cb099a74dd82d2b2e1bdf6",
+  "external_sha256": "35dd6cd92da9caaac911451187c7174e6d705b727cecf0d92b68100660ca27d4",
+  "bytes": 1048576
+}
