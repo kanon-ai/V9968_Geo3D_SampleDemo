@@ -13,7 +13,7 @@ A quiet Earthrise turns into a cat and rabbit's journey home. They walk to their
 
 - ROM: **1,048,576 bytes (1 MiB), ASCII16 mapper**.
 - Use a V9968 + Geo3D capable openMSX build and its matching machine/extension definitions. A stock openMSX installation is insufficient. TurboR/R800 is the tested CPU configuration.
-- Example with the author's evaluation setup: `openmsx -machine Panasonic_FS-A1ST_V9968 -ext geo3d -cart EARTHRISE-HOME.ROM -romtype ASCII16`.
+- Example using our evaluation setup: `openmsx -machine Panasonic_FS-A1ST_V9968 -ext geo3d -cart EARTHRISE-HOME.ROM -romtype ASCII16`.
 - Machine names vary by distribution. BIOS, emulator, machine definitions and FPGA bitstreams are not bundled.
 
 V9968とGeo3Dの両方に対応したエミュレータ・機種設定を使用し、ASCII16でROMを挿入してください。通常版openMSXだけでは実行できません。検証はTurboR/R800構成です。
@@ -40,7 +40,7 @@ BlueMSX+ experimental-2 also passed full-route and loop checks for the optimized
 
 Geo3D renders textured polygons for Earth, lunar terrain, characters and rocket in real time. V9968 copies the star background and switches display pages. Camera/model matrices and animation are precomputed ROM data, not prerecorded video. Earth lighting is baked into its texture. Conservative off-screen polygon removal reduces transfers. The final zoom is a camera approach, not a change to the video playback rate.
 
-Validated on 2026-10-06 with the author's dedicated integrated openMSX evaluation build (including the previously used concert collision patch, which this demo does not use). Executable SHA256: `7ea5b46eefa1d5333d20497db46da50ffc89437301e5a0131dfb3097f5097b5f`.
+We validated this demo on 2026-10-06 with our dedicated integrated openMSX evaluation build (including the previously used concert collision patch, which this demo does not use). Executable SHA256: `7ea5b46eefa1d5333d20497db46da50ffc89437301e5a0131dfb3097f5097b5f`.
 
 For v0.1.0/v0.1.1, a complete 600-frame cycle and restart were captured. Representative frames include Earthrise, walking, boarding and departure. Exported MP4 is approximately 28 seconds, silent, with no speed-up or interpolated frames; GIF reduces temporal resolution to 15 fps. **Physical hardware remains unverified. Z80 evaluation uses a TurboR profile forced to Z80; native MSX2/2+ hardware is untested.** Emulator timing is not a hardware benchmark or a compatibility guarantee for other builds.
 
