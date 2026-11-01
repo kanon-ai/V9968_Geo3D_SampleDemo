@@ -1,5 +1,15 @@
 # V9968 + Geo3D Sample Demos
 
+## SKYBOUND — Flight Demo Ver2.0 / Japan Tour
+
+**256-color automatic flight, Geo3D V2 required.** Take off from Tokyo, fly past Mount Fuji, Nagoya and Osaka, turn at Kyoto and return. Includes live cockpit instruments, internal-98h and external-88h ROMs (**4 MiB / ASCII16**). Silent; developer openMSX/TurboR verified. Hardware, BlueMSX+ V2 and Z80 performance remain unverified. Earlier editions are retained.
+
+**フライトデモ Ver2.0**：東京から富士山・名古屋・大阪・京都を巡る自動飛行。256色、Geo3D V2必須、内蔵98h／外付け88h両版。離陸から一周、計器と帰路の描画を確認済みです。無音・操縦なし。旧版も引き続き利用できます。
+
+[ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/skybound-flight-v2.0.0) · [Usage, technical notes, licenses / 使い方・技術説明・免責](demos/skybound-v2.0/README.md)
+
+![SKYBOUND Japan Tour](docs/media/skybound-flight-v2.0.gif)
+
 ## NIGHT RAVEN ゲーム版は専用リポジトリへ移転しました
 
 **操作できるゲーム版の開発・配布先は [kanon-ai/NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) です。** 現行4ステージ版、操作方法、対応環境、ライセンス・免責、検証範囲は移転先をご覧ください。自動再生のNIGHT RAVENデモはこのリポジトリで継続します。
@@ -8,9 +18,9 @@
 
 ## Choose your connection — 内蔵98h / 外付け88h
 
-**Both I/O editions are now available for all 28 current public variants (56 ROMs).** Choose `INTERNAL-98H` for V9968 as the main VDP, or `EXTERNAL-88H` for a second-VDP cartridge. Each archive separates Geo3D V1 and V2. Verified in developer openMSX; physical hardware and BlueMSX+ external-88h remain unverified. Original releases are retained.
+**The original dual-I/O bundle contains 28 variants (56 ROMs).** Choose `INTERNAL-98H` for V9968 as the main VDP, or `EXTERNAL-88H` for a second-VDP cartridge. Each archive separates Geo3D V1 and V2. Verified in developer openMSX; physical hardware and BlueMSX+ external-88h remain unverified. Original releases are retained.
 
-**公開中の現行28種類に、内蔵98h用・外付け88h用の計56 ROMを用意しました。** 外付けカートリッジは `EXTERNAL-88H` を選び、カートリッジ側の映像出力をご覧ください。ZIP内でGeo3D V1/V2も分けています。実機・BlueMSX+外付け88h構成は未検証です。
+**従来の内蔵／外付けセットには28種類・計56 ROMを収録しています。** 外付けカートリッジは `EXTERNAL-88H` を選び、カートリッジ側の映像出力をご覧ください。ZIP内でGeo3D V1/V2も分けています。実機・BlueMSX+外付け88h構成は未検証です。
 
 [Download both editions / 内蔵用・外付け用ZIP](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/dual-io-v0.1.0) · [ROM list, setup, validation and licenses / 一覧・使い方・検証・ライセンス](demos/dual-io/README.md)
 

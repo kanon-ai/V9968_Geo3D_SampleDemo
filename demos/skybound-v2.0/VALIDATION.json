@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "rom_bytes": 4194304,
+  "mapper": "ASCII16",
+  "geo3d": "V2 required",
+  "emulator": "Geo3D author openMSX 67811936bee936c15e3fbdbdffe01755fd349876",
+  "machine": "Panasonic_FS-A1ST_V9968 / R800",
+  "frames_captured": 4380,
+  "first_pass_seconds": 150.0932124054873,
+  "average_render_fps": 28.995315179495048,
+  "external_88h_compared_frames": [
+    80,
+    170,
+    210,
+    300,
+    400,
+    500
+  ],
+  "external_frames_pixel_identical": true,
+  "source_rebuild_byte_identical": true,
+  "physical_hardware_tested": false,
+  "blueMSX_plus_V2_tested": false,
+  "z80_performance_tested": false,
+  "rom_sha256": {
+    "SKYBOUND-JAPAN-V2-EXTERNAL-88H.ROM": "4832e3d9daf27a819091cd790b325bef735fcf30994fa3b333dcd62626bac4aa",
+    "SKYBOUND-JAPAN-V2-INTERNAL-98H.ROM": "e8af34e4279da9ca6486f88c63e7031fdb6233a2bbd8b1301e53e101967dd85e"
+  }
+}
