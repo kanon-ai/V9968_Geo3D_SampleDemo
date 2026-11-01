@@ -1,3 +1,5 @@
+> **ゲーム版は [kanon-ai/NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転しました。** 本文・ソースは旧版の記録として保持しています。現行版の操作・検証・ライセンスは移転先をご確認ください。
+
 # NIGHT RAVEN — Flight Development Demo
 
 **2026-10-03 Z80 update / Z80最適化版:** [ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [測定・検証範囲 / Measurements and verification scope](Z80_OPTIMIZATION.md). Existing previews and earlier validation below describe previous releases. 以下の既存映像・過去検証は旧版の記録です。

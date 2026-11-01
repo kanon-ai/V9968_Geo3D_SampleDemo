@@ -1,3 +1,5 @@
+> **ゲーム版は [kanon-ai/NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転しました。** 本文・ソースは旧版の記録として保持しています。現行版の操作・検証・ライセンスは移転先をご確認ください。
+
 # NIGHT RAVEN — Three-stage Geo3D v2 test v0.1.0
 
 **3ステージ構成の操作可能な開発デモをGeo3D v2へ対応した別版です。完成ゲームではありません。** 1ステージ自動デモの「NIGHT RAVEN Geo3D V2.0 edition」とは異なります。旧3ステージ版v0.5.0は保持しています。

@@ -1,3 +1,5 @@
+> NIGHT RAVENの操作可能な旧試作版3種は本セットに履歴として残しています。現行ゲームは [専用リポジトリ](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。本セットの外付け対応・検証結果は現行4ステージ版を対象にしていません。
+
 # Internal 98h / External 88h ROM editions — 内蔵用・外付け用
 
 [Download / ダウンロード](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/dual-io-v0.1.0)

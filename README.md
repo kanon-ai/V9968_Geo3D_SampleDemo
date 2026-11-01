@@ -1,5 +1,11 @@
 # V9968 + Geo3D Sample Demos
 
+## NIGHT RAVEN ゲーム版は専用リポジトリへ移転しました
+
+**操作できるゲーム版の開発・配布先は [kanon-ai/NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) です。** 現行4ステージ版、操作方法、対応環境、ライセンス・免責、検証範囲は移転先をご覧ください。自動再生のNIGHT RAVENデモはこのリポジトリで継続します。
+
+旧ゲーム試作版のソース・リリース・内蔵／外付けセットは、既存リンクと旧版再現のため履歴として残しています。これらは現行ゲームの配布物ではありません。
+
 ## Choose your connection — 内蔵98h / 外付け88h
 
 **Both I/O editions are now available for all 28 current public variants (56 ROMs).** Choose `INTERNAL-98H` for V9968 as the main VDP, or `EXTERNAL-88H` for a second-VDP cartridge. Each archive separates Geo3D V1 and V2. Verified in developer openMSX; physical hardware and BlueMSX+ external-88h remain unverified. Original releases are retained.
@@ -17,7 +23,9 @@
 
 [ROMs / Source / ダウンロード](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-v2-extra-v0.1.0) · [Benchmarks, usage, licenses / 比較・使い方・ライセンス](demos/geo3d-v2-extra/README.md)
 
-## NIGHT RAVEN — 3ステージ操作可能デモ・Geo3D v2試験版
+## NIGHT RAVEN — 3ステージ操作可能デモ・Geo3D v2試験版（旧版）
+
+> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
 
 **旧3ステージ版とは別のv2専用試験版。** 拡張面RAMに機体を常駐させて転送を削減。通常場面のfpsはほぼ同じで、人工的な多機種表示試験では約30→60fps。作者openMSXで確認、実機・BlueMSX+ v2は未検証です。音楽・効果音は暫定、ステージ進行は変更される可能性があります。下記の1ステージ自動デモ版とは異なります。
 
@@ -166,7 +174,9 @@ A silent, automatic robot pursuit through a city: find the blue robot, then foll
 ![BULLRUSH](docs/media/bullrush.gif)
 
 
-## NIGHT RAVEN — 3面構成の開発体験版 / Three-stage development demo
+## NIGHT RAVEN — 3面構成の開発体験版 / Three-stage development demo（旧版）
+
+> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
 
 **音楽・効果音は暫定で、今後更新予定です。ステージ進行も最終版とは異なる可能性があります。完成ゲームではありません。**
 
@@ -178,7 +188,9 @@ Playable three-sector preview. **Music and sound effects are provisional and pla
 
 ![Three-stage development demo](docs/media/night-raven-three-stage.gif)
 
-## NIGHT RAVEN — 操作できる開発体験デモ / Flight Development Demo
+## NIGHT RAVEN — 操作できる開発体験デモ / Flight Development Demo（旧版）
+
+> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
 
 **完成ゲームではなく、空間を飛行する感覚を少しだけ楽しめる開発体験版です。** 従来の無音・自動再生デモとは別に追加しました。
 

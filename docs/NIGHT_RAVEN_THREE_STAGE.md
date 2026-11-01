@@ -1,3 +1,5 @@
+> **ゲーム版は [kanon-ai/NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転しました。** 本文・ソースは旧版の記録として保持しています。現行版の操作・検証・ライセンスは移転先をご確認ください。
+
 # NIGHT RAVEN — Three-stage development demo v0.5.0
 
 **開発途中の操作可能なデモです。完成ゲーム・最終版ではありません。**
