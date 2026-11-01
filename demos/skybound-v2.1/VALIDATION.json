@@ -1,0 +1,40 @@
+{
+  "edition": "Flight Demo Ver2.1 / Japan Odyssey",
+  "rom_bytes": 4194304,
+  "mapper": "ASCII16",
+  "geo3d": "V2",
+  "emulator": "Geo3D author openMSX / TurboR",
+  "external_comparison_frames": [
+    80,
+    170,
+    210,
+    300,
+    400,
+    500
+  ],
+  "pixel_identical": true,
+  "io_operands": 60,
+  "route_monotonic": true,
+  "pause_frames": 96,
+  "physical_hardware": false,
+  "blueMSX_plus": false,
+  "sha256": {
+    "SKYBOUND-JAPAN-V2-EXTERNAL-88H.ROM": "a00d89ce9606dd0e32189cb878dd46aa58923b9917787ce13b3dba70d93479c0",
+    "SKYBOUND-JAPAN-V2-INTERNAL-98H.ROM": "cb6e0cb27228e5dc70b2bd7d9a7f82ae7311031ba64688281fdee87f1538743b"
+  },
+  "first_pass_seconds": 176.66085452201327,
+  "average_fps": 24.634772721863566,
+  "captured_frames": 4500,
+  "uv_fix_regression_frames": [
+    80,
+    720,
+    1240,
+    1600,
+    1950,
+    2080,
+    2450,
+    4000,
+    4300
+  ],
+  "source_rebuild_byte_identical": true
+}

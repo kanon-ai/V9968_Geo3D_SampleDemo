@@ -1,315 +1,315 @@
-# V9968 + Geo3D Sample Demos
-
-## SKYBOUND — Flight Demo Ver2.0 / Japan Tour
-
-**256-color automatic flight, Geo3D V2 required.** Take off from Tokyo, fly past Mount Fuji, Nagoya and Osaka, turn at Kyoto and return. Includes live cockpit instruments, internal-98h and external-88h ROMs (**4 MiB / ASCII16**). Silent; developer openMSX/TurboR verified. Hardware, BlueMSX+ V2 and Z80 performance remain unverified. Earlier editions are retained.
-
-**フライトデモ Ver2.0**：東京から富士山・名古屋・大阪・京都を巡る自動飛行。256色、Geo3D V2必須、内蔵98h／外付け88h両版。離陸から一周、計器と帰路の描画を確認済みです。無音・操縦なし。旧版も引き続き利用できます。
-
-[ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/skybound-flight-v2.0.0) · [Usage, technical notes, licenses / 使い方・技術説明・免責](demos/skybound-v2.0/README.md)
-
-![SKYBOUND Japan Tour](docs/media/skybound-flight-v2.0.gif)
-
-## NIGHT RAVEN ゲーム版は専用リポジトリへ移転しました
-
-**操作できるゲーム版の開発・配布先は [kanon-ai/NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) です。** 現行4ステージ版、操作方法、対応環境、ライセンス・免責、検証範囲は移転先をご覧ください。自動再生のNIGHT RAVENデモはこのリポジトリで継続します。
-
-旧ゲーム試作版のソース・リリース・内蔵／外付けセットは、既存リンクと旧版再現のため履歴として残しています。これらは現行ゲームの配布物ではありません。
-
-## Choose your connection — 内蔵98h / 外付け88h
-
-**The original dual-I/O bundle contains 28 variants (56 ROMs).** Choose `INTERNAL-98H` for V9968 as the main VDP, or `EXTERNAL-88H` for a second-VDP cartridge. Each archive separates Geo3D V1 and V2. Verified in developer openMSX; physical hardware and BlueMSX+ external-88h remain unverified. Original releases are retained.
-
-**従来の内蔵／外付けセットには28種類・計56 ROMを収録しています。** 外付けカートリッジは `EXTERNAL-88H` を選び、カートリッジ側の映像出力をご覧ください。ZIP内でGeo3D V1/V2も分けています。実機・BlueMSX+外付け88h構成は未検証です。
-
-[Download both editions / 内蔵用・外付け用ZIP](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/dual-io-v0.1.0) · [ROM list, setup, validation and licenses / 一覧・使い方・検証・ライセンス](demos/dual-io/README.md)
-
-
-## Eight more demos — Geo3D V2.0 editions / 公開8デモのV2専用版
-
-**Separate V2-only editions; original versions remain available.** Resident geometry and VFIRST/FFIRST reduce CPU uploads. R800 measurements: ORBITAL ≈20→30 fps, SKYBOUND ≈20→30, VECTOR RUSH ≈20→29, LUNAR COMMUTE ≈21→29. FOUR SEASONS: ≈27→30 on R800 and ≈12.7→16.8 with TurboR forced to Z80. BASIC FUNCTIONS remains ≈30 fps. Author openMSX evaluation only; physical hardware and BlueMSX+ V2 are unverified.
-
-従来版を維持した別バージョンです。V2の拡張モデルRAMを使って転送を削減。地球・月、フライト、レース、四季、月面からの帰宅などを改修し、両CPU条件で計10,792画面が旧版と一致しました。演奏会は今回の変更に含みません。**Geo3D V2.0必須、実機・BlueMSX+ V2未検証。**
-
-[ROMs / Source / ダウンロード](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-v2-extra-v0.1.0) · [Benchmarks, usage, licenses / 比較・使い方・ライセンス](demos/geo3d-v2-extra/README.md)
-
-## NIGHT RAVEN — 3ステージ操作可能デモ・Geo3D v2試験版（旧版）
-
-> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
-
-**旧3ステージ版とは別のv2専用試験版。** 拡張面RAMに機体を常駐させて転送を削減。通常場面のfpsはほぼ同じで、人工的な多機種表示試験では約30→60fps。作者openMSXで確認、実機・BlueMSX+ v2は未検証です。音楽・効果音は暫定、ステージ進行は変更される可能性があります。下記の1ステージ自動デモ版とは異なります。
-
-[ROM / 配布セット](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-three-stage-geo3d-v2-v0.1.0) · [操作・性能比較・検証範囲・ライセンス](demos/night-raven-three-stage-geo3d-v2/README.md)
-
-
-## NIGHT RAVEN — Geo3D V2.0 edition
-
-**Geo3D V2.0専用の独立版**。壁・機体824頂点／527面を常駐させ、作者版openMSXの同条件比較で **20.13 → 29.96 fps（約49%向上）**。全512画面一致、OPLL BGMを維持。**TurboR向け・実機とBlueMSX+ V2は未検証**です。Geo3D V1版とは対応環境が異なります。
-
-Resident models with VFIRST/FFIRST and extended indices. Requires Geo3D V2.0 with 1024-entry model RAM; measured gains are emulator results, not hardware performance guarantees.
-
-[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-geo3d-v2-v0.1.0) · [Usage, benchmarks, provenance / 詳細](demos/night-raven-geo3d-v2/README.md)
-
-![NIGHT RAVEN Geo3D V2.0](docs/media/night-raven-geo3d-v2.gif)
-
-## BULLRUSH — Geo3D V2.0対応版
-
-通常2機（1 MiB）とにぎやか5機（2 MiB）の両視点デモ。ASCII16 / TurboR。Geo3D v2.0の拡張面メモリを活用し、追尾視点で約18–20%改善（作者openMSX測定）。旧版は維持しています。**V2.0専用、BlueMSX+ v2・実機未検証。**
-
-[ROM・GIF・無音MP4・ソース](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-geo3d-v2-v0.1.0) · [使い方・技術・測定条件・免責](docs/BULLRUSH_GEO3D_V2.md)
-
-Geo3D v2.0-only experimental editions. Original-speed media; developer openMSX tested, physical hardware and BlueMSX+ v2 unverified.
-
-![5機V2版](docs/media/bullrush-crowd-cockpit-v2.gif)
-
-
-## NIGHT RAVEN — OPLL BGM test
-
-黒烏の1ステージデモにOPLL BGMを追加。**TurboR向けBGMテスト版**。Suno（Premium）で作曲し、MSXミュージックエディタのMCP機能でCodexが編曲。専用openMSXで音楽2周以上と512画面一致、BlueMSX+で映像と音楽ポインターの進行を確認。実機未検証。
-
-[ROM / audio MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-opll-test-v0.1.0) · [使い方・出典・検証範囲](demos/night-raven-opll-test/README.md)
-
-
-## LUNAR COMMUTE — 通勤が疲れたデモ
-
-**My commute felt like 380,000 km today. / 通勤が38万キロくらいに感じた。**
-
-A beautiful Earthrise becomes a cat and rabbit's trip home by rocket. They land at an unnamed harbor, hop onto the quay, and watch their empty rocket fly away. Real-time textured Geo3D animation with V9968 SCREEN 8 / EPAL 256 colours, silent and automatic. 1 MiB / ASCII16. Tested in dedicated openMSX and BlueMSX+ Geo3D experimental builds with TurboR/R800; physical hardware unverified; Z80 evaluated by forcing a TurboR profile to Z80.
-
-地球の出から、猫とうさぎがロケットで帰宅する無音デモ。地球へ帰還し、港で二匹が降りるとロケットだけが飛び立ちます。専用openMSXとBlueMSX+のGeo3D実験版で検証、Z80固定テストも実施、実機は未検証です。
-
-[ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.2) · [Usage, technology, licenses & disclaimer / 使い方・技術・ライセンス・免責](demos/lunar-commute/README.md)
-
-**v0.1.2 harbor ending:** both emulators checked in R800; new harbor not retested on Z80. / 港追加版は両エミュレータのR800で確認、追加場面のZ80再検証は未実施。
-
-**Previous v0.1.1 — Z80 optimization measurements:** 12.21 → 13.42 fps (+9.9%); R800 +2.4%. All 602 compared pages per CPU are unchanged. Both emulators checked; hardware untested. / Z80で約9.9%改善、両エミュレータで確認済み。
-
-![LUNAR COMMUTE](docs/media/lunar-commute.gif)
-
-
-**Future validation / 今後の検証：** Future demo releases and revisions will be checked in both Geo3D-capable openMSX and BlueMSX+ builds, with exact versions and any limitations recorded per demo. This policy does not retroactively certify older releases. / 今後のデモ公開・更新は両エミュレータで確認し、版と制限を各デモに記載します。過去の全公開版を両方で検証済みとするものではありません。
-
-## PAWS & BEATS — A Magical Concert of Twinkling Stars / 星がきらめく魔法の演奏会
-
-A cat on xylophone and a rabbit on drums play **Twinkle, Twinkle, Little Star** with **Geo3D + OPLL**. Sprites embedded in the mallet tips meet transparent receiver sprites at the instruments; the collision flag triggers stars. **Collision is used only for this visual effect.**
-
-猫とうさぎの演奏会。バチ先端と楽器の打面に仕込んだスプライトの接触で星がきらめきます。当たり判定は演出専用です。
-
-**Experimental patched-openMSX validation only; physical hardware untested. Transparent contact support requires the test patch described below.** / 専用パッチ版で検証、実機未確認。対応条件をご確認ください。
-
-[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/paws-beats-v0.1.1) · [Usage, mechanism, licenses & disclaimer / 使い方・仕組み・ライセンス・免責](demos/paws-beats/README.md)
-
-**PAWS & BEATS v0.1.1 — Z80 optimized:** 8.91 → 10.70 fps (+20.1%) in a forced-Z80 emulator test; R800 performance unchanged. Music runs slower on Z80. / Z80最適化で約20%改善。実機未検証。
-
-![PAWS & BEATS](docs/media/paws-beats.gif)
-
-
-**Running the demos (2026-10-04):** Use the Geo3D-compatible emulator version listed for each demo. Newer emulator releases may not include Geo3D support. See each demo's documentation for tested environments and hardware verification status. [Compatibility details](docs/UPSTREAM_COMPATIBILITY_20261004.md)
-
-**実行環境について（2026-10-04）：** 各デモで案内しているGeo3D対応エミュレータをご利用ください。最新版でもGeo3Dに対応していない場合があります。動作確認済みの環境や実機での検証状況は、各デモの説明をご確認ください。[互換性の詳細](docs/UPSTREAM_COMPATIBILITY_20261004.md)
-
-
-## BULLRUSH CROWD COCKPIT — 5機・両視点版
-
-追尾とコックピットを周回ごとに切り替える別の負荷実験版です。Cキーでも切替可能。**2 MiB / ASCII16**、無音・自動走行。従来版も維持しています。openMSXで表示確認、BlueMSX+は起動・描画進行の確認のみ。実機未検証。
-
-[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-cockpit-v0.1.0) · [操作・技術・検証範囲・免責](docs/BULLRUSH_CROWD_COCKPIT.md)
-
-## Z80 optimization update / Z80最適化更新
-
-**Nine demos updated for Z80:** SKYBOUND, VECTOR RUSH, ORBITAL (both editions), OBSIDIAN, NIGHT RAVEN (both editions), BULLRUSH and BULLRUSH CROWD. Measured gains are approximately **8–33%** in developer openMSX with unchanged visuals. R800 retains its original bulk-transfer loop. **This update is unverified on physical hardware and BlueMSX+.** BASIC FUNCTIONS is unchanged because no speed improvement was measured; FOUR SEASONS v0.2.0 remains available below.
-
-Z80で効果を確認した9本を更新しました。描画内容を維持し、専用openMSXで約8～33%改善。R800は従来の転送ループを使用します。本更新の実機・BlueMSX+検証は未実施です。効果のなかった基本機能デモと、更新済みの花びらデモは変更していません。
-
-| Demo | Before / 旧版 | After / 最適化版 | Gain / 改善 |
-|---|---:|---:|---:|
-| BULLRUSH | 5.54 fps | 6.25 fps | +12.9% |
-| BULLRUSH CROWD (5 robots) | 4.70 fps | 5.20 fps | +10.7% |
-| NIGHT RAVEN | 9.95 fps | 10.75 fps | +8.0% |
-| NIGHT RAVEN FLIGHT | 9.64 fps | 10.45 fps | +8.4% |
-| OBSIDIAN | 5.13 fps | 5.99 fps | +16.8% |
-| ORBITAL | 9.73 fps | 11.27 fps | +15.8% |
-| ORBITAL TYPE REAL | 9.73 fps | 11.27 fps | +15.8% |
-| SKYBOUND | 9.69 fps | 12.91 fps | +33.3% |
-| VECTOR RUSH | 8.99 fps | 10.34 fps | +15.1% |
-| FOUR SEASONS (v0.2.0 / 更新済み) | 4.12 fps | 12.69 fps | 3.08× |
-
-NIGHT RAVEN FLIGHT uses scripted keyboard input; other rows use automatic playback. / NIGHT RAVEN FLIGHTはキー操作付き、ほかは自動再生での比較です。
-
-[Updated ROMs / 更新ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [Measurements, setup and disclaimer / 測定・実行・免責](docs/Z80_OPTIMIZATION.md)
-
-
-## Geo3D BASIC FUNCTIONS — 基本機能デモ
-
-A minimal, silent demonstration of **focal length, projection center and texture-origin scrolling**, followed by a combined scene. Fixed geometry, a black background and live register values make each effect easy to compare. **1 MiB / ASCII16.** Tested only in the dedicated Geo3D openMSX build; physical hardware and BlueMSX Plus are unverified.
-
-焦点距離・投影中心・テクスチャ原点を個別に動かし、最後に組み合わせる無音の基本デモです。図形は固定し、上端に設定値を表示します。1 MiB / ASCII16、専用Geo3D openMSXで確認。実機・BlueMSX Plusは未検証です。
-
-[ROM / GIF / MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-basics-v0.1.0) · [Guide / 技術・使い方・検証・免責](docs/GEO3D_BASICS.md)
-
-![Geo3D BASIC FUNCTIONS](docs/media/geo3d-basics.gif)
-
-
-## FOUR SEASONS — ポリゴン・テクスチャの基本デモ / Polygon & Texture Basics
-
-桜・蛍・紅葉・雪が黒背景を舞う、無音・自動の基本サンプルです。1 MiB / ASCII16。専用Geo3D openMSXで確認、BlueMSX+・実機は本デモ未検証です。
-
-A silent, automatic demo of cherry petals, fireflies, maple leaves and snow against a black background. **1 MiB / ASCII16.** Tested in the developer Geo3D openMSX build; this demo has not yet been tested in BlueMSX+ or on physical hardware.
-
-[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.2.0) · [使い方・技術・検証・免責 / Guide & Disclaimer](docs/FOUR_SEASONS.md)
-
-**v0.2.0: Z80向け転送最適化。** 同じ描画内容で、専用openMSXでは約4.12→12.69 fps。R800でも約10.39→27.26 fps。実機・BlueMSX+は未検証です。
-
-**v0.2.0: Z80 transfer optimization.** Identical visuals; developer-openMSX results improved from 4.12 to 12.69 fps on Z80 and 10.39 to 27.26 fps on R800. Physical hardware and BlueMSX+ remain unverified. Preview media uses actual Z80 playback speed.
-
-![FOUR SEASONS](docs/media/four-seasons.gif)
-
-
-## BULLRUSH CROWD — 別バージョンの負荷実験 / Separate Load Experiment
-
-自機1＋赤1＋青3の5機を配置した「にぎやか版」です。ゲーム本編とは別の自動走行負荷実験として追加しました。通常版も引き続き提供します。1 MiB / ASCII16、無音。専用openMSXとBlueMSX+ experimental-2で確認、実機未検証。
-
-A separate automatic load experiment with **five robots: one player, one red and three blue**. This is not the main game; the original BULLRUSH demo remains available. Silent, 1 MiB / ASCII16. Checked in developer Geo3D openMSX and BlueMSX+ experimental-2; physical hardware is unverified. See the details for reduced geometry and measurement conditions.
-
-[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-v0.1.0) · [技術・軽量化・測定条件・使い方 / Technical Guide & Measurements](docs/BULLRUSH_CROWD.md)
-
-## GR-9 BULLRUSH — 256色の市街地追跡デモ / 256-Color City Pursuit
-
-探索から青い機体を発見し、ローラーダッシュ・横スライド・急旋回で市街地を追跡する無音の自動走行デモを追加しました。関節の姿勢と体重移動、屋上ショートカットを描きます。**まだ操作可能なゲームではありません。専用Geo3D openMSXで確認。BlueMSX+第2版でもASCII16指定で起動・複数場面を確認、実機未検証です。**
-
-A silent, automatic robot pursuit through a city: find the blue robot, then follow it with roller dashes, lateral slides, sharp turns and rooftop shortcuts. Joint animation and weight shifts are part of the demonstration. **This is not yet a playable game.** Tested in developer Geo3D openMSX, with startup and multiple scenes also checked in BlueMSX+ experimental-2 using explicit ASCII16. Physical hardware is unverified.
-
-[ROM・GIF・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-v0.1.0) · [使い方・技術・検証・ライセンス・免責 / Guide, License & Disclaimer](docs/BULLRUSH.md)
-
-![BULLRUSH](docs/media/bullrush.gif)
-
-
-## NIGHT RAVEN — 3面構成の開発体験版 / Three-stage development demo（旧版）
-
-> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
-
-**音楽・効果音は暫定で、今後更新予定です。ステージ進行も最終版とは異なる可能性があります。完成ゲームではありません。**
-
-Playable three-sector preview. **Music and sound effects are provisional and planned for updates. Stage progression may differ from the final version.**
-
-今回の版はGeo3D開発者版openMSXで確認。BlueMSX+・実機は未検証。旧版とは別に公開します。
-
-[ROM / MP4 / GIF — v0.5.0 prerelease](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-three-stage-v0.5.0) · [操作・技術・検証・ライセンス・免責](docs/NIGHT_RAVEN_THREE_STAGE.md)
-
-![Three-stage development demo](docs/media/night-raven-three-stage.gif)
-
-## NIGHT RAVEN — 操作できる開発体験デモ / Flight Development Demo（旧版）
-
-> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
-
-**完成ゲームではなく、空間を飛行する感覚を少しだけ楽しめる開発体験版です。** 従来の無音・自動再生デモとは別に追加しました。
-
-**効果音は暫定のPSG音であり、最終版の音ではありません。BGMは未収録です。**
-
-An interactive development demo, not a finished game. **Sound effects are temporary placeholders, not final audio.**
-
-[ROM・動画 / v0.4.0 prerelease](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.4.0) · [操作・技術・検証・免責](docs/NIGHT_RAVEN_FLIGHT.md)
-
-![Flight development demo](docs/media/night-raven-flight.gif)
-
-
-## NIGHT RAVEN v0.3.2 — 高速版 / Optimized Version
-
-画面外の壁の転送・描画を省略。元版と一周512画面の表示VRAMが完全一致し、開発者版openMSXで測定時間を約4.1%短縮しました。無音・1MiB / ASCII16。実機未検証です。
-
-Skips off-screen wall transfers and rendering. Display VRAM matched the original across all 512 frames of one loop, while measured loop time decreased by about 4.1% in developer openMSX. Silent, 1 MiB / ASCII16; physical hardware is unverified. The NIGHT RAVEN GIF below shows the older v0.2.0 capture, not the optimized timing.
-
-[高速版ROM / Optimized ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.2) · [変更・検証詳細 / Changes & Validation](docs/NIGHT_RAVEN.md)
-
-以下のNIGHT RAVEN GIFはv0.2.0の映像です（画面内容は同じ、速度は旧版）。
-
-
-**TurboR + V9968 + Geo3Dで「こんな映像も見てみたい」を試す、従来5本の無音・自動再生デモも収録しています。**
-
-Five silent, non-interactive experiments, including NIGHT RAVEN space combat and OBSIDIAN battleship flyby: a coastal race, a low-altitude flight, and rotating Earth/Moon spheres. These are real-time polygon rendering demos, with precomputed movement/camera tables—not prerecorded raster movies in ROM.
-
-**まずはGeo3D開発者 Alex Moncks氏のopenMSXで確認しています。実機動作・実機速度の保証ではありません。** These demos were checked with the Geo3D developer's openMSX build. Physical hardware and other emulators are not validated. See [validation details](docs/VALIDATION.md).
-
-## ORBITAL — TYPE REAL / 別バージョン / Fast Earth Rotation Variant
-
-地球が月の1公転につき約27.3回自転する高速回転版です。月は同じ面を地球に向けたまま公転します。**従来のORBITALも引き続き提供します。** 実時間や実機性能を示すものではありません。
-
-Earth rotates approximately 27.3 times per lunar orbit, while the Moon keeps the same face toward Earth. The original ORBITAL version remains available. Animation is accelerated; this is not a real-time astronomical timescale or a physical-hardware performance measurement.
-
-[ROM・無音MP4・GIF / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) · [使い方・技術説明・検証 / Details](demos/orbital-type-real/README.md)
-
-![ORBITAL TYPE REAL](docs/media/orbital-type-real.gif)
-
-## NIGHT RAVEN — 新着 / New
-
-巨大艦の壁沿いを突破する、リアルタイム・ポリゴン宇宙戦デモを追加しました。**効果音・BGMなし版です。カッコいいBGMを付けたいのですが、まだ決まらず悩み中。今後BGMを追加する予定です。それまでは、それぞれの「心のBGM」を重ねてお楽しみください。**
-
-NIGHT RAVEN is currently silent (no SFX or BGM). We are still looking for the right soundtrack and plan to add BGM later. Until then, enjoy it with the soundtrack in your imagination!
-
-[無音ROM・MP4 / v0.2.0](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0) · [使い方・技術説明・検証・免責 / Details](docs/NIGHT_RAVEN.md)
-
-![NIGHT RAVEN](docs/media/night-raven.gif)
-
-## OBSIDIAN / TITAN PASS — 最初の巨大戦艦デモ / Battleship Flyby
-
-巨大戦艦の近傍を飛行する、最初のGeo3D実験も無音版で追加しました。1フレームあたり1,816頂点・1,302面を投入します（全ての面が常に表示されるという意味ではありません）。
-
-A silent real-time polygon flyby near a giant spacecraft. Submits 1,816 vertices and 1,302 faces per frame; not all submitted faces are necessarily visible.
-
-[使い方・技術説明・検証 / Guide & Validation](docs/OBSIDIAN.md) · [v0.2.0 ROM・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0)
-
-![OBSIDIAN](docs/media/obsidian.gif)
-
-## ダウンロード / Download
-
-[ORBITAL通常版・TYPE REAL 餅つきウサギ版 / v0.3.5](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.5) — 月の上に小さなポリゴンのウサギを追加。両版のROM・GIF・無音MP4を更新しました。
-
-[ORBITAL通常版 自転方向修正版 / v0.3.3](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.3) — 通常版を西から東への自転に修正。TYPE REALはv0.3.1から変更ありません。
-
-[ORBITAL通常版・TYPE REAL 地球テクスチャ修正版 / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) — 両版の左右反転を修正しました。
-
-[v0.1.1 リリース・ROMと無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.1)
-
-ROMは **ASCII16**（OBSIDIAN: 256KiB、ほか: 1MiB）。操作は不要です。音声はありません。エミュレータ・BIOS・FPGAビットストリームは同梱していません。
-
-| Demo | 内容 | Preview |
-|---|---|---|
-| OBSIDIAN / TITAN PASS | 巨大戦艦への接近飛行 / battleship flyby | [Details](docs/OBSIDIAN.md) |
-| NIGHT RAVEN | 巨大艦沿いの宇宙迎撃戦 / space combat | [Details](docs/NIGHT_RAVEN.md) |
-| VECTOR / RUSH | 起伏とバンクのある海沿いコース、3台の車 / coastal race | [GIF](docs/media/vector-rush.gif) |
-| SKYBOUND | テクスチャ付き地形、僚機2機、港湾・谷・橋 / textured low-altitude flight | [GIF](docs/media/skybound.gif) |
-| ORBITAL | テクスチャ付き地球・月の自転と公転、7段階の陰影 / Earth and Moon | [GIF](docs/media/orbital.gif) |
-
-### VECTOR / RUSH
-![VECTOR / RUSH](docs/media/vector-rush.gif)
-
-### SKYBOUND
-![SKYBOUND](docs/media/skybound.gif)
-
-### ORBITAL
-![ORBITAL](docs/media/orbital.gif)
-
-## 起動とビルド
-
-- [使い方・必要な環境 / Usage and build](docs/USAGE.md)
-- [技術説明 / Technical notes](docs/TECHNICAL.md)
-- [検証した版・範囲・制約 / Validation](docs/VALIDATION.md)
-- [ライセンス・素材の来歴 / Licenses and provenance](docs/LICENSE_REVIEW.md)
-
-## クレジット / Credits
-
-- V9968: **HRA!** — [V9968_Cartridge](https://github.com/hra1129/V9968_Cartridge)
-- Geo3D: **Alex Moncks** — [Geo3D](https://github.com/alexmoncks/V9968_Cartridge/tree/main/geo3d), [Geo3D openMSX](https://github.com/alexmoncks/openMSX)
-- openMSX contributors, SDCC contributors, and the authors of the build tools.
-- Demo production: **Kanon**, with **ASTRA** assistance.
-- SKYBOUND / ORBITAL texture images are AI-generated. 元画像と生成プロンプトを各デモの `assets/` に収録しています。
-
-ハードウェアと周辺の創作活動を応援する非公式サンプルです。各ハードウェア開発者による認証・品質保証を意味するものではありません。
-
-## ライセンスと免責事項 / License and disclaimer
-
-本プロジェクトのソースコード・独自素材は、権利を有する範囲で [MIT License](LICENSE) により提供します。上流の権利・ライセンスは [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を参照してください。
-
-**試作・実験用です。現状有姿、無保証で提供します。** 動作、速度、特定機器への適合性、安全性、継続的な保守、バグ修正は保証しません。使用は利用者の判断と責任で行ってください。損害に関する責任の制限は、適用法で許される範囲に限ります。ROM・BIOS等は適法に入手したものを使用してください。
-
-Experimental software, provided **AS IS, without warranty**. Hardware compatibility, performance, maintenance and fixes are not guaranteed. Liability limitations apply only to the extent permitted by applicable law. Use lawfully obtained system ROMs. See the MIT license for its full terms.
+# V9968 + Geo3D Sample Demos
+
+## SKYBOUND — Flight Demo Ver2.0 / Japan Tour
+
+**256-color automatic flight, Geo3D V2 required.** Take off from Tokyo, fly past Mount Fuji, Nagoya and Osaka, turn at Kyoto and return. Includes live cockpit instruments, internal-98h and external-88h ROMs (**4 MiB / ASCII16**). Silent; developer openMSX/TurboR verified. Hardware, BlueMSX+ V2 and Z80 performance remain unverified. Earlier editions are retained.
+
+**フライトデモ Ver2.0**：東京から富士山・名古屋・大阪・京都を巡る自動飛行。256色、Geo3D V2必須、内蔵98h／外付け88h両版。離陸から一周、計器と帰路の描画を確認済みです。無音・操縦なし。旧版も引き続き利用できます。
+
+[ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/skybound-flight-v2.0.0) · [Usage, technical notes, licenses / 使い方・技術説明・免責](demos/skybound-v2.0/README.md)
+
+![SKYBOUND Japan Tour](docs/media/skybound-flight-v2.0.gif)
+
+## NIGHT RAVEN ゲーム版は専用リポジトリへ移転しました
+
+**操作できるゲーム版の開発・配布先は [kanon-ai/NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) です。** 現行4ステージ版、操作方法、対応環境、ライセンス・免責、検証範囲は移転先をご覧ください。自動再生のNIGHT RAVENデモはこのリポジトリで継続します。
+
+旧ゲーム試作版のソース・リリース・内蔵／外付けセットは、既存リンクと旧版再現のため履歴として残しています。これらは現行ゲームの配布物ではありません。
+
+## Choose your connection — 内蔵98h / 外付け88h
+
+**The original dual-I/O bundle contains 28 variants (56 ROMs).** Choose `INTERNAL-98H` for V9968 as the main VDP, or `EXTERNAL-88H` for a second-VDP cartridge. Each archive separates Geo3D V1 and V2. Verified in developer openMSX; physical hardware and BlueMSX+ external-88h remain unverified. Original releases are retained.
+
+**従来の内蔵／外付けセットには28種類・計56 ROMを収録しています。** 外付けカートリッジは `EXTERNAL-88H` を選び、カートリッジ側の映像出力をご覧ください。ZIP内でGeo3D V1/V2も分けています。実機・BlueMSX+外付け88h構成は未検証です。
+
+[Download both editions / 内蔵用・外付け用ZIP](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/dual-io-v0.1.0) · [ROM list, setup, validation and licenses / 一覧・使い方・検証・ライセンス](demos/dual-io/README.md)
+
+
+## Eight more demos — Geo3D V2.0 editions / 公開8デモのV2専用版
+
+**Separate V2-only editions; original versions remain available.** Resident geometry and VFIRST/FFIRST reduce CPU uploads. R800 measurements: ORBITAL ≈20→30 fps, SKYBOUND ≈20→30, VECTOR RUSH ≈20→29, LUNAR COMMUTE ≈21→29. FOUR SEASONS: ≈27→30 on R800 and ≈12.7→16.8 with TurboR forced to Z80. BASIC FUNCTIONS remains ≈30 fps. Author openMSX evaluation only; physical hardware and BlueMSX+ V2 are unverified.
+
+従来版を維持した別バージョンです。V2の拡張モデルRAMを使って転送を削減。地球・月、フライト、レース、四季、月面からの帰宅などを改修し、両CPU条件で計10,792画面が旧版と一致しました。演奏会は今回の変更に含みません。**Geo3D V2.0必須、実機・BlueMSX+ V2未検証。**
+
+[ROMs / Source / ダウンロード](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-v2-extra-v0.1.0) · [Benchmarks, usage, licenses / 比較・使い方・ライセンス](demos/geo3d-v2-extra/README.md)
+
+## NIGHT RAVEN — 3ステージ操作可能デモ・Geo3D v2試験版（旧版）
+
+> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
+
+**旧3ステージ版とは別のv2専用試験版。** 拡張面RAMに機体を常駐させて転送を削減。通常場面のfpsはほぼ同じで、人工的な多機種表示試験では約30→60fps。作者openMSXで確認、実機・BlueMSX+ v2は未検証です。音楽・効果音は暫定、ステージ進行は変更される可能性があります。下記の1ステージ自動デモ版とは異なります。
+
+[ROM / 配布セット](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-three-stage-geo3d-v2-v0.1.0) · [操作・性能比較・検証範囲・ライセンス](demos/night-raven-three-stage-geo3d-v2/README.md)
+
+
+## NIGHT RAVEN — Geo3D V2.0 edition
+
+**Geo3D V2.0専用の独立版**。壁・機体824頂点／527面を常駐させ、作者版openMSXの同条件比較で **20.13 → 29.96 fps（約49%向上）**。全512画面一致、OPLL BGMを維持。**TurboR向け・実機とBlueMSX+ V2は未検証**です。Geo3D V1版とは対応環境が異なります。
+
+Resident models with VFIRST/FFIRST and extended indices. Requires Geo3D V2.0 with 1024-entry model RAM; measured gains are emulator results, not hardware performance guarantees.
+
+[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-geo3d-v2-v0.1.0) · [Usage, benchmarks, provenance / 詳細](demos/night-raven-geo3d-v2/README.md)
+
+![NIGHT RAVEN Geo3D V2.0](docs/media/night-raven-geo3d-v2.gif)
+
+## BULLRUSH — Geo3D V2.0対応版
+
+通常2機（1 MiB）とにぎやか5機（2 MiB）の両視点デモ。ASCII16 / TurboR。Geo3D v2.0の拡張面メモリを活用し、追尾視点で約18–20%改善（作者openMSX測定）。旧版は維持しています。**V2.0専用、BlueMSX+ v2・実機未検証。**
+
+[ROM・GIF・無音MP4・ソース](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-geo3d-v2-v0.1.0) · [使い方・技術・測定条件・免責](docs/BULLRUSH_GEO3D_V2.md)
+
+Geo3D v2.0-only experimental editions. Original-speed media; developer openMSX tested, physical hardware and BlueMSX+ v2 unverified.
+
+![5機V2版](docs/media/bullrush-crowd-cockpit-v2.gif)
+
+
+## NIGHT RAVEN — OPLL BGM test
+
+黒烏の1ステージデモにOPLL BGMを追加。**TurboR向けBGMテスト版**。Suno（Premium）で作曲し、MSXミュージックエディタのMCP機能でCodexが編曲。専用openMSXで音楽2周以上と512画面一致、BlueMSX+で映像と音楽ポインターの進行を確認。実機未検証。
+
+[ROM / audio MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-opll-test-v0.1.0) · [使い方・出典・検証範囲](demos/night-raven-opll-test/README.md)
+
+
+## LUNAR COMMUTE — 通勤が疲れたデモ
+
+**My commute felt like 380,000 km today. / 通勤が38万キロくらいに感じた。**
+
+A beautiful Earthrise becomes a cat and rabbit's trip home by rocket. They land at an unnamed harbor, hop onto the quay, and watch their empty rocket fly away. Real-time textured Geo3D animation with V9968 SCREEN 8 / EPAL 256 colours, silent and automatic. 1 MiB / ASCII16. Tested in dedicated openMSX and BlueMSX+ Geo3D experimental builds with TurboR/R800; physical hardware unverified; Z80 evaluated by forcing a TurboR profile to Z80.
+
+地球の出から、猫とうさぎがロケットで帰宅する無音デモ。地球へ帰還し、港で二匹が降りるとロケットだけが飛び立ちます。専用openMSXとBlueMSX+のGeo3D実験版で検証、Z80固定テストも実施、実機は未検証です。
+
+[ROM / MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/lunar-commute-v0.1.2) · [Usage, technology, licenses & disclaimer / 使い方・技術・ライセンス・免責](demos/lunar-commute/README.md)
+
+**v0.1.2 harbor ending:** both emulators checked in R800; new harbor not retested on Z80. / 港追加版は両エミュレータのR800で確認、追加場面のZ80再検証は未実施。
+
+**Previous v0.1.1 — Z80 optimization measurements:** 12.21 → 13.42 fps (+9.9%); R800 +2.4%. All 602 compared pages per CPU are unchanged. Both emulators checked; hardware untested. / Z80で約9.9%改善、両エミュレータで確認済み。
+
+![LUNAR COMMUTE](docs/media/lunar-commute.gif)
+
+
+**Future validation / 今後の検証：** Future demo releases and revisions will be checked in both Geo3D-capable openMSX and BlueMSX+ builds, with exact versions and any limitations recorded per demo. This policy does not retroactively certify older releases. / 今後のデモ公開・更新は両エミュレータで確認し、版と制限を各デモに記載します。過去の全公開版を両方で検証済みとするものではありません。
+
+## PAWS & BEATS — A Magical Concert of Twinkling Stars / 星がきらめく魔法の演奏会
+
+A cat on xylophone and a rabbit on drums play **Twinkle, Twinkle, Little Star** with **Geo3D + OPLL**. Sprites embedded in the mallet tips meet transparent receiver sprites at the instruments; the collision flag triggers stars. **Collision is used only for this visual effect.**
+
+猫とうさぎの演奏会。バチ先端と楽器の打面に仕込んだスプライトの接触で星がきらめきます。当たり判定は演出専用です。
+
+**Experimental patched-openMSX validation only; physical hardware untested. Transparent contact support requires the test patch described below.** / 専用パッチ版で検証、実機未確認。対応条件をご確認ください。
+
+[ROM / audio MP4 / GIF](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/paws-beats-v0.1.1) · [Usage, mechanism, licenses & disclaimer / 使い方・仕組み・ライセンス・免責](demos/paws-beats/README.md)
+
+**PAWS & BEATS v0.1.1 — Z80 optimized:** 8.91 → 10.70 fps (+20.1%) in a forced-Z80 emulator test; R800 performance unchanged. Music runs slower on Z80. / Z80最適化で約20%改善。実機未検証。
+
+![PAWS & BEATS](docs/media/paws-beats.gif)
+
+
+**Running the demos (2026-10-04):** Use the Geo3D-compatible emulator version listed for each demo. Newer emulator releases may not include Geo3D support. See each demo's documentation for tested environments and hardware verification status. [Compatibility details](docs/UPSTREAM_COMPATIBILITY_20261004.md)
+
+**実行環境について（2026-10-04）：** 各デモで案内しているGeo3D対応エミュレータをご利用ください。最新版でもGeo3Dに対応していない場合があります。動作確認済みの環境や実機での検証状況は、各デモの説明をご確認ください。[互換性の詳細](docs/UPSTREAM_COMPATIBILITY_20261004.md)
+
+
+## BULLRUSH CROWD COCKPIT — 5機・両視点版
+
+追尾とコックピットを周回ごとに切り替える別の負荷実験版です。Cキーでも切替可能。**2 MiB / ASCII16**、無音・自動走行。従来版も維持しています。openMSXで表示確認、BlueMSX+は起動・描画進行の確認のみ。実機未検証。
+
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-cockpit-v0.1.0) · [操作・技術・検証範囲・免責](docs/BULLRUSH_CROWD_COCKPIT.md)
+
+## Z80 optimization update / Z80最適化更新
+
+**Nine demos updated for Z80:** SKYBOUND, VECTOR RUSH, ORBITAL (both editions), OBSIDIAN, NIGHT RAVEN (both editions), BULLRUSH and BULLRUSH CROWD. Measured gains are approximately **8–33%** in developer openMSX with unchanged visuals. R800 retains its original bulk-transfer loop. **This update is unverified on physical hardware and BlueMSX+.** BASIC FUNCTIONS is unchanged because no speed improvement was measured; FOUR SEASONS v0.2.0 remains available below.
+
+Z80で効果を確認した9本を更新しました。描画内容を維持し、専用openMSXで約8～33%改善。R800は従来の転送ループを使用します。本更新の実機・BlueMSX+検証は未実施です。効果のなかった基本機能デモと、更新済みの花びらデモは変更していません。
+
+| Demo | Before / 旧版 | After / 最適化版 | Gain / 改善 |
+|---|---:|---:|---:|
+| BULLRUSH | 5.54 fps | 6.25 fps | +12.9% |
+| BULLRUSH CROWD (5 robots) | 4.70 fps | 5.20 fps | +10.7% |
+| NIGHT RAVEN | 9.95 fps | 10.75 fps | +8.0% |
+| NIGHT RAVEN FLIGHT | 9.64 fps | 10.45 fps | +8.4% |
+| OBSIDIAN | 5.13 fps | 5.99 fps | +16.8% |
+| ORBITAL | 9.73 fps | 11.27 fps | +15.8% |
+| ORBITAL TYPE REAL | 9.73 fps | 11.27 fps | +15.8% |
+| SKYBOUND | 9.69 fps | 12.91 fps | +33.3% |
+| VECTOR RUSH | 8.99 fps | 10.34 fps | +15.1% |
+| FOUR SEASONS (v0.2.0 / 更新済み) | 4.12 fps | 12.69 fps | 3.08× |
+
+NIGHT RAVEN FLIGHT uses scripted keyboard input; other rows use automatic playback. / NIGHT RAVEN FLIGHTはキー操作付き、ほかは自動再生での比較です。
+
+[Updated ROMs / 更新ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/z80-optimization-v0.1.0) · [Measurements, setup and disclaimer / 測定・実行・免責](docs/Z80_OPTIMIZATION.md)
+
+
+## Geo3D BASIC FUNCTIONS — 基本機能デモ
+
+A minimal, silent demonstration of **focal length, projection center and texture-origin scrolling**, followed by a combined scene. Fixed geometry, a black background and live register values make each effect easy to compare. **1 MiB / ASCII16.** Tested only in the dedicated Geo3D openMSX build; physical hardware and BlueMSX Plus are unverified.
+
+焦点距離・投影中心・テクスチャ原点を個別に動かし、最後に組み合わせる無音の基本デモです。図形は固定し、上端に設定値を表示します。1 MiB / ASCII16、専用Geo3D openMSXで確認。実機・BlueMSX Plusは未検証です。
+
+[ROM / GIF / MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/geo3d-basics-v0.1.0) · [Guide / 技術・使い方・検証・免責](docs/GEO3D_BASICS.md)
+
+![Geo3D BASIC FUNCTIONS](docs/media/geo3d-basics.gif)
+
+
+## FOUR SEASONS — ポリゴン・テクスチャの基本デモ / Polygon & Texture Basics
+
+桜・蛍・紅葉・雪が黒背景を舞う、無音・自動の基本サンプルです。1 MiB / ASCII16。専用Geo3D openMSXで確認、BlueMSX+・実機は本デモ未検証です。
+
+A silent, automatic demo of cherry petals, fireflies, maple leaves and snow against a black background. **1 MiB / ASCII16.** Tested in the developer Geo3D openMSX build; this demo has not yet been tested in BlueMSX+ or on physical hardware.
+
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/four-seasons-v0.2.0) · [使い方・技術・検証・免責 / Guide & Disclaimer](docs/FOUR_SEASONS.md)
+
+**v0.2.0: Z80向け転送最適化。** 同じ描画内容で、専用openMSXでは約4.12→12.69 fps。R800でも約10.39→27.26 fps。実機・BlueMSX+は未検証です。
+
+**v0.2.0: Z80 transfer optimization.** Identical visuals; developer-openMSX results improved from 4.12 to 12.69 fps on Z80 and 10.39 to 27.26 fps on R800. Physical hardware and BlueMSX+ remain unverified. Preview media uses actual Z80 playback speed.
+
+![FOUR SEASONS](docs/media/four-seasons.gif)
+
+
+## BULLRUSH CROWD — 別バージョンの負荷実験 / Separate Load Experiment
+
+自機1＋赤1＋青3の5機を配置した「にぎやか版」です。ゲーム本編とは別の自動走行負荷実験として追加しました。通常版も引き続き提供します。1 MiB / ASCII16、無音。専用openMSXとBlueMSX+ experimental-2で確認、実機未検証。
+
+A separate automatic load experiment with **five robots: one player, one red and three blue**. This is not the main game; the original BULLRUSH demo remains available. Silent, 1 MiB / ASCII16. Checked in developer Geo3D openMSX and BlueMSX+ experimental-2; physical hardware is unverified. See the details for reduced geometry and measurement conditions.
+
+[ROM・GIF・MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-crowd-v0.1.0) · [技術・軽量化・測定条件・使い方 / Technical Guide & Measurements](docs/BULLRUSH_CROWD.md)
+
+## GR-9 BULLRUSH — 256色の市街地追跡デモ / 256-Color City Pursuit
+
+探索から青い機体を発見し、ローラーダッシュ・横スライド・急旋回で市街地を追跡する無音の自動走行デモを追加しました。関節の姿勢と体重移動、屋上ショートカットを描きます。**まだ操作可能なゲームではありません。専用Geo3D openMSXで確認。BlueMSX+第2版でもASCII16指定で起動・複数場面を確認、実機未検証です。**
+
+A silent, automatic robot pursuit through a city: find the blue robot, then follow it with roller dashes, lateral slides, sharp turns and rooftop shortcuts. Joint animation and weight shifts are part of the demonstration. **This is not yet a playable game.** Tested in developer Geo3D openMSX, with startup and multiple scenes also checked in BlueMSX+ experimental-2 using explicit ASCII16. Physical hardware is unverified.
+
+[ROM・GIF・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/bullrush-v0.1.0) · [使い方・技術・検証・ライセンス・免責 / Guide, License & Disclaimer](docs/BULLRUSH.md)
+
+![BULLRUSH](docs/media/bullrush.gif)
+
+
+## NIGHT RAVEN — 3面構成の開発体験版 / Three-stage development demo（旧版）
+
+> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
+
+**音楽・効果音は暫定で、今後更新予定です。ステージ進行も最終版とは異なる可能性があります。完成ゲームではありません。**
+
+Playable three-sector preview. **Music and sound effects are provisional and planned for updates. Stage progression may differ from the final version.**
+
+今回の版はGeo3D開発者版openMSXで確認。BlueMSX+・実機は未検証。旧版とは別に公開します。
+
+[ROM / MP4 / GIF — v0.5.0 prerelease](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/night-raven-three-stage-v0.5.0) · [操作・技術・検証・ライセンス・免責](docs/NIGHT_RAVEN_THREE_STAGE.md)
+
+![Three-stage development demo](docs/media/night-raven-three-stage.gif)
+
+## NIGHT RAVEN — 操作できる開発体験デモ / Flight Development Demo（旧版）
+
+> ゲーム版は [NIGHT_RAVEN](https://github.com/kanon-ai/NIGHT_RAVEN) へ移転済みです。以下は過去の試作版の記録です。
+
+**完成ゲームではなく、空間を飛行する感覚を少しだけ楽しめる開発体験版です。** 従来の無音・自動再生デモとは別に追加しました。
+
+**効果音は暫定のPSG音であり、最終版の音ではありません。BGMは未収録です。**
+
+An interactive development demo, not a finished game. **Sound effects are temporary placeholders, not final audio.**
+
+[ROM・動画 / v0.4.0 prerelease](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.4.0) · [操作・技術・検証・免責](docs/NIGHT_RAVEN_FLIGHT.md)
+
+![Flight development demo](docs/media/night-raven-flight.gif)
+
+
+## NIGHT RAVEN v0.3.2 — 高速版 / Optimized Version
+
+画面外の壁の転送・描画を省略。元版と一周512画面の表示VRAMが完全一致し、開発者版openMSXで測定時間を約4.1%短縮しました。無音・1MiB / ASCII16。実機未検証です。
+
+Skips off-screen wall transfers and rendering. Display VRAM matched the original across all 512 frames of one loop, while measured loop time decreased by about 4.1% in developer openMSX. Silent, 1 MiB / ASCII16; physical hardware is unverified. The NIGHT RAVEN GIF below shows the older v0.2.0 capture, not the optimized timing.
+
+[高速版ROM / Optimized ROM](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.2) · [変更・検証詳細 / Changes & Validation](docs/NIGHT_RAVEN.md)
+
+以下のNIGHT RAVEN GIFはv0.2.0の映像です（画面内容は同じ、速度は旧版）。
+
+
+**TurboR + V9968 + Geo3Dで「こんな映像も見てみたい」を試す、従来5本の無音・自動再生デモも収録しています。**
+
+Five silent, non-interactive experiments, including NIGHT RAVEN space combat and OBSIDIAN battleship flyby: a coastal race, a low-altitude flight, and rotating Earth/Moon spheres. These are real-time polygon rendering demos, with precomputed movement/camera tables—not prerecorded raster movies in ROM.
+
+**まずはGeo3D開発者 Alex Moncks氏のopenMSXで確認しています。実機動作・実機速度の保証ではありません。** These demos were checked with the Geo3D developer's openMSX build. Physical hardware and other emulators are not validated. See [validation details](docs/VALIDATION.md).
+
+## ORBITAL — TYPE REAL / 別バージョン / Fast Earth Rotation Variant
+
+地球が月の1公転につき約27.3回自転する高速回転版です。月は同じ面を地球に向けたまま公転します。**従来のORBITALも引き続き提供します。** 実時間や実機性能を示すものではありません。
+
+Earth rotates approximately 27.3 times per lunar orbit, while the Moon keeps the same face toward Earth. The original ORBITAL version remains available. Animation is accelerated; this is not a real-time astronomical timescale or a physical-hardware performance measurement.
+
+[ROM・無音MP4・GIF / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) · [使い方・技術説明・検証 / Details](demos/orbital-type-real/README.md)
+
+![ORBITAL TYPE REAL](docs/media/orbital-type-real.gif)
+
+## NIGHT RAVEN — 新着 / New
+
+巨大艦の壁沿いを突破する、リアルタイム・ポリゴン宇宙戦デモを追加しました。**効果音・BGMなし版です。カッコいいBGMを付けたいのですが、まだ決まらず悩み中。今後BGMを追加する予定です。それまでは、それぞれの「心のBGM」を重ねてお楽しみください。**
+
+NIGHT RAVEN is currently silent (no SFX or BGM). We are still looking for the right soundtrack and plan to add BGM later. Until then, enjoy it with the soundtrack in your imagination!
+
+[無音ROM・MP4 / v0.2.0](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0) · [使い方・技術説明・検証・免責 / Details](docs/NIGHT_RAVEN.md)
+
+![NIGHT RAVEN](docs/media/night-raven.gif)
+
+## OBSIDIAN / TITAN PASS — 最初の巨大戦艦デモ / Battleship Flyby
+
+巨大戦艦の近傍を飛行する、最初のGeo3D実験も無音版で追加しました。1フレームあたり1,816頂点・1,302面を投入します（全ての面が常に表示されるという意味ではありません）。
+
+A silent real-time polygon flyby near a giant spacecraft. Submits 1,816 vertices and 1,302 faces per frame; not all submitted faces are necessarily visible.
+
+[使い方・技術説明・検証 / Guide & Validation](docs/OBSIDIAN.md) · [v0.2.0 ROM・無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.2.0)
+
+![OBSIDIAN](docs/media/obsidian.gif)
+
+## ダウンロード / Download
+
+[ORBITAL通常版・TYPE REAL 餅つきウサギ版 / v0.3.5](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.5) — 月の上に小さなポリゴンのウサギを追加。両版のROM・GIF・無音MP4を更新しました。
+
+[ORBITAL通常版 自転方向修正版 / v0.3.3](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.3) — 通常版を西から東への自転に修正。TYPE REALはv0.3.1から変更ありません。
+
+[ORBITAL通常版・TYPE REAL 地球テクスチャ修正版 / v0.3.1](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.3.1) — 両版の左右反転を修正しました。
+
+[v0.1.1 リリース・ROMと無音MP4](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/v0.1.1)
+
+ROMは **ASCII16**（OBSIDIAN: 256KiB、ほか: 1MiB）。操作は不要です。音声はありません。エミュレータ・BIOS・FPGAビットストリームは同梱していません。
+
+| Demo | 内容 | Preview |
+|---|---|---|
+| OBSIDIAN / TITAN PASS | 巨大戦艦への接近飛行 / battleship flyby | [Details](docs/OBSIDIAN.md) |
+| NIGHT RAVEN | 巨大艦沿いの宇宙迎撃戦 / space combat | [Details](docs/NIGHT_RAVEN.md) |
+| VECTOR / RUSH | 起伏とバンクのある海沿いコース、3台の車 / coastal race | [GIF](docs/media/vector-rush.gif) |
+| SKYBOUND | テクスチャ付き地形、僚機2機、港湾・谷・橋 / textured low-altitude flight | [GIF](docs/media/skybound.gif) |
+| ORBITAL | テクスチャ付き地球・月の自転と公転、7段階の陰影 / Earth and Moon | [GIF](docs/media/orbital.gif) |
+
+### VECTOR / RUSH
+![VECTOR / RUSH](docs/media/vector-rush.gif)
+
+### SKYBOUND
+![SKYBOUND](docs/media/skybound.gif)
+
+### ORBITAL
+![ORBITAL](docs/media/orbital.gif)
+
+## 起動とビルド
+
+- [使い方・必要な環境 / Usage and build](docs/USAGE.md)
+- [技術説明 / Technical notes](docs/TECHNICAL.md)
+- [検証した版・範囲・制約 / Validation](docs/VALIDATION.md)
+- [ライセンス・素材の来歴 / Licenses and provenance](docs/LICENSE_REVIEW.md)
+
+## クレジット / Credits
+
+- V9968: **HRA!** — [V9968_Cartridge](https://github.com/hra1129/V9968_Cartridge)
+- Geo3D: **Alex Moncks** — [Geo3D](https://github.com/alexmoncks/V9968_Cartridge/tree/main/geo3d), [Geo3D openMSX](https://github.com/alexmoncks/openMSX)
+- openMSX contributors, SDCC contributors, and the authors of the build tools.
+- Demo production: **Kanon**, with **ASTRA** assistance.
+- SKYBOUND / ORBITAL texture images are AI-generated. 元画像と生成プロンプトを各デモの `assets/` に収録しています。
+
+ハードウェアと周辺の創作活動を応援する非公式サンプルです。各ハードウェア開発者による認証・品質保証を意味するものではありません。
+
+## ライセンスと免責事項 / License and disclaimer
+
+本プロジェクトのソースコード・独自素材は、権利を有する範囲で [MIT License](LICENSE) により提供します。上流の権利・ライセンスは [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を参照してください。
+
+**試作・実験用です。現状有姿、無保証で提供します。** 動作、速度、特定機器への適合性、安全性、継続的な保守、バグ修正は保証しません。使用は利用者の判断と責任で行ってください。損害に関する責任の制限は、適用法で許される範囲に限ります。ROM・BIOS等は適法に入手したものを使用してください。
+
+Experimental software, provided **AS IS, without warranty**. Hardware compatibility, performance, maintenance and fixes are not guaranteed. Liability limitations apply only to the extent permitted by applicable law. Use lawfully obtained system ROMs. See the MIT license for its full terms.
