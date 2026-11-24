@@ -2,9 +2,9 @@
 
 ## SEASON GLOBE — 四季のスノードーム
 
-MSX turbo R＋外付けV9968（88h）＋Geo3D V2の鑑賞デモです。SPACEでドームを揺らし、左右キーで季節を切り替えます。BGMには「Distant Music Box」をMSX-MUSIC（OPLL）用に変換して収録しました。BlueMSX+ v3.2.0-alphaで動作確認済みです。
+MSX turbo R＋V9968（内蔵98h／外付け88h）＋Geo3D V2の鑑賞デモです。SPACEでドームを揺らし、左右キーで季節を切り替えます。BGMには「Distant Music Box」をMSX-MUSIC（OPLL）用に変換して収録しました。BlueMSX+ v3.2.0-alphaで動作確認済みです。
 
-[配布ZIP / Release](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/season-globe-v1.0.1) · [操作説明・プレビュー / Controls and preview](demos/season-globe/README.md) · [作品の利用条件・免責 / License](demos/season-globe/LICENSE.txt)
+[配布ZIP / Release](https://github.com/kanon-ai/V9968_Geo3D_SampleDemo/releases/tag/season-globe-v1.1.0) · [操作説明・プレビュー / Controls and preview](demos/season-globe/README.md) · [作品の利用条件・免責 / License](demos/season-globe/LICENSE.txt)
 
 ## SKYBOUND — Flight Demo Ver2.0 / Japan Tour
 

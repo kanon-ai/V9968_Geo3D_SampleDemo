@@ -1,5 +1,5 @@
 # SEASON GLOBE
-MSX turbo R、外部V9968（88h）とGeo3D V2向けの、四季のスノードームです。雪の山小屋、桜の京都、蛍の光が漂う池、紅葉の滝を表現しました。BGMには「Distant Music Box」をMSX-MUSIC（OPLL）用に変換して収録しました。
+MSX turbo R、内蔵V9968（98h）または外付けV9968（88h）とGeo3D V2向けの、四季のスノードームです。雪の山小屋、桜の京都、蛍の光が漂う池、紅葉の滝を表現しました。BGMには「Distant Music Box」をMSX-MUSIC（OPLL）用に変換して収録しました。
 
 ![四季のスノードーム（無音プレビュー）](SEASON-GLOBE.gif)
 
@@ -15,16 +15,23 @@ MSX turbo R、外部V9968（88h）とGeo3D V2向けの、四季のスノード�
 ## BlueMSX+で起動
 
 1. [BlueMSX+ v3.2.0-alpha](https://github.com/Hesoten/blueMSX-plus/releases/tag/v3.2.0-alpha) のx64版と、利用権のあるFS-A1ST用システムROMを準備します。
-2. 機種を **MSXturboR - Panasonic FS-A1ST** に設定します。
-3. スロット1に **SEASON-GLOBE-88H.ROM** を **ASCII16** 指定で挿入し、スロット2に **V9968Cartridge** を設定して起動します。初回表示まで画像の読み込みがあります。
+2. 接続方式に合わせて次のどちらかを選びます。どちらもスロット1に4 MiBのROMを **ASCII16** 指定で挿入します。初回表示まで画像の読み込みがあります。
+
+| 接続方式 | ROM | BlueMSX+ の構成 |
+| --- | --- | --- |
+| 外付け88h | [SEASON-GLOBE-88H.ROM](SEASON-GLOBE-88H.ROM) | FS-A1STの標準機種設定。スロット2に V9968Cartridge を挿入。 |
+| 内蔵98h | [SEASON-GLOBE-98H.ROM](SEASON-GLOBE-98H.ROM) | FS-A1STの機種設定を複製し、主VDPをV9968に変更。スロット2は空。 |
+
+内蔵版を検証時と同じ設定で起動するには、`Machines/MSXturboR - Panasonic FS-A1ST` を `Machines/MSXturboR - Panasonic FS-A1ST V9968 INTERNAL` にコピーし、コピー側の `config.ini` の `[Video]` を `version=V9968`、`vram size=256kB` に設定します。
 
 WindowsでROMをエミュレータのフォルダーに置いた場合の起動例です。
 
 ```bat
 "blueMSX+.exe" /machine "MSXturboR - Panasonic FS-A1ST" /rom1 "SEASON-GLOBE-88H.ROM" /romtype1 ASCII16 /special2 V9968Cartridge
+"blueMSX+.exe" /machine "MSXturboR - Panasonic FS-A1ST V9968 INTERNAL" /rom1 "SEASON-GLOBE-98H.ROM" /romtype1 ASCII16
 ```
 
-2026-11-24に公式x64配布版（62368a3）で起動、四季の描画、キー操作と音声出力を確認しました。実機では未検証です。ROMは4 MiBです。GIFは無音で、BGMはROMを起動すると再生されます。
+2026-11-24に公式x64配布版（62368a3）で両構成の起動、四季の描画、キー操作と音声出力を確認しました。実機では未検証です。ROMは4 MiBです。GIFは無音で、BGMはROMを起動すると再生されます。
 
 ## License and disclaimer / 利用条件・免責
 
@@ -32,4 +39,4 @@ WindowsでROMをエミュレータのフォルダーに置いた場合の起動�
 
 ## English controls
 
-Press **Space** to shake the globe. Press **Right / Left** for the next / previous season. Leave it running to cycle automatically. Use the 4 MiB ASCII16 ROM with the FS-A1ST profile and external V9968Cartridge in BlueMSX+.
+Press **Space** to shake the globe. Press **Right / Left** for the next / previous season. Leave it running to cycle automatically. Both ROMs use ASCII16. Choose 88H for an external V9968Cartridge or 98H for an FS-A1ST profile configured with V9968 as the main VDP.
