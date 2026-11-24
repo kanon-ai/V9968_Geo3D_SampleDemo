@@ -1,0 +1,9 @@
+SEASON GLOBE — 配布版の利用条件 / Binary release terms
+
+この公式配布物は、個人がダウンロードしてROMを実行し、プレビュー映像を鑑賞する目的で利用できます。紹介には公式配布ページへのリンクをご利用ください。改変版の配布、商用利用、画像や楽曲の個別利用について、本配布条件は許諾を与えるものではありません。法令上認められる利用を制限するものではありません。
+
+現状のまま提供します。互換性、特定目的への適合性、動作および結果について保証しません。適用法が認める範囲で、本配布物の使用により生じた損害について責任を負いません。
+
+You may download this official release for personal use, run the ROM, and view the preview. Please link to the official release when sharing it. These terms do not grant permission for distribution of modified copies, commercial use, or separate reuse of music or artwork. Statutory rights are unaffected.
+
+Provided as is without warranty of compatibility, fitness for purpose, or results. To the extent permitted by applicable law, I am not liable for damages arising from use.
